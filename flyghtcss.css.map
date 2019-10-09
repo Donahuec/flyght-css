@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "flyghtcss.scss"
+    ],
+    "names": [],
+    "file": "flyghtcss.css"
+}
