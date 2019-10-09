@@ -1,16 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+// colors from https://clrs.cc/
+$navy:#001f3f;
+$blue:#0074D9;
+$aqua:#7FDBFF;
+$teal:#39CCCC;
+$olive:#3D9970;
+$green:#2ECC40;
+$lime:#01FF70;
+$yellow:#FFDC00;
+$orange:#FF851B;
+$red:#FF4136;
+$maroon:#85144b;
+$fuchsia:#F012BE;
+$purple:#B10DC9;
+$black:#111111;
+$gray:#AAAAAA;
+$silver:#DDDDDD;
+$white:#FFFFFF;
 $font-stack: Roboto,
 sans-serif;
-$primary-color: teal;
-$secondary-color: magenta;
-$default-color: #747474;
-$default-radius: 5px;
+$primary-color: $blue;
+$secondary-color: $teal;
+$default-color: $gray;
+$warning-color: $orange;
+$error-color:$red;
+$default-radius: 2px;
+/////////////////// 
+// Color Styles
+///////////////////
+.primary {
+    background-color: $primary-color;
+}
+
+.secondary {
+    background-color: $secondary-color;
+}
+
+.default {
+    background-color: $default-color;
+}
+
+.warning {
+    background-color: $warning-color;
+}
+
+.error {
+    background-color: $error-color;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.text-default {
+    color: $default-color;
+}
+
+.text-warning {
+    color: $warning-color;
+}
+
+.text-error {
+    color: $error-color;
+}
+
+/////////////////// 
+// Button Styles
+///////////////////
 button {
     padding: .5rem 1rem .5rem 1rem;
     border: none;
     border-radius: $default-radius;
     color: white;
-    font: 100% $font-stack;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .4);
+    font-family: $font-stack;
+    font-size: 1rem;
 }
 
 button.primary {
@@ -23,4 +91,20 @@ button.secondary {
 
 button.default {
     background-color: $default-color;
+}
+
+button.warning {
+    background-color: $warning-color;
+}
+
+button.error {
+    background-color: $error-color;
+}
+
+/////////////////// 
+// Text Styles
+///////////////////
+p {
+    font-family: $font-stack;
+    color: $black;
 }
