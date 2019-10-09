@@ -76,9 +76,24 @@ button {
     border: none;
     border-radius: $default-radius;
     color: white;
-    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
     font-family: $font-stack;
     font-size: 1rem;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:focus {
+    outline: none;
 }
 
 button.primary {
