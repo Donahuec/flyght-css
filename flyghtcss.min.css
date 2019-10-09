@@ -1,1 +1,1 @@
-button{background-color:teal;padding:.5rem 1rem .5rem 1rem;border:none;border-radius:10%;color:white;font-size:1rem}
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");button{padding:.5rem 1rem .5rem 1rem;border:none;border-radius:5px;color:white;font:100% Roboto,sans-serif}button.primary{background-color:teal}button.secondary{background-color:#f0f}button.default{background-color:#747474}
