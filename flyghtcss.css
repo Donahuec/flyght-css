@@ -62,21 +62,21 @@ button {
 
 button:hover {
   opacity: 0.7;
-  -webkit-transform: translateY(-0.05em);
-  transform: translateY(-0.05em);
+  -webkit-transform: translateY(-0.05em) rotate(0.0001deg);
+  transform: translateY(-0.05em) rotate(0.0001deg);
   will-change: transform;
 }
 
 button:active {
-  -webkit-transform: translateY(0.1em);
-  transform: translateY(0.1em);
+  -webkit-transform: translateY(0.1em) rotate(0.0001deg);
+  transform: translateY(0.1em) rotate(0.0001deg);
   will-change: transform;
 }
 
 button:focus {
   outline: none;
-  -webkit-transform: translateY(0.05em);
-  transform: translateY(0.05em);
+  -webkit-transform: translateY(0.05em) rotate(0.0001deg);
+  transform: translateY(0.05em) rotate(0.0001deg);
   will-change: transform;
   box-shadow: none;
   opacity: 0.8;
@@ -220,6 +220,7 @@ hr.hr-full {
   transition: 0.3s;
   display: inline-block;
   border-radius: 2px;
+  margin: .5em 0 1em 0;
 }
 
 .card.card-small {
