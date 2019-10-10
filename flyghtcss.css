@@ -1,6 +1,11 @@
+@import url("lib/normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 .primary {
   background-color: #0074D9;
 }
@@ -44,6 +49,227 @@
 .container {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* For mobile phones: */
+[class*="col"] {
+  width: 100%;
+  float: left;
+}
+
+.col .demo {
+  display: block;
+  margin: .1em .3em .1em .3em;
+  padding: .5em 1em .5em 1em;
+  background: #39CCCC;
+  text-align: center;
+  border-radius: 2px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col.xs1 {
+    width: 8.33%;
+  }
+  .col.xs2 {
+    width: 16.66%;
+  }
+  .col.xs3 {
+    width: 25%;
+  }
+  .col.xs4 {
+    width: 33.33%;
+  }
+  .col.xs5 {
+    width: 41.66%;
+  }
+  .col.xs6 {
+    width: 50%;
+  }
+  .col.xs7 {
+    width: 58.33%;
+  }
+  .col.xs8 {
+    width: 66.66%;
+  }
+  .col.xs9 {
+    width: 75%;
+  }
+  .col.xs10 {
+    width: 83.33%;
+  }
+  .col.xs11 {
+    width: 91.66%;
+  }
+  .col.xs12 {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col.s1 {
+    width: 8.33%;
+  }
+  .col.s2 {
+    width: 16.66%;
+  }
+  .col.s3 {
+    width: 25%;
+  }
+  .col.s4 {
+    width: 33.33%;
+  }
+  .col.s5 {
+    width: 41.66%;
+  }
+  .col.s6 {
+    width: 50%;
+  }
+  .col.s7 {
+    width: 58.33%;
+  }
+  .col.s8 {
+    width: 66.66%;
+  }
+  .col.s9 {
+    width: 75%;
+  }
+  .col.s10 {
+    width: 83.33%;
+  }
+  .col.s11 {
+    width: 91.66%;
+  }
+  .col.s12 {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col.m1 {
+    width: 8.33%;
+  }
+  .col.m2 {
+    width: 16.66%;
+  }
+  .col.m3 {
+    width: 25%;
+  }
+  .col.m4 {
+    width: 33.33%;
+  }
+  .col.m5 {
+    width: 41.66%;
+  }
+  .col.m6 {
+    width: 50%;
+  }
+  .col.m7 {
+    width: 58.33%;
+  }
+  .col.m8 {
+    width: 66.66%;
+  }
+  .col.m9 {
+    width: 75%;
+  }
+  .col.m10 {
+    width: 83.33%;
+  }
+  .col.m11 {
+    width: 91.66%;
+  }
+  .col.m12 {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col.l1 {
+    width: 8.33%;
+  }
+  .col.l2 {
+    width: 16.66%;
+  }
+  .col.l3 {
+    width: 25%;
+  }
+  .col.l4 {
+    width: 33.33%;
+  }
+  .col.l5 {
+    width: 41.66%;
+  }
+  .col.l6 {
+    width: 50%;
+  }
+  .col.l7 {
+    width: 58.33%;
+  }
+  .col.l8 {
+    width: 66.66%;
+  }
+  .col.l9 {
+    width: 75%;
+  }
+  .col.l10 {
+    width: 83.33%;
+  }
+  .col.l11 {
+    width: 91.66%;
+  }
+  .col.l12 {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .col.xl1 {
+    width: 8.33%;
+  }
+  .col.xl2 {
+    width: 16.66%;
+  }
+  .col.xl3 {
+    width: 25%;
+  }
+  .col.xl4 {
+    width: 33.33%;
+  }
+  .col.xl5 {
+    width: 41.66%;
+  }
+  .col.xl6 {
+    width: 50%;
+  }
+  .col.xl7 {
+    width: 58.33%;
+  }
+  .col.xl8 {
+    width: 66.66%;
+  }
+  .col.xl9 {
+    width: 75%;
+  }
+  .col.xl10 {
+    width: 83.33%;
+  }
+  .col.xl11 {
+    width: 91.66%;
+  }
+  .col.xl12 {
+    width: 100%;
+  }
 }
 
 button {
@@ -199,6 +425,10 @@ h5 {
 
 h6 {
   font-size: .75em;
+}
+
+mark {
+  background-color: #FFDC00;
 }
 
 hr {

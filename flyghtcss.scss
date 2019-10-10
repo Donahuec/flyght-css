@@ -1,3 +1,4 @@
+@import url("lib/normalize.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
@@ -36,6 +37,14 @@ $font-ibm-plex:'IBM Plex Serif',
 serif;
 //misc
 $default-radius: 2px;
+/////////////////// 
+// Universal Styles
+///////////////////
+// https://www.w3schools.com/css/css_rwd_grid.asp
+* {
+    box-sizing: border-box;
+}
+
 /////////////////// 
 // Color Styles
 ///////////////////
@@ -85,6 +94,103 @@ $default-radius: 2px;
 .container {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* For mobile phones: */
+
+[class*="col"] {
+    width: 100%;
+    float: left;
+}
+
+@mixin responsive-col($size) {
+    .col.#{$size}1 {
+        width: 8.33%;
+    }
+    .col.#{$size}2 {
+        width: 16.66%;
+    }
+    .col.#{$size}3 {
+        width: 25%;
+    }
+    .col.#{$size}4 {
+        width: 33.33%;
+    }
+    .col.#{$size}5 {
+        width: 41.66%;
+    }
+    .col.#{$size}6 {
+        width: 50%;
+    }
+    .col.#{$size}7 {
+        width: 58.33%;
+    }
+    .col.#{$size}8 {
+        width: 66.66%;
+    }
+    .col.#{$size}9 {
+        width: 75%;
+    }
+    .col.#{$size}10 {
+        width: 83.33%;
+    }
+    .col.#{$size}11 {
+        width: 91.66%;
+    }
+    .col.#{$size}12 {
+        width: 100%;
+    }
+}
+
+.col .demo {
+    display: block;
+    margin: .1em .3em .1em .3em;
+    padding: .5em 1em .5em 1em;
+    background: $teal;
+    text-align: center;
+    border-radius: $default-radius;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    @include responsive-col(xs);
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    @include responsive-col(s);
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    @include responsive-col(m);
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    @include responsive-col(l);
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    @include responsive-col(xl);
 }
 
 /////////////////// 
@@ -246,6 +352,10 @@ h5 {
 
 h6 {
     font-size: .75em;
+}
+
+mark {
+    background-color: $yellow;
 }
 
 /////////////////// 
