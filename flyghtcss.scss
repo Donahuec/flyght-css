@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
 // colors from https://clrs.cc/
 $navy:#001f3f;
 $blue:#0074D9;
@@ -17,13 +19,22 @@ $black:#111111;
 $gray:#AAAAAA;
 $silver:#DDDDDD;
 $white:#FFFFFF;
-$font-stack: Roboto,
-sans-serif;
+// Theme
 $primary-color: $blue;
 $secondary-color: $teal;
 $default-color: $gray;
 $warning-color: $orange;
 $error-color:$red;
+// Fonts
+$font-roboto: 'Roboto',
+sans-serif;
+$font-montserrat: 'Montserrat',
+sans-serif;
+$font-biorhyme:'BioRhyme',
+serif;
+$font-ibm-plex:'IBM Plex Serif',
+serif;
+//misc
 $default-radius: 2px;
 /////////////////// 
 // Color Styles
@@ -56,7 +67,7 @@ $default-radius: 2px;
     color: $secondary-color;
 }
 
-.text-default {
+.text-muted {
     color: $default-color;
 }
 
@@ -69,19 +80,28 @@ $default-radius: 2px;
 }
 
 /////////////////// 
+// Layout Styles
+///////////////////
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/////////////////// 
 // Button Styles
 ///////////////////
 button {
-    padding: .5rem 1rem .5rem 1rem;
+    padding: .5em 1em .5em 1em;
     border: none;
     border-radius: $default-radius;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
-    font-family: $font-stack;
-    font-size: 1rem;
+    font-family: $font-montserrat;
+    font-size: 1em;
     opacity: 1;
     transition: 0.3s;
     background-color: $default-color;
+    margin: .25em .25em .25em .25em;
 }
 
 button:hover {
@@ -157,7 +177,78 @@ button.link:focus {
 /////////////////// 
 // Text Styles
 ///////////////////
+body {
+    font-family: $font-montserrat;
+}
+
 p {
-    font-family: $font-stack;
-    color: $black;
+    font-size: 1em;
+    font-weight: light;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+small {
+    font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 110%;
+    font-family: $font-ibm-plex;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+/////////////////// 
+// Separator Styles
+///////////////////
+hr {
+    border-top: 1px solid $black;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    opacity: .2;
+    margin: 3em 10% 3em 10%;
+}
+
+hr.hr-full {
+    margin: 3em 0 3em 0;
 }
