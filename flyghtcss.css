@@ -164,6 +164,11 @@ h6 {
   font-weight: 500;
   line-height: 110%;
   font-family: "IBM Plex Serif", serif;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: .5em 0 .5em 0;
 }
 
 h1 {
@@ -201,4 +206,31 @@ hr {
 
 hr.hr-full {
   margin: 3em 0 3em 0;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.card.card-small {
+  max-width: 400px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Add some padding inside the card container */
+.card .card-content {
+  padding: 2px 2em 2px 2em;
+}
+
+.card .card-title {
+  padding: 2px 2em 0 2em;
+  border-bottom: 1px solid #DDDDDD;
 }
