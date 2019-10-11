@@ -1,4 +1,4 @@
-@import url(c:\Users\Caitlin\Dropbox\Flyghtcss\normalize.css);
+@import url("normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap");
@@ -533,7 +533,6 @@ hr.hr-full {
 .card .card-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 2px 2px 0 0;
 }
 
 .card .card-footer {
