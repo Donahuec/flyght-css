@@ -1,9 +1,10 @@
-@import url("lib/normalize.css");
+@import url(c:\Users\Caitlin\Dropbox\Flyghtcss\normalize.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .primary {
@@ -16,6 +17,10 @@
 
 .default {
   background-color: #AAAAAA;
+}
+
+.success {
+  background-color: #2ECC40;
 }
 
 .warning {
@@ -38,6 +43,10 @@
   color: #AAAAAA;
 }
 
+.text-success {
+  color: #2ECC40;
+}
+
 .text-warning {
   color: #FF851B;
 }
@@ -46,9 +55,25 @@
   color: #FF4136;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .container {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.display-block {
+  display: block;
 }
 
 .row::after {
@@ -277,11 +302,15 @@ button {
   border: none;
   border-radius: 2px;
   color: white;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   background-color: #AAAAAA;
   margin: .25em .25em .25em .25em;
 }
@@ -304,7 +333,8 @@ button:focus {
   -webkit-transform: translateY(0.05em) rotate(0.0001deg);
   transform: translateY(0.05em) rotate(0.0001deg);
   will-change: transform;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   opacity: 0.8;
 }
 
@@ -329,11 +359,13 @@ button.error {
 }
 
 button.flat {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 button.flat:focus {
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
 }
 
 button.white {
@@ -342,18 +374,21 @@ button.white {
 }
 
 button.white:focus {
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 button.link {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background: #FFFFFF;
   color: #0074D9;
 }
 
 button.link:hover,
 button.link:focus {
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
   text-decoration: underline;
   opacity: 1;
 }
@@ -396,10 +431,14 @@ h6 {
   font-weight: 500;
   line-height: 110%;
   font-family: "IBM Plex Serif", serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   margin: .5em 0 .5em 0;
 }
 
@@ -446,28 +485,73 @@ hr.hr-full {
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
-  display: inline-block;
   border-radius: 2px;
+  background-clip: padding-box;
   margin: .5em .5em .5em .5em;
-}
-
-.card.card-small {
-  max-width: 400px;
+  overflow: hidden;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Add some padding inside the card container */
 .card .card-content {
-  padding: 2px 2em 2px 2em;
+  padding: 1em 1em 1em 1em;
 }
 
 .card .card-title {
-  padding: 2px 2em 0 2em;
+  padding: .3em 2em 0 2em;
   border-bottom: 1px solid #DDDDDD;
 }
+
+.card .card-image .card-title {
+  position: absolute;
+  border: none;
+  padding: 0 1em 0 1em;
+  bottom: .25em;
+  left: 0;
+}
+
+.card .card-image .card-title.title-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  right: 0;
+  color: #FFFFFF;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px 2px 0 0;
+}
+
+.card .card-footer {
+  padding: .3em 2em .3em 2em;
+  border-top: 1px solid #DDDDDD;
+}
+
+.card .card-title::after,
+.card .card-content::after,
+.card .card-image::after,
+.card .card-footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=flyghtcss.css.map */

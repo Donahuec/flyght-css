@@ -1,4 +1,4 @@
-@import url("lib/normalize.css");
+@import "normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
@@ -20,10 +20,11 @@ $black:#111111;
 $gray:#AAAAAA;
 $silver:#DDDDDD;
 $white:#FFFFFF;
-// Theme
+// Theme 
 $primary-color: $blue;
 $secondary-color: $teal;
 $default-color: $gray;
+$success-color: $green;
 $warning-color: $orange;
 $error-color:$red;
 // Fonts
@@ -37,10 +38,15 @@ $font-ibm-plex:'IBM Plex Serif',
 serif;
 //misc
 $default-radius: 2px;
+@mixin clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /////////////////// 
 // Universal Styles
 ///////////////////
-// https://www.w3schools.com/css/css_rwd_grid.asp
 * {
     box-sizing: border-box;
 }
@@ -58,6 +64,10 @@ $default-radius: 2px;
 
 .default {
     background-color: $default-color;
+}
+
+.success {
+    background-color: $success-color;
 }
 
 .warning {
@@ -80,6 +90,10 @@ $default-radius: 2px;
     color: $default-color;
 }
 
+.text-success {
+    color: $success-color;
+}
+
 .text-warning {
     color: $warning-color;
 }
@@ -88,18 +102,36 @@ $default-radius: 2px;
     color: $error-color;
 }
 
+.text-white {
+    color: $white;
+}
+
 /////////////////// 
 // Layout Styles
 ///////////////////
+// https://www.w3schools.com/css/css_rwd_grid.asp
 .container {
     margin-left: 10%;
     margin-right: 10%;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.display-block {
+    display: block;
+}
+
+/////////////////// 
+// Grid
+///////////////////
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+    @include clearfix;
 }
 
 
@@ -110,42 +142,54 @@ $default-radius: 2px;
     float: left;
 }
 
+$grid-1: 8.33%;
+$grid-2: 16.66%;
+$grid-3: 25%;
+$grid-4: 33.33%;
+$grid-5: 41.66%;
+$grid-6: 50%;
+$grid-7: 58.33%;
+$grid-8: 66.66%;
+$grid-9: 75%;
+$grid-10: 83.33%;
+$grid-11: 91.66%;
+$grid-12: 100%;
 @mixin responsive-col($size) {
     .col.#{$size}1 {
-        width: 8.33%;
+        width: $grid-1;
     }
     .col.#{$size}2 {
-        width: 16.66%;
+        width: $grid-2;
     }
     .col.#{$size}3 {
-        width: 25%;
+        width: $grid-3;
     }
     .col.#{$size}4 {
-        width: 33.33%;
+        width: $grid-4;
     }
     .col.#{$size}5 {
-        width: 41.66%;
+        width: $grid-5;
     }
     .col.#{$size}6 {
-        width: 50%;
+        width: $grid-6;
     }
     .col.#{$size}7 {
-        width: 58.33%;
+        width: $grid-7;
     }
     .col.#{$size}8 {
-        width: 66.66%;
+        width: $grid-8;
     }
     .col.#{$size}9 {
-        width: 75%;
+        width: $grid-9;
     }
     .col.#{$size}10 {
-        width: 83.33%;
+        width: $grid-10;
     }
     .col.#{$size}11 {
-        width: 91.66%;
+        width: $grid-11;
     }
     .col.#{$size}12 {
-        width: 100%;
+        width: $grid-12;
     }
 }
 
@@ -381,13 +425,12 @@ hr.hr-full {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, .4);
     transition: 0.3s;
-    display: inline-block;
     border-radius: $default-radius;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
     margin: .5em .5em .5em .5em;
-}
-
-.card.card-small {
-    max-width: 400px;
+    overflow: hidden;
 }
 
 
@@ -401,10 +444,53 @@ hr.hr-full {
 /* Add some padding inside the card container */
 
 .card .card-content {
-    padding: 2px 2em 2px 2em;
+    padding: 1em 1em 1em 1em;
 }
 
 .card .card-title {
-    padding: 2px 2em 0 2em;
+    padding: .3em 2em 0 2em;
     border-bottom: 1px solid $silver;
+}
+
+.card .card-image .card-title {
+    position: absolute;
+    border: none;
+    padding: 0 1em 0 1em;
+    bottom: .25em;
+    left: 0;
+}
+
+.card .card-image .card-title.title-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    right: 0;
+    color: $white;
+}
+
+.card .card-image {
+    position: relative;
+}
+
+.card .card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $default-radius $default-radius 0 0;
+}
+
+.card .card-footer {
+    padding: .3em 2em .3em 2em;
+    border-top: 1px solid $silver;
+}
+
+.card .card-title::after,
+.card .card-content::after,
+.card .card-image::after,
+.card .card-footer::after {
+    @include clearfix;
+}
+
+//img
+img.responsive {
+    max-width: 100%;
+    height: auto;
 }
