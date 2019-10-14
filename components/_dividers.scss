@@ -1,0 +1,15 @@
+/////////////////// 
+// Separator Styles
+///////////////////
+hr {
+    border-top: 1px solid $black;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    opacity: .2;
+    margin: 3em 10% 3em 10%;
+}
+
+hr.hr-full {
+    margin: 3em 0 3em 0;
+}
