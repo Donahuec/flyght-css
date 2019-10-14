@@ -6,6 +6,208 @@
   box-sizing: border-box;
 }
 
+button,
+a.link-button {
+  padding: .5em 1em .5em 1em;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  opacity: 1;
+  transition: transform 0.2s;
+  background-color: #AAAAAA;
+  margin: .25em .25em .25em .25em;
+}
+
+button:hover,
+a.link-button:hover {
+  opacity: 0.7;
+  -webkit-transform: translateY(-0.05em) rotate(0.0001deg);
+  transform: translateY(-0.05em) rotate(0.0001deg);
+  will-change: transform;
+}
+
+button:active,
+a.link-button:hover {
+  transition: transform 0.1s;
+  -webkit-transform: translateY(0.1em) rotate(0.0001deg);
+  transform: translateY(0.1em) rotate(0.0001deg);
+  will-change: transform;
+}
+
+button:focus,
+a.link-button:focus {
+  outline: none;
+  -webkit-transform: translateY(0.05em) rotate(0.0001deg);
+  transform: translateY(0.05em) rotate(0.0001deg);
+  will-change: transform;
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+button.flat {
+  box-shadow: none;
+}
+
+button.flat:focus {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+button.white {
+  background: #FFFFFF;
+  color: #111111;
+}
+
+button.white:focus {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+button.link {
+  box-shadow: none;
+  background: #FFFFFF;
+  color: #0074D9;
+}
+
+button.link:hover,
+button.link:focus {
+  transform: none;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+button.link:focus {
+  color: #B10DC9;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  margin: .5em .5em .5em .5em;
+  overflow: hidden;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Add some padding inside the card container */
+.card .card-content {
+  padding: 1em 1em 1em 1em;
+}
+
+.card .card-title {
+  padding: .3em 2em 0 2em;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.card .card-image .card-title {
+  position: absolute;
+  border: none;
+  padding: 0 1em 0 1em;
+  bottom: .25em;
+  left: 0;
+}
+
+.card .card-image .card-title.title-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  right: 0;
+  color: #FFFFFF;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card .card-footer {
+  padding: .3em 2em .3em 2em;
+  border-top: 1px solid #DDDDDD;
+}
+
+.card .card-title::after,
+.card .card-content::after,
+.card .card-image::after,
+.card .card-footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #DDDDDD;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: -.2em .2em 0 .2em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 1em 1em;
+  text-decoration: none;
+  display: block;
+  color: #111111;
+}
+
+.dropdown-button:hover {
+  -webkit-transform: none;
+  transform: none;
+  will-change: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #AAAAAA;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+  opacity: 0.7;
+}
+
+hr {
+  border-top: 1px solid #111111;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  opacity: .2;
+  margin: 3em 10% 3em 10%;
+}
+
+hr.hr-full {
+  margin: 3em 0 3em 0;
+}
+
 .container {
   margin-left: 10%;
   margin-right: 10%;
@@ -330,208 +532,6 @@ a.nav-button:focus {
 
 a.nav-button:focus {
   outline: none;
-}
-
-button,
-a.link-button {
-  padding: .5em 1em .5em 1em;
-  border: none;
-  border-radius: 2px;
-  color: white;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  opacity: 1;
-  transition: transform 0.2s;
-  background-color: #AAAAAA;
-  margin: .25em .25em .25em .25em;
-}
-
-button:hover,
-a.link-button:hover {
-  opacity: 0.7;
-  -webkit-transform: translateY(-0.05em) rotate(0.0001deg);
-  transform: translateY(-0.05em) rotate(0.0001deg);
-  will-change: transform;
-}
-
-button:active,
-a.link-button:hover {
-  transition: transform 0.1s;
-  -webkit-transform: translateY(0.1em) rotate(0.0001deg);
-  transform: translateY(0.1em) rotate(0.0001deg);
-  will-change: transform;
-}
-
-button:focus,
-a.link-button:focus {
-  outline: none;
-  -webkit-transform: translateY(0.05em) rotate(0.0001deg);
-  transform: translateY(0.05em) rotate(0.0001deg);
-  will-change: transform;
-  box-shadow: none;
-  opacity: 0.8;
-}
-
-button.flat {
-  box-shadow: none;
-}
-
-button.flat:focus {
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
-}
-
-button.white {
-  background: #FFFFFF;
-  color: #111111;
-}
-
-button.white:focus {
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
-}
-
-button.link {
-  box-shadow: none;
-  background: #FFFFFF;
-  color: #0074D9;
-}
-
-button.link:hover,
-button.link:focus {
-  transform: none;
-  text-decoration: underline;
-  opacity: 1;
-}
-
-button.link:focus {
-  color: #B10DC9;
-}
-
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-  border-radius: 2px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  margin: .5em .5em .5em .5em;
-  overflow: hidden;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-}
-
-/* Add some padding inside the card container */
-.card .card-content {
-  padding: 1em 1em 1em 1em;
-}
-
-.card .card-title {
-  padding: .3em 2em 0 2em;
-  border-bottom: 1px solid #DDDDDD;
-}
-
-.card .card-image .card-title {
-  position: absolute;
-  border: none;
-  padding: 0 1em 0 1em;
-  bottom: .25em;
-  left: 0;
-}
-
-.card .card-image .card-title.title-background {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: block;
-  right: 0;
-  color: #FFFFFF;
-}
-
-.card .card-image {
-  position: relative;
-}
-
-.card .card-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card .card-footer {
-  padding: .3em 2em .3em 2em;
-  border-top: 1px solid #DDDDDD;
-}
-
-.card .card-title::after,
-.card .card-content::after,
-.card .card-image::after,
-.card .card-footer::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-img.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #DDDDDD;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin: -.2em .2em 0 .2em;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  padding: 1em 1em;
-  text-decoration: none;
-  display: block;
-  color: #111111;
-}
-
-.dropdown-button:hover {
-  -webkit-transform: none;
-  transform: none;
-  will-change: none;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #AAAAAA;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropdown-button {
-  opacity: 0.7;
-}
-
-hr {
-  border-top: 1px solid #111111;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  opacity: .2;
-  margin: 3em 10% 3em 10%;
-}
-
-hr.hr-full {
-  margin: 3em 0 3em 0;
 }
 
 body {
