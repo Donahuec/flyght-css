@@ -16,6 +16,10 @@ a.link-button {
     margin: .25em .25em .25em .25em;
 }
 
+a.link-button {
+    display: inline-block;
+}
+
 button:hover,
 a.link-button:hover {
     opacity: 0.7;
@@ -74,4 +78,13 @@ button.link:focus {
 
 button.link:focus {
     color: $purple;
+}
+
+.to-top {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 4em;
+    height: 4em;
 }

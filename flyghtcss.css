@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.circle {
+  border-radius: 50% !important;
+}
+
 button,
 a.link-button {
   padding: .5em 1em .5em 1em;
@@ -19,6 +23,10 @@ a.link-button {
   transition: transform 0.2s;
   background-color: #AAAAAA;
   margin: .25em .25em .25em .25em;
+}
+
+a.link-button {
+  display: inline-block;
 }
 
 button:hover,
@@ -79,6 +87,15 @@ button.link:focus {
 
 button.link:focus {
   color: #B10DC9;
+}
+
+.to-top {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 4em;
+  height: 4em;
 }
 
 .card {
@@ -240,6 +257,10 @@ hr.hr-full {
   height: 2em;
   visibility: hidden;
   pointer-events: none;
+}
+
+.table-scroll {
+  overflow-x: auto;
 }
 
 .row::after {
@@ -486,6 +507,11 @@ hr.hr-full {
   font-size: 2em;
 }
 
+.navbar .nav-icon {
+  height: 1em;
+  display: inline-block;
+}
+
 .navbar .nav-menu-right {
   height: 4em;
   float: right;
@@ -601,6 +627,41 @@ h6 {
 
 mark {
   background-color: #ffea66;
+}
+
+blockquote {
+  padding-left: 1em;
+  border-left: 0.3em solid #DDDDDD;
+  text-align: left;
+}
+
+.quote:before,
+.quote:after {
+  color: #AAAAAA;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.quote:before {
+  content: open-quote;
+}
+
+.quote:after {
+  content: close-quote;
+}
+
+blockquote .source {
+  font-style: italic;
+  color: #5e5e5e;
+  text-align: right;
+  margin: -.5em 0 0 0;
+}
+
+blockquote .source:before {
+  content: "\A- ";
+  white-space: pre-wrap;
 }
 
 .navy {
