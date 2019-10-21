@@ -44,16 +44,12 @@
   overflow: hidden;
   max-height: 0em;
   position: relative;
-  padding: 0 1.5em;
+  padding: 0 2em;
   border: 1px hidden #FFFFFF;
   transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
 
-.accordion .accordion-content .accordion-header {
-  padding: 1em 0;
-}
-
-.accordion .accordion-content .accordion__body {
+.accordion .accordion-content .accordion-body {
   padding: 0 0 1.5em;
 }
 
@@ -76,6 +72,7 @@ a.link-button {
   transition: transform 0.2s;
   background-color: #AAAAAA;
   margin: .25em .25em .25em .25em;
+  cursor: pointer;
 }
 
 a.link-button {

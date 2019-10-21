@@ -37,13 +37,10 @@ $ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
         overflow: hidden;
         max-height: 0em;
         position: relative;
-        padding: 0 1.5em;
+        padding: 0 2em;
         border: 1px hidden $white;
         transition: all $timing $ease;
-        .accordion-header {
-            padding: 1em 0;
-        }
-        .accordion__body {
+        .accordion-body {
             padding: 0 0 1.5em;
         }
     }
