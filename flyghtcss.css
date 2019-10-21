@@ -10,6 +10,59 @@
   border-radius: 50% !important;
 }
 
+/*
+* Animation Variables
+*/
+/* Basic Accordion Styles */
+.accordion {
+  width: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  /* Radio Inputs */
+  /* Labels */
+  /* Panel Content */
+}
+
+.accordion input[name='panel'] {
+  display: none;
+}
+
+.accordion label {
+  position: relative;
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid #DDDDDD;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+
+.accordion label:hover {
+  background-color: #DDDDDD;
+}
+
+.accordion .accordion-content {
+  overflow: hidden;
+  max-height: 0em;
+  position: relative;
+  padding: 0 1.5em;
+  border: 1px hidden #FFFFFF;
+  transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+
+.accordion .accordion-content .accordion-header {
+  padding: 1em 0;
+}
+
+.accordion .accordion-content .accordion__body {
+  padding: 0 0 1.5em;
+}
+
+input[name='panel']:checked ~ .accordion-content {
+  /* Get this as close to what height you expect */
+  max-height: 50em;
+  border-bottom: 1px solid #DDDDDD;
+}
+
 button,
 a.link-button {
   padding: .5em 1em .5em 1em;
