@@ -19,6 +19,11 @@ a.link-button {
 
 a.link-button {
     display: inline-block;
+    text-decoration: none;
+}
+
+a.link-button:hover {
+    text-decoration: underline;
 }
 
 button:hover,
@@ -30,7 +35,7 @@ a.link-button:hover {
 }
 
 button:active,
-a.link-button:hover {
+a.link-button:active {
     transition: transform 0.1s;
     -webkit-transform: translateY(.1em) rotate(0.0001deg);
     transform: translateY(.1em) rotate(0.0001deg);
@@ -82,10 +87,8 @@ button.link:focus {
 }
 
 .to-top {
-    border-radius: 50%;
+    //border-radius: 50%;
     position: fixed;
     bottom: 1em;
     right: 1em;
-    width: 4em;
-    height: 4em;
 }

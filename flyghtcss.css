@@ -15,12 +15,8 @@
 */
 /* Basic Accordion Styles */
 .accordion {
-  width: 75%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
   border-radius: 2px;
-  /* Radio Inputs */
-  /* Labels */
-  /* Panel Content */
 }
 
 .accordion input[name='panel'] {
@@ -57,6 +53,7 @@ input[name='panel']:checked ~ .accordion-content {
   /* Get this as close to what height you expect */
   max-height: 50em;
   border-bottom: 1px solid #DDDDDD;
+  transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
 
 button,
@@ -77,6 +74,11 @@ a.link-button {
 
 a.link-button {
   display: inline-block;
+  text-decoration: none;
+}
+
+a.link-button:hover {
+  text-decoration: underline;
 }
 
 button:hover,
@@ -88,7 +90,7 @@ a.link-button:hover {
 }
 
 button:active,
-a.link-button:hover {
+a.link-button:active {
   transition: transform 0.1s;
   -webkit-transform: translateY(0.1em) rotate(0.0001deg);
   transform: translateY(0.1em) rotate(0.0001deg);
@@ -140,12 +142,9 @@ button.link:focus {
 }
 
 .to-top {
-  border-radius: 50%;
   position: fixed;
   bottom: 1em;
   right: 1em;
-  width: 4em;
-  height: 4em;
 }
 
 .card {

@@ -8,19 +8,11 @@ $ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
 /* Basic Accordion Styles */
 
 .accordion {
-    width: 75%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, .4);
     border-radius: $default-radius;
-    /* Radio Inputs */
     input[name='panel'] {
         display: none;
     }
-    // .accordion-section {
-    //     &:not(:last-of-type) {
-    //         border-bottom: 1px solid $silver;
-    //     }
-    // }
-    /* Labels */
     label {
         position: relative;
         display: block;
@@ -32,7 +24,6 @@ $ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
             background-color: $silver;
         }
     }
-    /* Panel Content */
     .accordion-content {
         overflow: hidden;
         max-height: 0em;
@@ -50,4 +41,5 @@ input[name='panel']:checked~.accordion-content {
     /* Get this as close to what height you expect */
     max-height: 50em;
     border-bottom: 1px solid $silver;
+    transition: all $timing $ease;
 }
