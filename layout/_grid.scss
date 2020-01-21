@@ -64,6 +64,45 @@ $grid-12: 100%;
     }
 }
 
+@mixin offset-col($size) {
+    .col.offset-#{$size}1 {
+        margin-left: $grid-1;
+    }
+    .col.offset-#{$size}2 {
+        margin-left: $grid-2;
+    }
+    .col.offset-#{$size}3 {
+        margin-left: $grid-3;
+    }
+    .col.offset-#{$size}4 {
+        margin-left: $grid-4;
+    }
+    .col.offset-#{$size}5 {
+        margin-left: $grid-5;
+    }
+    .col.offset-#{$size}6 {
+        margin-left: $grid-6;
+    }
+    .col.offset-#{$size}7 {
+        margin-left: $grid-7;
+    }
+    .col.offset-#{$size}8 {
+        margin-left: $grid-8;
+    }
+    .col.offset-#{$size}9 {
+        margin-left: $grid-9;
+    }
+    .col.offset-#{$size}10 {
+        margin-left: $grid-10;
+    }
+    .col.offset-#{$size}11 {
+        margin-left: $grid-11;
+    }
+    .col.offset-#{$size}12 {
+        margin-left: $grid-12;
+    }
+}
+
 .col .demo {
     display: block;
     margin: .1em .3em .1em .3em;
@@ -78,6 +117,7 @@ $grid-12: 100%;
 
 @media only screen and (max-width: 600px) {
     @include responsive-col(xs);
+    @include offset-col(xs);
 }
 
 
@@ -85,6 +125,7 @@ $grid-12: 100%;
 
 @media only screen and (min-width: 600px) {
     @include responsive-col(s);
+    @include offset-col(s);
 }
 
 
@@ -92,6 +133,7 @@ $grid-12: 100%;
 
 @media only screen and (min-width: 768px) {
     @include responsive-col(m);
+    @include offset-col(m);
 }
 
 
@@ -99,11 +141,13 @@ $grid-12: 100%;
 
 @media only screen and (min-width: 992px) {
     @include responsive-col(l);
+    @include offset-col(l);
 }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    @include responsive-col(xl);
     @include responsive-col(xl);
 }
