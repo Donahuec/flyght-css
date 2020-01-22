@@ -13,3 +13,26 @@ ol.bullet-roman {
 ol.bullet-alpha {
     list-style-type: lower-alpha;
 }
+
+dt {
+    font-weight: bold;
+}
+
+////////////////
+// List Group
+////////////////
+ul.list-group {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid $silver;
+    border-radius: $default-radius;
+}
+
+ul.list-group li {
+    padding: .5em 1em;
+    border-bottom: 1px solid $silver;
+}
+
+ul.list-group li:last-child {
+    border-bottom: none;
+}

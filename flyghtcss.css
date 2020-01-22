@@ -290,6 +290,35 @@ ol.bullet-alpha {
   list-style-type: lower-alpha;
 }
 
+dt {
+  font-weight: bold;
+}
+
+ul.list-group {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+}
+
+ul.list-group li {
+  padding: .5em 1em;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+ul.list-group li:last-child {
+  border-bottom: none;
+}
+
+pre.code-block {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+}
+
+pre.code-block.left-border {
+  border-left: 0.3em solid #39CCCC;
+}
+
 .container {
   margin-left: 10%;
   margin-right: 10%;
