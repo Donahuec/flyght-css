@@ -294,36 +294,43 @@ dl {
   width: 100%;
 }
 
-dl:after {
+dl.dl-inline:after {
   content: "";
   display: table;
   clear: both;
 }
 
-dt {
+dl.dl-inline > dt {
   font-weight: bold;
   clear: left;
   float: left;
   width: 25%;
   text-align: right;
-  padding: .25em;
+  padding: .25em 0;
   clear: left;
 }
 
-dd {
+dl.dl-inline > dd {
   float: left;
   clear: right;
-  width: 65%;
+  max-width: 65%;
   padding: .5em 0;
 }
 
-dd + dd {
-  float: right;
-  clear: both;
+dl.dl-inline > dd + dd {
+  padding-left: 25%;
 }
 
-dd + dt {
-  clear: both;
+dl.dl-stacked > dt {
+  font-weight: bold;
+}
+
+dl.dl-stacked > dd {
+  padding: .5em 0 0 1em;
+  margin: 0;
+}
+
+dl.dl-stacked > dd + dt {
   padding-top: .5em;
 }
 
@@ -352,7 +359,7 @@ ul.list-group.hover li:hover {
 }
 
 pre.code-block {
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
   padding: 1.5em;
 }
 
