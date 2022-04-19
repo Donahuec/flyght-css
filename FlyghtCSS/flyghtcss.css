@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .circle {
@@ -15,7 +16,8 @@
 */
 /* Basic Accordion Styles */
 .accordion {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
   border-radius: 2px;
 }
 
@@ -29,6 +31,7 @@
   padding: 1em;
   border-bottom: 1px solid #DDDDDD;
   cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
   transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
 
@@ -42,6 +45,7 @@
   position: relative;
   padding: 0 2em;
   border: 1px hidden #FFFFFF;
+  -webkit-transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
   transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
 
@@ -53,6 +57,7 @@ input[name='panel']:checked ~ .accordion-content {
   /* Get this as close to what height you expect */
   max-height: 50em;
   border-bottom: 1px solid #DDDDDD;
+  -webkit-transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
   transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
 
@@ -62,11 +67,15 @@ a.link-button {
   border: none;
   border-radius: 2px;
   color: white;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   opacity: 1;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   background-color: #AAAAAA;
   margin: .25em .25em .25em .25em;
   cursor: pointer;
@@ -91,7 +100,10 @@ a.link-button:hover {
 
 button:active,
 a.link-button:active {
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
   -webkit-transform: translateY(0.1em) rotate(0.0001deg);
   transform: translateY(0.1em) rotate(0.0001deg);
   will-change: transform;
@@ -103,16 +115,19 @@ a.link-button:focus {
   -webkit-transform: translateY(0.05em) rotate(0.0001deg);
   transform: translateY(0.05em) rotate(0.0001deg);
   will-change: transform;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   opacity: 0.8;
 }
 
 button.flat {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 button.flat:focus {
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4);
 }
 
 button.white {
@@ -121,18 +136,21 @@ button.white {
 }
 
 button.white:focus {
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 button.link {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background: #FFFFFF;
   color: #0074D9;
 }
 
 button.link:hover,
 button.link:focus {
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
   text-decoration: underline;
   opacity: 1;
 }
@@ -149,11 +167,11 @@ button.link:focus {
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 2px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
   margin: .5em .5em .5em .5em;
   overflow: hidden;
@@ -161,7 +179,8 @@ button.link:focus {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Add some padding inside the card container */
@@ -228,7 +247,8 @@ img.responsive {
   display: none;
   position: absolute;
   background-color: #DDDDDD;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin: -.2em .2em 0 .2em;
 }
@@ -376,8 +396,8 @@ pre.code-block.left-border {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .pull-left {
@@ -813,7 +833,8 @@ pre.code-block.left-border {
   margin: none;
   padding: 0 2em;
   overflow: hidden;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar.nav-sticky {
@@ -916,10 +937,14 @@ h6 {
   font-weight: 500;
   line-height: 110%;
   font-family: "IBM Plex Serif", serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   margin: .5em 0 .5em 0;
 }
 
@@ -3009,3 +3034,4 @@ blockquote .source:before {
 .text-error.text-darken-5 {
   color: text-darken(#FF4136, 50%) !important;
 }
+/*# sourceMappingURL=flyghtcss.css.map */
