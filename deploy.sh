@@ -8,14 +8,16 @@ npm run build
 
 # navigate into the build output directory
 cd dist
-
-git init
 git checkout main
+
+cp index.html 404.html
+
 git add -A
 git commit -m 'deploy'
 
+cd -
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:donahuec/flyght-css.git main:gh-pages
+git subtree push --prefix dist origin gh-pages
 
 cd -
