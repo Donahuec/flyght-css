@@ -63,7 +63,7 @@
                     <div class="card card-small">
                         <span class="card-image">
                             <img
-                                src="assets/Moose.jpg "
+                                src="@/assets/Moose.jpg "
                                 alt="picture of Moose the cat"
                             />
                         </span>
@@ -92,7 +92,7 @@
                         </div>
                         <span class="card-image">
                             <img
-                                src="assets/Moose.jpg "
+                                src="@/assets/Moose.jpg "
                                 alt="picture of Moose the cat"
                             />
                         </span>
@@ -118,7 +118,7 @@
                     <div class="card card-small">
                         <span class="card-image">
                             <img
-                                src="assets/Moose.jpg "
+                                src="@/assets/Moose.jpg "
                                 alt="picture of Moose the cat"
                             />
                             <div class="card-title title-background">
