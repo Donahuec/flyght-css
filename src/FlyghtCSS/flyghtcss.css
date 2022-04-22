@@ -11,6 +11,10 @@
   border-radius: 50% !important;
 }
 
+body {
+  height: 100vh;
+}
+
 /*
 * Animation Variables
 */

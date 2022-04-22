@@ -18,22 +18,39 @@ import { RouterLink, RouterView } from "vue-router";
     </div>
     <a class="to-top link-button teal darken-3" href="#">To Top</a>
 
-    <div class="row">
-        <div class="col m2">
-            <div class="card card-small" style="position: sticky">
-                <div class="card-content">
-                    <RouterLink to="/">Home</RouterLink> <br />
-                    <RouterLink to="/colors">Colors</RouterLink> <br />
-                    <RouterLink to="/typography">Typography</RouterLink> <br />
-                    <RouterLink to="/grid">Grid</RouterLink> <br />
-                    <RouterLink to="/buttons">Buttons</RouterLink> <br />
-                    <RouterLink to="/cards">Cards</RouterLink> <br />
-                    <RouterLink to="/accordions">Accordions</RouterLink> <br />
-                </div>
-            </div>
+    <div class="main-body">
+        <div class="side-nav">
+            <RouterLink to="/">Home</RouterLink> <br />
+            <RouterLink to="/colors">Colors</RouterLink> <br />
+            <RouterLink to="/typography">Typography</RouterLink> <br />
+            <RouterLink to="/grid">Grid</RouterLink> <br />
+            <RouterLink to="/buttons">Buttons</RouterLink> <br />
+            <RouterLink to="/cards">Cards</RouterLink> <br />
+            <RouterLink to="/accordions">Accordions</RouterLink> <br />
         </div>
-        <div class="col m10">
+        <main class="main-content">
             <RouterView />
-        </div>
+        </main>
     </div>
 </template>
+
+<style>
+.main-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+}
+
+.side-nav {
+    height: 100%;
+    flex: 0 0 15%;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 20px 0 20px;
+}
+</style>
