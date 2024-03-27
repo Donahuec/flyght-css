@@ -1,0 +1,104 @@
+@import "../theme/flyght-theme.css";
+
+@layer lists {
+    @layer unordered {
+        ul.fc-bullet-circle {
+            list-style-type: circle;
+        }
+
+        ul.fc-bullet-square {
+            list-style-type: square;
+        }
+    }
+
+    @layer ordered {
+        ol.fc-bullet-roman {
+            list-style-type: upper-roman;
+        }
+
+        ol.fc-bullet-alpha {
+            list-style-type: lower-alpha;
+        }
+    }
+
+    @layer description {
+        @layer inline {
+            /* learned from here https://clicknathan.com/web-design/styling-html-5-description-lists-formerly-known-as-definition-lists-properly/
+        woo clearfixing on the dl */
+            dl.fc-dl-inline:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            dl.fc-dl-inline>dt {
+                font-weight: bold;
+                clear: left;
+                float: left;
+                width: 25%;
+                text-align: right;
+                padding: .25em 0;
+                clear: left;
+            }
+
+            dl.fc-dl-inline>dd {
+                float: left;
+                clear: right;
+                width: 70%;
+                padding: .25em 0;
+            }
+
+            dl.fc-dl-inline>dd+dd {
+                padding-left: 25%;
+            }
+        }
+
+        @layer stacked {
+            dl.fc-dl-stacked>dt {
+                font-weight: bold;
+            }
+
+            dl.fc-dl-stacked>dd {
+                padding: .5em 0 0 1em;
+                margin: 0;
+            }
+
+            dl.fc-dl-stacked>dd+dt {
+                padding-top: .5em;
+            }
+        }
+    }
+    @layer list-group {
+        ul.fc-list-group {
+            list-style-type: none;
+            padding: 0;
+            border: 1px solid var(--fc-lt-on-surface);
+            border-radius: var(--fc-border-radius);
+        }
+        
+        ul.fc-list-group li {
+            padding: .5em 1em;
+            border-bottom: 1px solid var(--fc-lt-on-surface);
+        }
+        
+        ul.fc-list-group li:last-child {
+            border-bottom: none;
+        }
+        
+        ul.fc-list-group.fc-striped li:nth-child(even) {
+            background-color: var(--fc-muted);
+        }
+        
+        ul.fc-list-group.hover li:hover {
+            background-color: blueviolet;
+        }
+    }
+}
+
+
+
+
+
+
+
+ 

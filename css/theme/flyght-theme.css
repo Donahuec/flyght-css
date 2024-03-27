@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+@import "flyght-defaults.css";
+
+:root {
+/* Typography */
+    --fc-default-font: "Roboto", sans-serif;
+    --fc-monospace-font: "Roboto Mono", monospace;
+
+/* Colors */
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --fc-lt-background: var(--white);
+    --fc-lt-on-background: var(--black);
+    --fc-dt-background: '';
+    --fc-dt-on-background: var(--white);
+
+    --fc-lt-surface: var(--white);
+    --fc-lt-on-surface: var(--black);
+    --fc-dt-surface: '';
+    --fc-dt-on-surface: '';
+    
+    --fc-primary: #00BCD4;
+    --fc-primary-variant: #0096A7;
+    --fc-on-primary: var(--black);
+
+    --fc-secondary: #BA68C8;
+    --fc-secondary-variant: #9C27B0;
+    --fc-on-secondary: var(--black);
+
+    --fc-success: #00E676;
+    --fc-success-variant: #00C853;
+    --fc-on-success: var(--black);
+
+    --fc-warn: #FFA726;
+    --fc-warn-variant: #F57C00;
+    --fc-on-warn: var(--black);
+
+    --fc-error: #E91E63;
+    --fc-error-variant: #C2185B;
+    --fc-on-error: var(--black);
+
+    --fc-muted: #90A4AE;
+    --fc-muted-variant: #546E7A;
+    --fc-on-muted: var(--black);
+}

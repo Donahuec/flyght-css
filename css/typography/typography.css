@@ -1,0 +1,102 @@
+@import "../theme/flyght-theme.css";
+
+@layer body {
+    body {
+        font-family: var(--fc-default-font);
+    }
+}
+
+@layer custom-classes {
+    .fc-text-center {
+        text-align: center;
+    }
+    
+    .fc-text-right {
+        text-align: right;
+    }
+    
+    .fc-text-left {
+        text-align: left;
+    }
+    
+    .fc-text-primary {
+        color: var(--fc-primary-variant);
+    }
+    
+    .fc-text-secondary {
+        color: var(--fc-secondary-variant);
+    }
+    
+    .fc-text-success {
+        color: var(--fc-success-variant);
+    }
+    
+    .fc-text-warning {
+        color: var(--fc-warn-variant);
+    }
+    
+    .fc-text-error {
+        color: var(--fc-error-variant);
+    }
+    
+    .fc-text-muted {
+        color: var(--fc-muted-variant)
+    }
+}
+
+@layer heading {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 500;
+        line-height: 110%;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin: .5em 0 .5em 0;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    h4 {
+        font-size: 1.5em;
+    }
+    
+    h5 {
+        font-size: 1em;
+    }
+    
+    h6 {
+        font-size: .75em;
+    }
+}
+
+@layer base-text {
+    p {
+        font-size: 1em;
+        font-weight: light;
+    }
+
+    small {
+        font-weight: lighter;
+    }
+
+    mark {
+        background-color: var(--fc-primary);
+    }
+}
+
