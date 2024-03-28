@@ -1,5 +1,3 @@
-@import "../../theme/flyght-theme.css";
-
 @layer body {
   body {
     font-family: var(--fc-default-font);

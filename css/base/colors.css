@@ -1,5 +1,3 @@
-@import "../theme/flyght-theme.css";
-
 @layer text {
   .fc-text-white {
     color: white;

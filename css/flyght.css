@@ -1,5 +1,8 @@
 @layer vendor, typography, components, colors;
 
+@import "theme/flyght-defaults.css";
+@import "theme/flyght-theme.css";
+
 @import "vendor/normalize.css" layer(vendor);
 @import "base/typography/typography.css" layer(typography);
 @import "base/typography/lists.css" layer(typography);

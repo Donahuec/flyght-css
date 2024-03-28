@@ -1,5 +1,3 @@
-@import "../../theme/flyght-theme.css";
-
 @layer lists {
   @layer unordered {
     ul.fc-bullet-circle {
@@ -72,13 +70,13 @@
     ul.fc-list-group {
       list-style-type: none;
       padding: 0;
-      border: 1px solid var(--fc-lt-on-surface);
+      border: var(--fc-border-muted);
       border-radius: var(--fc-border-radius);
     }
 
     ul.fc-list-group li {
       padding: 0.5em 1em;
-      border-bottom: 1px solid var(--fc-lt-on-surface);
+      border-bottom: var(--fc-border-muted);
     }
 
     ul.fc-list-group li:last-child {
@@ -86,7 +84,7 @@
     }
 
     ul.fc-list-group.fc-striped li:nth-child(even) {
-      background-color: var(--fc-muted);
+      background-color: var(--fc-muted-light);
     }
 
     ul.fc-list-group.hover li:hover {

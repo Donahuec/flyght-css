@@ -1,4 +1,7 @@
-
 :root {
-    --fc-border-radius: 2px;
+  --fc-border-radius: 4px;
+
+  --fc-border-line: 1px solid;
+
+  --fc-border-muted: var(--fc-border-line) var(--fc-muted);
 }
