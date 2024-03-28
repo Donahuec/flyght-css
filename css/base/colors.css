@@ -1,0 +1,129 @@
+@import "../theme/flyght-theme.css";
+
+@layer text {
+  .fc-text-white {
+    color: white;
+  }
+
+  .fc-text-primary {
+    color: var(--fc-primary-text);
+  }
+
+  .fc-text-on-primary {
+    color: var(--fc-on-primary);
+  }
+
+  .fc-text-secondary {
+    color: var(--fc-secondary);
+  }
+
+  .fc-text-on-secondary {
+    color: var(--fc-on-secondary);
+  }
+
+  .fc-text-success {
+    color: var(--fc-success);
+  }
+
+  .fc-text-on-success {
+    color: var(--fc-on-success);
+  }
+
+  .fc-text-warning {
+    color: var(--fc-warn);
+  }
+
+  .fc-text-on-warning {
+    color: var(--fc-on-warn);
+  }
+
+  .fc-text-error {
+    color: var(--fc-error);
+  }
+
+  .fc-text-on-error {
+    color: var(--fc-on-error);
+  }
+
+  .fc-text-muted {
+    color: var(--fc-muted);
+  }
+
+  .fc-text-on-muted {
+    color: var(--fc-on-muted);
+  }
+}
+
+@layer background {
+  .fc-primary {
+    background-color: var(--fc-primary);
+  }
+
+  .fc-primary-dark {
+    background-color: var(--fc-primary-dark);
+  }
+
+  .fc-primary-light {
+    background-color: var(--fc-primary-light);
+  }
+
+  .fc-secondary {
+    background-color: var(--fc-secondary);
+  }
+
+  .fc-secondary-dark {
+    background-color: var(--fc-secondary-dark);
+  }
+
+  .fc-secondary-light {
+    background-color: var(--fc-secondary-light);
+  }
+
+  .fc-success {
+    background-color: var(--fc-success);
+  }
+
+  .fc-success-dark {
+    background-color: var(--fc-success-dark);
+  }
+
+  .fc-success-light {
+    background-color: var(--fc-success-light);
+  }
+
+  .fc-warn {
+    background-color: var(--fc-warn);
+  }
+
+  .fc-warn-dark {
+    background-color: var(--fc-warn-dark);
+  }
+
+  .fc-warn-light {
+    background-color: var(--fc-warn-light);
+  }
+
+  .fc-error {
+    background-color: var(--fc-error);
+  }
+
+  .fc-error-dark {
+    background-color: var(--fc-error-dark);
+  }
+
+  .fc-error-light {
+    background-color: var(--fc-error-light);
+  }
+
+  .fc-muted {
+    background-color: var(--fc-muted);
+  }
+
+  .fc-muted-dark {
+    background-color: var(--fc-muted-dark);
+  }
+
+  .fc-muted-light {
+    background-color: var(--fc-muted-light);
+  }
+}

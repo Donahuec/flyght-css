@@ -1,10 +1,11 @@
-@layer vendor, typography, components;
+@layer vendor, typography, components, colors;
 
-@import 'vendor/normalize.css' layer(vendor);
-@import 'typography/typography.css' layer(typography);
-@import 'typography/lists.css' layer(typography);
-@import 'components/components.css' layer(components);
+@import "vendor/normalize.css" layer(vendor);
+@import "base/typography/typography.css" layer(typography);
+@import "base/typography/lists.css" layer(typography);
+@import "components/components.css" layer(components);
+@import "base/colors.css" layer(colors);
 
 body {
-    margin: 0 30px;
+  margin: 0 30px;
 }
