@@ -21,47 +21,50 @@
   --fc-dt-surface: "";
   --fc-dt-on-surface: "";
 
-  --fc-l-mid: 50%;
+  --fc-l-mid: 45%;
   --fc-l-light: 90%;
-  --fc-l-dark: 30%;
+  --fc-l-dark: 20%;
 
-  --fc-primary-hsl: hsl(192, 84%, 45%);
-  --fc-primary-hs: 192 85%;
+  --fc-primary-hsl: hsl(210 100% 45%);
+  --fc-primary-hs: 210 100%;
   --fc-primary: hsl(var(--fc-primary-hs) var(--fc-l-mid));
   --fc-primary-light: hsl(var(--fc-primary-hs) var(--fc-l-light));
   --fc-primary-dark: hsl(var(--fc-primary-hs) var(--fc-l-dark));
   --fc-primary-text: hsl(var(--fc-primary-hs) 30%);
-  --fc-on-primary: var(--black);
+  --fc-on-primary: var(--white);
 
-  --fc-secondary-hsl: hsl(291, 58%, 57%);
-  --fc-secondary-hso: 291 47%;
-  --fc-secondary-hs: 285 80%;
+  --fc-secondary-hsl: hsl(331 74% 45%);
+  --fc-secondary-hs: 331 74%;
   --fc-secondary: hsl(var(--fc-secondary-hs) var(--fc-l-mid));
   --fc-secondary-light: hsl(var(--fc-secondary-hs) var(--fc-l-light));
   --fc-secondary-dark: hsl(var(--fc-secondary-hs) var(--fc-l-dark));
-  --fc-on-secondary: var(--black);
+  --fc-on-secondary: var(--white);
 
+  --fc-success-hsl: hsl(151 100% 45%);
   --fc-success-hs: 151 100%;
   --fc-success: hsl(var(--fc-success-hs) var(--fc-l-mid));
   --fc-success-light: hsl(var(--fc-success-hs) var(--fc-l-light));
   --fc-success-dark: hsl(var(--fc-success-hs) var(--fc-l-dark));
   --fc-success-success: var(--black);
 
+  --fc-warn-hsl: hsl(36 100% 50%);
   --fc-warn-hs: 36 100%;
-  --fc-warn: hsl(var(--fc-warn-hs) var(--fc-l-mid));
+  --fc-warn: hsl(var(--fc-warn-hs) 50%);
   --fc-warn-light: hsl(var(--fc-warn-hs) var(--fc-l-light));
-  --fc-warn-dark: hsl(var(--fc-warn-hs) var(--fc-l-dark));
+  --fc-warn-dark: hsl(var(--fc-warn-hs) 30%);
   --fc-on-warn: var(--black);
 
-  --fc-error-hs: 340 82%;
+  --fc-error-hsl: hsl(3 100% 45%);
+  --fc-error-hs: 3 100%;
   --fc-error: hsl(var(--fc-error-hs) var(--fc-l-mid));
   --fc-error-light: hsl(var(--fc-error-hs) var(--fc-l-light));
   --fc-error-dark: hsl(var(--fc-error-hs) var(--fc-l-dark));
-  --fc-on-error: var(--black);
+  --fc-on-error: var(--white);
 
-  --fc-muted-hs: 200 16%;
+  --fc-muted-hsl: hsl(0 0% 45%);
+  --fc-muted-hs: 0 0%;
   --fc-muted: hsl(var(--fc-muted-hs) var(--fc-l-mid));
   --fc-muted-light: hsl(var(--fc-muted-hs) var(--fc-l-light));
   --fc-muted-dark: hsl(var(--fc-muted-hs) var(--fc-l-dark));
-  --fc-on-muted: var(--black);
+  --fc-on-muted: var(--white);
 }

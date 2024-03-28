@@ -5,48 +5,100 @@
     color: white;
   }
 
+  .fc-text-black {
+    color: black;
+  }
+
+  .fc-text-primary-light {
+    color: var(--fc-primary-light);
+  }
+
   .fc-text-primary {
-    color: var(--fc-primary-text);
+    color: var(--fc-primary);
+  }
+
+  .fc-text-primary-dark {
+    color: var(--fc-primary-dark);
   }
 
   .fc-text-on-primary {
     color: var(--fc-on-primary);
   }
 
+  .fc-text-secondary-light {
+    color: var(--fc-secondary-light);
+  }
+
   .fc-text-secondary {
     color: var(--fc-secondary);
+  }
+
+  .fc-text-secondary-dark {
+    color: var(--fc-secondary-dark);
   }
 
   .fc-text-on-secondary {
     color: var(--fc-on-secondary);
   }
 
+  .fc-text-success-light {
+    color: var(--fc-success-light);
+  }
+
   .fc-text-success {
     color: var(--fc-success);
+  }
+
+  .fc-text-success-dark {
+    color: var(--fc-success-dark);
   }
 
   .fc-text-on-success {
     color: var(--fc-on-success);
   }
 
-  .fc-text-warning {
+  .fc-text-warn-light {
+    color: var(--fc-warn-light);
+  }
+
+  .fc-text-warn {
     color: var(--fc-warn);
   }
 
-  .fc-text-on-warning {
+  .fc-text-warn-dark {
+    color: var(--fc-warn-dark);
+  }
+
+  .fc-text-on-warn {
     color: var(--fc-on-warn);
+  }
+
+  .fc-text-error-light {
+    color: var(--fc-error-light);
   }
 
   .fc-text-error {
     color: var(--fc-error);
   }
 
+  .fc-text-error-dark {
+    color: var(--fc-error-dark);
+  }
+
   .fc-text-on-error {
     color: var(--fc-on-error);
   }
 
+  .fc-text-muted-light {
+    color: var(--fc-muted-light);
+  }
+
   .fc-text-muted {
     color: var(--fc-muted);
+  }
+
+  .fc-text-muted-dark {
+    color: var(--fc-muted-dark);
   }
 
   .fc-text-on-muted {
