@@ -1,0 +1,22 @@
+{
+  "name": "flyght-css",
+  "version": "0.2.0",
+  "description": "",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donahuec/flyght-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donahuec/flyght-css/issues"
+  },
+  "homepage": "https://github.com/Donahuec/flyght-css#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
