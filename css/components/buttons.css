@@ -1,0 +1,99 @@
+button,
+a.fc-btn-link {
+  box-sizing: border-box;
+  padding: 0.5em 1em 0.5em 1em;
+  border: none;
+  border-radius: var(--fc-border-radius);
+  color: white;
+  box-shadow: var(--fc-box-shadow);
+  font-family: var(--fc-default-font);
+  font-size: 1em;
+  margin: 0.25em 0.25em 0.25em 0.25em;
+  cursor: pointer;
+  outline-offset: 2px;
+
+  &.fc-btn-primary {
+    background-color: var(--fc-primary);
+    &:hover,
+    &:focus {
+      background-color: hsl(var(--fc-primary-hs) 35%);
+    }
+    &:focus {
+      outline: 2px solid var(--fc-primary-dark);
+    }
+    &:active {
+      outline-offset: 0px;
+      outline: 4px solid var(--fc-primary-dark);
+    }
+  }
+
+  &.fc-btn-secondary {
+    background-color: var(--fc-secondary);
+    &:hover,
+    &:focus {
+      background-color: hsl(var(--fc-secondary-hs) 35%);
+    }
+    &:focus {
+      outline: 2px solid var(--fc-secondary-dark);
+    }
+    &:active {
+      outline-offset: 0px;
+      outline: 4px solid var(--fc-secondary-dark);
+    }
+  }
+
+  &.fc-btn-error {
+    background-color: var(--fc-error);
+    &:hover,
+    &:focus {
+      background-color: hsl(var(--fc-error-hs) 35%);
+    }
+    &:focus {
+      outline: 2px solid var(--fc-error-dark);
+    }
+    &:active {
+      outline-offset: 0px;
+      outline: 4px solid var(--fc-error-dark);
+    }
+  }
+
+  &.fc-btn-muted {
+    background-color: var(--fc-muted);
+    &:hover,
+    &:focus {
+      background-color: hsl(var(--fc-muted-hs) 35%);
+    }
+    &:focus {
+      outline: 2px solid var(--fc-muted-dark);
+    }
+    &:active {
+      outline-offset: 0px;
+      outline: 4px solid var(--fc-muted-dark);
+    }
+  }
+
+  &.fc-btn-white {
+    background: var(--white);
+    color: var(--black);
+    &:hover,
+    &:focus {
+      background-color: var(--fc-muted-light);
+    }
+    &:focus {
+      outline: 2px solid var(--fc-muted);
+    }
+    &:active {
+      outline-offset: 0px;
+      outline: 4px solid var(--fc-muted);
+    }
+  }
+
+  &.fc-btn-flat {
+    box-shadow: none;
+  }
+}
+
+a.fc-btn-link {
+  display: inline-block;
+  text-decoration: none;
+}

@@ -1,0 +1,43 @@
+@layer flyght-css, site;
+@import "css/flyght.css" layer(flyght-css);
+
+@layer site {
+  @layer overrides {
+    body {
+      margin: 0 5%;
+    }
+  }
+
+  @layer custom-styles {
+    .side-nav {
+      float: left;
+      width: 20%;
+      .nav-links {
+        padding: 50px 10px;
+      }
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+    }
+
+    color-square {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      margin: 0;
+      padding: 0;
+    }
+
+    color-group {
+      display: flex;
+      margin: 5px;
+    }
+
+    .color-label {
+      padding: 0 5px;
+      margin: 5px 0;
+    }
+  }
+}

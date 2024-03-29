@@ -3,16 +3,28 @@
   <head>
     <title>{{ title }} - Flyght CSS</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/css/flyght.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <a href="/">Home</a>
-    <a href="/pages/typography">Typography</a>
-    <a href="/pages/lists">Lists</a>
-    <a href="/pages/colors">Colors</a>
-    <hr />
+    <nav class="side-nav">
+      <div class="nav-links">
+        <a href="/">Home</a><br />
+        <a href="/pages/typography">Typography</a><br />
+        <a href="/pages/lists">Lists</a><br />
+        <a href="/pages/colors">Colors</a><br />
+        <a href="/pages/cards">Cards</a><br />
+        <a href="/pages/buttons">Buttons</a><br />
+        <a href="/pages/images">Images</a><br />
+        <a href="/pages/misc">Miscellany</a><br />
+        <a href="/pages/util">Utilities</a><br />
+      </div>
+    </nav>
+    <main class="content">
+      <h1>{{ title }}</h1>
 
-    <div>{{ content }}</div>
+      <hr />
+
+      <div>{{ content }}</div>
+    </main>
   </body>
 </html>

@@ -1,4 +1,4 @@
-@layer vendor, typography, components, colors;
+@layer vendor, typography, colors, components;
 
 @import "theme/flyght-defaults.css";
 @import "theme/flyght-theme.css";
