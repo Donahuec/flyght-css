@@ -1,4 +1,4 @@
-@layer vendor, typography, colors, components;
+@layer vendor, typography, components, utils, colors;
 
 @import "theme/flyght-defaults.css";
 @import "theme/flyght-theme.css";
@@ -6,9 +6,6 @@
 @import "vendor/normalize.css" layer(vendor);
 @import "base/typography/typography.css" layer(typography);
 @import "base/typography/lists.css" layer(typography);
-@import "components/components.css" layer(components);
 @import "base/colors.css" layer(colors);
-
-body {
-  margin: 0 30px;
-}
+@import "base/util.css" layer(utils);
+@import "components/components.css" layer(components);

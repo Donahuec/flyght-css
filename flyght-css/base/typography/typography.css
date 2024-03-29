@@ -1,6 +1,8 @@
 @layer body {
   body {
     font-family: var(--fc-default-font);
+    font-size: 1em;
+    font-weight: light;
   }
 }
 @layer heading {
@@ -45,11 +47,6 @@
 }
 
 @layer base-text {
-  p {
-    font-size: 1em;
-    font-weight: light;
-  }
-
   small {
     font-weight: lighter;
   }

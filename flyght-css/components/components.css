@@ -1,3 +1,6 @@
 @import "blockquote.css" layer(blockquote);
 @import "buttons.css" layer(buttons);
 @import "cards.css" layer(cards);
+@import "codeblock.css" layer(codeblocks);
+@import "dividers.css" layer(dividers);
+@import "navbar.css" layer(navbar);
