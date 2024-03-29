@@ -55,7 +55,9 @@
   }
 
   mark {
-    background-color: var(--fc-primary);
+    background-color: var(--fc-primary-light);
+    padding: 0 2px;
+    margin: 0 -2px;
   }
 }
 
