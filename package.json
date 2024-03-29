@@ -1,20 +1,22 @@
 {
-  "name": "flyghtcss",
-  "version": "0.0.0",
+  "name": "flyght-css",
+  "version": "0.2.0",
+  "description": "",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5050",
-    "deploy": "./deploy.sh"
+    "start": "npx @11ty/eleventy --serve"
   },
-  "dependencies": {
-    "vue": "^3.2.33",
-    "vue-router": "^4.0.14"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donahuec/flyght-css.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donahuec/flyght-css/issues"
+  },
+  "homepage": "https://github.com/Donahuec/flyght-css#readme",
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.0",
-    "@vitejs/plugin-vue": "^2.3.1",
-    "prettier": "^2.5.1",
-    "vite": "^2.9.17"
+    "@11ty/eleventy": "^2.0.1"
   }
 }

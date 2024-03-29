@@ -1,0 +1,179 @@
+@layer text {
+  .fc-text-white {
+    color: white;
+  }
+
+  .fc-text-black {
+    color: black;
+  }
+
+  .fc-text-primary-light {
+    color: var(--fc-primary-light);
+  }
+
+  .fc-text-primary {
+    color: var(--fc-primary);
+  }
+
+  .fc-text-primary-dark {
+    color: var(--fc-primary-dark);
+  }
+
+  .fc-text-on-primary {
+    color: var(--fc-on-primary);
+  }
+
+  .fc-text-secondary-light {
+    color: var(--fc-secondary-light);
+  }
+
+  .fc-text-secondary {
+    color: var(--fc-secondary);
+  }
+
+  .fc-text-secondary-dark {
+    color: var(--fc-secondary-dark);
+  }
+
+  .fc-text-on-secondary {
+    color: var(--fc-on-secondary);
+  }
+
+  .fc-text-success-light {
+    color: var(--fc-success-light);
+  }
+
+  .fc-text-success {
+    color: var(--fc-success);
+  }
+
+  .fc-text-success-dark {
+    color: var(--fc-success-dark);
+  }
+
+  .fc-text-on-success {
+    color: var(--fc-on-success);
+  }
+
+  .fc-text-warn-light {
+    color: var(--fc-warn-light);
+  }
+
+  .fc-text-warn {
+    color: var(--fc-warn);
+  }
+
+  .fc-text-warn-dark {
+    color: var(--fc-warn-dark);
+  }
+
+  .fc-text-on-warn {
+    color: var(--fc-on-warn);
+  }
+
+  .fc-text-error-light {
+    color: var(--fc-error-light);
+  }
+
+  .fc-text-error {
+    color: var(--fc-error);
+  }
+
+  .fc-text-error-dark {
+    color: var(--fc-error-dark);
+  }
+
+  .fc-text-on-error {
+    color: var(--fc-on-error);
+  }
+
+  .fc-text-muted-light {
+    color: var(--fc-muted-light);
+  }
+
+  .fc-text-muted {
+    color: var(--fc-muted);
+  }
+
+  .fc-text-muted-dark {
+    color: var(--fc-muted-dark);
+  }
+
+  .fc-text-on-muted {
+    color: var(--fc-on-muted);
+  }
+}
+
+@layer background {
+  .fc-primary {
+    background-color: var(--fc-primary);
+  }
+
+  .fc-primary-dark {
+    background-color: var(--fc-primary-dark);
+  }
+
+  .fc-primary-light {
+    background-color: var(--fc-primary-light);
+  }
+
+  .fc-secondary {
+    background-color: var(--fc-secondary);
+  }
+
+  .fc-secondary-dark {
+    background-color: var(--fc-secondary-dark);
+  }
+
+  .fc-secondary-light {
+    background-color: var(--fc-secondary-light);
+  }
+
+  .fc-success {
+    background-color: var(--fc-success);
+  }
+
+  .fc-success-dark {
+    background-color: var(--fc-success-dark);
+  }
+
+  .fc-success-light {
+    background-color: var(--fc-success-light);
+  }
+
+  .fc-warn {
+    background-color: var(--fc-warn);
+  }
+
+  .fc-warn-dark {
+    background-color: var(--fc-warn-dark);
+  }
+
+  .fc-warn-light {
+    background-color: var(--fc-warn-light);
+  }
+
+  .fc-error {
+    background-color: var(--fc-error);
+  }
+
+  .fc-error-dark {
+    background-color: var(--fc-error-dark);
+  }
+
+  .fc-error-light {
+    background-color: var(--fc-error-light);
+  }
+
+  .fc-muted {
+    background-color: var(--fc-muted);
+  }
+
+  .fc-muted-dark {
+    background-color: var(--fc-muted-dark);
+  }
+
+  .fc-muted-light {
+    background-color: var(--fc-muted-light);
+  }
+}

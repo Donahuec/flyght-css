@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }} - Flyght CSS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="fc-top-nav fc-primary fc-text-white fc-nav-sticky">
+      <span class="fc-nav-container fc-nav-right">
+        <img src="/_assets/dragon.svg " class="" style="max-height: 50px" />
+        <p class="fc-nav-title">Flyght CSS</p>
+      </span>
+
+      <span class="fc-nav-container">
+        <a
+          href="https://github.com/Donahuec/flyght-css"
+          role="link"
+          class="fc-btn-secondary fc-btn-link"
+          >Github</a
+        >
+      </span>
+    </header>
+    <main>
+      <nav class="side-nav">
+        <div class="fc-card">
+          <div class="fc-card-content">
+            <a href="/">Home</a><br />
+            <a href="/_pages/typography">Typography</a><br />
+            <a href="/_pages/lists">Lists</a><br />
+            <a href="/_pages/colors">Colors</a><br />
+            <a href="/_pages/cards">Cards</a><br />
+            <a href="/_pages/buttons">Buttons</a><br />
+            <a href="/_pages/blockquotes">Blockquotes</a><br />
+            <a href="/_pages/images">Images</a><br />
+            <a href="/_pages/misc">Miscellany</a><br />
+            <a href="/_pages/util">Utilities</a><br />
+            <a href="/_pages/codeblock">Codeblocks</a><br />
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="fc-card">
+          <div class="fc-card-title"><h1>{{ title }}</h1></div>
+          <div class="fc-card-content">
+            <div>{{ content }}</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
