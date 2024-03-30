@@ -53,8 +53,8 @@
 
   mark {
     background-color: var(--fc-primary-light);
-    padding: 0 2px;
-    margin: 0 -2px;
+    padding: 0 0.25ch;
+    margin: 0 -0.25ch;
   }
 }
 
