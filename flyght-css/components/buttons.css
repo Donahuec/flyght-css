@@ -4,7 +4,7 @@ button,
 a.fc-btn-link {
   @layer base {
     box-sizing: border-box;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: var(--fc-padding-default);
     border: none;
     border-radius: var(--fc-border-radius);
     color: var(--white);
