@@ -9,7 +9,7 @@ pre {
   padding: 0.5em 1em;
 
   &.fc-border-left {
-    border-left: 0.3em solid var(--fc-muted);
+    border-left: var(--fc-border-line-accent) var(--fc-muted);
     &.fc-primary-bl {
       border-color: var(--fc-primary);
     }

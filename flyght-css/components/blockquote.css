@@ -1,9 +1,8 @@
 blockquote {
   @layer base {
     padding: 0.5em 1em;
-    border-left: 0.3em solid var(--fc-muted);
+    border-left: var(--fc-border-line-accent) var(--fc-muted);
     text-align: left;
-
     border-radius: var(--fc-border-radius);
 
     &.fc-quote:before,
