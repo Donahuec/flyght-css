@@ -25,18 +25,14 @@
       <nav class="side-nav">
         <div class="fc-card">
           <div class="fc-card-content">
-            <a href="/">Home</a><br />
-            <a href="/pages/typography">Typography</a><br />
-            <a href="/pages/lists">Lists</a><br />
-            <a href="/pages/list-groups">List Groups</a><br />
-            <a href="/pages/colors">Colors</a><br />
-            <a href="/pages/cards">Cards</a><br />
-            <a href="/pages/buttons">Buttons</a><br />
-            <a href="/pages/blockquotes">Blockquotes</a><br />
-            <a href="/pages/images">Images</a><br />
-            <a href="/pages/misc">Miscellany</a><br />
-            <a href="/pages/util">Utilities</a><br />
-            <a href="/pages/codeblock">Codeblocks</a><br />
+            {% assign navPages = collections.all | eleventyNavigation %}
+            <ul class="fc-list-unstyled">
+            {%- for entry in navPages %}
+              <li>
+                <a href="{{ entry.url }}" {% if entry.url == page.url %} class="fc-link-current" aria-current="page" {% endif %}>{{ entry.title }}</a>
+              </li>
+            {%- endfor %}
+            </ul>
           </div>
         </div>
       </nav>

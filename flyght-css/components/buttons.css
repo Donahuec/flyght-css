@@ -9,9 +9,7 @@ a.fc-btn-link {
     border-radius: var(--fc-border-radius);
     color: var(--white);
     box-shadow: var(--fc-box-shadow);
-    font-family: var(--fc-default-font);
-    font-size: 1em;
-    margin: 0.25em 0.25em 0.25em 0.25em;
+    margin: 0.25em;
     cursor: pointer;
     outline-offset: 2px;
 
