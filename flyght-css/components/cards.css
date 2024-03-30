@@ -30,7 +30,8 @@
 
 .fc-card .fc-card-title {
   padding: 0.3em 2em 0 2em;
-  border-bottom: 1px solid var(--fc-muted-light);
+  border-bottom: var(--fc-border-line);
+  border-color: inherit;
 }
 
 .fc-card .fc-card-image .fc-card-title {
@@ -59,7 +60,8 @@
 
 .fc-card .fc-card-footer {
   padding: 0.3em 2em 0.3em 2em;
-  border-top: 1px solid var(--fc-muted-light);
+  border-top: var(--fc-border-line);
+  border-color: inherit;
 }
 
 .fc-card .fc-card-title::after,
