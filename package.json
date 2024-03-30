@@ -3,7 +3,8 @@
   "version": "0.2.0",
   "description": "",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy --pathprefix=flyght-css"
   },
   "repository": {
     "type": "git",
