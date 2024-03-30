@@ -14,5 +14,3 @@ This is a small css framework. Mostly built for practicing and learning purposes
 Designed to be pure vanilla css and html, with eventual optional javascript integration.
 
 Templating and Static Site Generation done with [11ty](https://www.11ty.dev/).
-
-
