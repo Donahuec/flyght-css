@@ -19,74 +19,74 @@ ul.fc-list-group.fc-striped li:nth-child(even) {
   background-color: var(--fc-muted-light);
 }
 
-ul.fc-list-group.fc-primary-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-primary li:nth-child(even) {
   background-color: var(--fc-primary);
   color: var(--fc-on-primary);
 }
-ul.fc-list-group.fc-primary-light-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-primary-light li:nth-child(even) {
   background-color: var(--fc-primary-light);
 }
-ul.fc-list-group.fc-primary-dark-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-primary-dark li:nth-child(even) {
   background-color: var(--fc-primary-dark);
   color: var(--white);
 }
 
-ul.fc-list-group.fc-secondary-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-secondary li:nth-child(even) {
   background-color: var(--fc-secondary);
   color: var(--fc-on-primary);
 }
-ul.fc-list-group.fc-secondary-light-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-secondary-light li:nth-child(even) {
   background-color: var(--fc-secondary-light);
 }
-ul.fc-list-group.fc-secondary-dark-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-secondary-dark li:nth-child(even) {
   background-color: var(--fc-secondary-dark);
   color: var(--white);
 }
 
-ul.fc-list-group.fc-success-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-success li:nth-child(even) {
   background-color: var(--fc-success);
   color: var(--fc-on-success);
 }
-ul.fc-list-group.fc-success-light-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-success-light li:nth-child(even) {
   background-color: var(--fc-success-light);
 }
-ul.fc-list-group.fc-success-dark-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-success-dark li:nth-child(even) {
   background-color: var(--fc-success-dark);
   color: var(--white);
 }
 
-ul.fc-list-group.fc-warn-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-warn li:nth-child(even) {
   background-color: var(--fc-warn);
   color: var(--fc-on-warn);
 }
-ul.fc-list-group.fc-warn-light-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-warn-light li:nth-child(even) {
   background-color: var(--fc-warn-light);
 }
-ul.fc-list-group.fc-warn-dark-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-warn-dark li:nth-child(even) {
   background-color: var(--fc-warn-dark);
   color: var(--white);
 }
 
-ul.fc-list-group.fc-error-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-error li:nth-child(even) {
   background-color: var(--fc-error);
   color: var(--fc-on-error);
 }
-ul.fc-list-group.fc-error-light-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-error-light li:nth-child(even) {
   background-color: var(--fc-error-light);
 }
-ul.fc-list-group.fc-error-dark-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-error-dark li:nth-child(even) {
   background-color: var(--fc-error-dark);
   color: var(--white);
 }
 
-ul.fc-list-group.fc-muted-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-muted li:nth-child(even) {
   background-color: var(--fc-muted);
   color: var(--fc-on-muted);
 }
-ul.fc-list-group.fc-muted-light-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-muted-light li:nth-child(even) {
   background-color: var(--fc-muted-light);
 }
-ul.fc-list-group.fc-muted-dark-striped li:nth-child(even) {
+ul.fc-list-group.fc-striped-muted-dark li:nth-child(even) {
   background-color: var(--fc-muted-dark);
   color: var(--white);
 }

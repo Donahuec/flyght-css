@@ -179,75 +179,75 @@
 }
 
 @layer border {
-  .fc-primary-border {
+  .fc-border-primary {
     border-color: var(--fc-primary);
   }
 
-  .fc-primary-dark-border {
+  .fc-border-primary-dark {
     border-color: var(--fc-primary-dark);
   }
 
-  .fc-primary-light-border {
+  .fc-border-primary-light {
     border-color: var(--fc-primary-light);
   }
 
-  .fc-secondary-border {
+  .fc-border-secondary {
     border-color: var(--fc-secondary);
   }
 
-  .fc-secondary-dark-border {
+  .fc-border-secondary-dark {
     border-color: var(--fc-secondary-dark);
   }
 
-  .fc-secondary-light-border {
+  .fc-border-secondary-light {
     border-color: var(--fc-secondary-light);
   }
 
-  .fc-success-border {
+  .fc-border-success {
     border-color: var(--fc-success);
   }
 
-  .fc-success-dark-border {
+  .fc-border-success-dark {
     border-color: var(--fc-success-dark);
   }
 
-  .fc-success-light-border {
+  .fc-border-success-light {
     border-color: var(--fc-success-light);
   }
 
-  .fc-warn-border {
+  .fc-border-warn {
     border-color: var(--fc-warn);
   }
 
-  .fc-warn-dark-border {
+  .fc-border-warn-dark {
     border-color: var(--fc-warn-dark);
   }
 
-  .fc-warn-light-border {
+  .fc-border-warn-light {
     border-color: var(--fc-warn-light);
   }
 
-  .fc-error-border {
+  .fc-border-error {
     border-color: var(--fc-error);
   }
 
-  .fc-error-dark-border {
+  .fc-border-error-dark {
     border-color: var(--fc-error-dark);
   }
 
-  .fc-error-light-border {
+  .fc-border-error-light {
     border-color: var(--fc-error-light);
   }
 
-  .fc-muted-border {
+  .fc-border-muted {
     border-color: var(--fc-muted);
   }
 
-  .fc-muted-dark-border {
+  .fc-border-muted-dark {
     border-color: var(--fc-muted-dark);
   }
 
-  .fc-muted-light-border {
+  .fc-border-muted-light {
     border-color: var(--fc-muted-light);
   }
 }
