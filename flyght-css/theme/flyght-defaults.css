@@ -22,4 +22,8 @@
     --fc-padding-default: var(--fc-padding-vertical)
       var(--fc-padding-horizontal);
   }
+
+  @layer text {
+    --link-decoration: none;
+  }
 }
