@@ -1,7 +1,13 @@
 :root {
   --fc-border-radius: 4px;
 
-  --fc-border-line: 1px solid;
+  --fc-border-width: 1px;
+  --fc-border-width-thick: 2px;
+  --fc-border-width-accent: 4px;
+
+  --fc-border-line: var(--fc-border-width) solid;
+  --fc-border-thick: var(--fc-border-width-thick) solid;
+  --fc-border-line-accent: var(--fc-border-width-accent) solid;
 
   --fc-border-muted: var(--fc-border-line) var(--fc-muted);
   --fc-border-muted-light: var(--fc-border-line) var(--fc-muted-light);

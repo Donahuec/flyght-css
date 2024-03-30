@@ -7,7 +7,7 @@ a.fc-btn-link {
     padding: 0.5em 1em 0.5em 1em;
     border: none;
     border-radius: var(--fc-border-radius);
-    color: white;
+    color: var(--white);
     box-shadow: var(--fc-box-shadow);
     font-family: var(--fc-default-font);
     font-size: 1em;
@@ -19,24 +19,14 @@ a.fc-btn-link {
     background-color: var(--fc-muted);
     &:hover,
     &:focus {
-      background-color: hsl(var(--fc-muted-hs) 35%);
+      background-color: hsl(var(--fc-muted-hs) var(--fc-m-dark));
     }
     &:focus {
-      outline: 2px solid var(--fc-muted-dark);
+      outline: var(--fc-border-thick) var(--fc-muted-dark);
     }
     &:active {
       outline-offset: 0px;
-      outline: 2px solid var(--fc-muted-dark);
-    }
-
-    &:focus {
-      outline-width: 2px;
-      outline-style: solid;
-    }
-    &:active {
-      outline-offset: 0px;
-      outline-width: 2px;
-      outline-style: solid;
+      outline: var(--fc-border-thick) var(--fc-muted-dark);
     }
   }
   @layer colors {
@@ -44,7 +34,7 @@ a.fc-btn-link {
       background-color: var(--fc-primary);
       &:hover,
       &:focus {
-        background-color: hsl(var(--fc-primary-hs) 35%);
+        background-color: hsl(var(--fc-primary-hs) var(--fc-m-dark));
       }
       &:focus,
       &:active {
@@ -54,7 +44,7 @@ a.fc-btn-link {
         color: var(--fc-primary);
         &:hover,
         &:focus {
-          background-color: hsl(var(--fc-primary-hs) 95%);
+          background-color: hsl(var(--fc-primary-hs) var(--fc-v-light));
         }
         &:focus,
         &:active {
@@ -67,7 +57,7 @@ a.fc-btn-link {
       background-color: var(--fc-secondary);
       &:hover,
       &:focus {
-        background-color: hsl(var(--fc-secondary-hs) 35%);
+        background-color: hsl(var(--fc-secondary-hs) var(--fc-m-dark));
       }
       &:focus,
       &:active {
@@ -77,7 +67,7 @@ a.fc-btn-link {
         color: var(--fc-secondary);
         &:hover,
         &:focus {
-          background-color: hsl(var(--fc-secondary-hs) 95%);
+          background-color: hsl(var(--fc-secondary-hs) var(--fc-v-light));
         }
         &:focus,
         &:active {
@@ -90,7 +80,7 @@ a.fc-btn-link {
       color: var(--fc-muted);
       &:hover,
       &:focus {
-        background-color: hsl(var(--fc-muted-hs) 95%);
+        background-color: hsl(var(--fc-muted-hs) var(--fc-v-light));
       }
       &:focus,
       &:active {
@@ -102,7 +92,7 @@ a.fc-btn-link {
       background-color: var(--fc-error);
       &:hover,
       &:focus {
-        background-color: hsl(var(--fc-error-hs) 35%);
+        background-color: hsl(var(--fc-error-hs) var(--fc-m-dark));
       }
       &:focus,
       &:active {
@@ -112,7 +102,7 @@ a.fc-btn-link {
         color: var(--fc-error);
         &:hover,
         &:focus {
-          background-color: hsl(var(--fc-error-hs) 95%);
+          background-color: hsl(var(--fc-error-hs) var(--fc-v-light));
         }
         &:focus,
         &:active {
@@ -129,24 +119,24 @@ a.fc-btn-link {
         background-color: var(--fc-muted-light);
       }
       &:focus {
-        outline: 2px solid var(--fc-muted);
+        outline: var(--fc-border-thick) var(--fc-muted);
       }
       &:active {
-        outline: 2px solid var(--fc-muted);
+        outline: var(--fc-border-thick) var(--fc-muted);
       }
     }
   }
   @layer extras {
-    &.fc-btn-flat {
+    &.fc-btn-flat,
+    &.fc-btn-outline {
       box-shadow: none;
     }
 
     &.fc-btn-outline {
-      border: 1px solid;
-      box-shadow: none;
+      border: var(--fc-border-line);
       &:focus,
       &:active {
-        outline: 2px solid;
+        outline: var(--fc-border-thick);
       }
       &:not(:active, :hover) {
         background-color: var(--white);
