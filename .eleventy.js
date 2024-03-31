@@ -2,11 +2,10 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
-  const isProd = process.env.ELEVENTY_ENV === "production";
-
   eleventyConfig.addPassthroughCopy("./flyght-css");
   eleventyConfig.addPassthroughCopy("./assets");
   eleventyConfig.addPassthroughCopy("styles.css");
+  eleventyConfig.addPassthroughCopy("main.js");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 

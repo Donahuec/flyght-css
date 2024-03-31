@@ -63,12 +63,16 @@
     &:hover {
       text-decoration: underline;
     }
+    &.fc-link-underline {
+      text-decoration: underline;
+    }
     &:active,
     &.fc-link-current {
       text-decoration: underline solid 2px;
     }
-    &.fc-link-underline {
-      text-decoration: underline;
+    &:focus {
+      outline-color: currentColor;
+      outline-offset: 0.25em;
     }
   }
 }
