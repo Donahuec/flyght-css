@@ -1,63 +1,67 @@
 ---
-layout: layout.html
+layout: documentLayout.html
 title: Typography
 eleventyNavigation:
   key: Typography
   order: 1
 ---
 
-<h1>h1. Heading</h1>
-<h2>h2. Heading</h2>
-<h3>h3. Heading</h3>
-<h4>h4. Heading</h4>
-<h5>h5. Heading</h5>
-<h6>h6. Heading</h6>
+<div id="documentation" class="fc-tab-content fc-tab-active">Docs here</div>
 
-<h2>Text Styles</h2>
-<p>
-  You can use the mark tag to
-  <mark>highlight</mark> text. You can also set the color
-  <mark class="fc-secondary-light">like this</mark>
-  <mark class="fc-warn">or this this</mark>
-  <mark class="fc-success-light">or this</mark>
-  <mark class="fc-secondary">but you</mark>
-  <mark class="fc-error-dark">have to manage</mark>
-  <mark class="fc-primary-dark fc-text-white">color contrast</mark>
-  <mark class="fc-success">yourself</mark>
-</p>
-<p>
-  <del>This line of text is meant to be treated as deleted text.</del>
-</p>
-<p>
-  <s>This line of text is meant to be treated as no longer accurate.</s>
-</p>
-<p>
-  <ins
-    >This line of text is meant to be treated as an addition to the
-    document.</ins
+<div id="examples" class="fc-tab-content">
+  <h1>h1. Heading</h1>
+  <h2>h2. Heading</h2>
+  <h3>h3. Heading</h3>
+  <h4>h4. Heading</h4>
+  <h5>h5. Heading</h5>
+  <h6>h6. Heading</h6>
+
+  <h2>Text Styles</h2>
+  <p>
+    You can use the mark tag to
+    <mark>highlight</mark> text. You can also set the color
+    <mark class="fc-secondary-light">like this</mark>
+    <mark class="fc-warn">or this this</mark>
+    <mark class="fc-success-light">or this</mark>
+    <mark class="fc-secondary">but you</mark>
+    <mark class="fc-error-dark">have to manage</mark>
+    <mark class="fc-primary-dark fc-text-white">color contrast</mark>
+    <mark class="fc-success">yourself</mark>
+  </p>
+  <p>
+    <del>This line of text is meant to be treated as deleted text.</del>
+  </p>
+  <p>
+    <s>This line of text is meant to be treated as no longer accurate.</s>
+  </p>
+  <p>
+    <ins
+      >This line of text is meant to be treated as an addition to the
+      document.</ins
+    >
+  </p>
+  <p>
+    <u>This line of text will render as underlined</u>
+  </p>
+  <p>
+    <small>This line of text is meant to be treated as fine print.</small>
+  </p>
+  <p>
+    <strong>This line rendered as bold text.</strong>
+  </p>
+  <p>
+    <em>This line rendered as italicized text.</em>
+  </p>
+
+  <a href="http://stackoverflow.com">Link</a>
+  <a href="http://stackoverflow.com" class="fc-link-underline"
+    >Link with Underline</a
   >
-</p>
-<p>
-  <u>This line of text will render as underlined</u>
-</p>
-<p>
-  <small>This line of text is meant to be treated as fine print.</small>
-</p>
-<p>
-  <strong>This line rendered as bold text.</strong>
-</p>
-<p>
-  <em>This line rendered as italicized text.</em>
-</p>
-
-<a href="http://stackoverflow.com">Link</a>
-<a href="http://stackoverflow.com" class="fc-link-underline"
-  >Link with Underline</a
->
-<a href="http://stackoverflow.com" class="fc-link-current"
-  >Highlighting links for the current page</a
->
-<br />
-<a href="" class="fc-text-primary">primary</a>
-<a href="" class="fc-text-secondary">secondary</a>
-<a href="" class="fc-text-error">error</a>
+  <a href="http://stackoverflow.com" class="fc-link-current"
+    >Highlighting links for the current page</a
+  >
+  <br />
+  <a href="" class="fc-text-primary">primary</a>
+  <a href="" class="fc-text-secondary">secondary</a>
+  <a href="" class="fc-text-error">error</a>
+</div>
