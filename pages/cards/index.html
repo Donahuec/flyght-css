@@ -4,17 +4,21 @@
     <title>Cards - Flyght CSS</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/flyght-css/styles.css">
+    <script src="/flyght-css/main.js"></script>
   </head>
   <body>
     <header class="fc-nav fc-primary fc-text-white fc-nav-sticky">
-      <span class="fc-nav-container fc-nav-right">
-        <img src="/flyght-css/assets/dragon.svg" class="" style="max-height: 50px">
-        <p class="fc-nav-title">Flyght CSS</p>
+      <span class="fc-nav-content">
+        <span class="fc-nav-container fc-nav-right">
+          <img src="/flyght-css/assets/dragon.svg" class="" style="max-height: 50px">
+          <p class="fc-nav-title">Flyght CSS</p>
+        </span>
+  
+        <span class="fc-nav-container">
+          <a href="https://github.com/Donahuec/flyght-css" role="link" class="fc-btn-secondary fc-btn-link">Github</a>
+        </span>
       </span>
-
-      <span class="fc-nav-container">
-        <a href="https://github.com/Donahuec/flyght-css" role="link" class="fc-btn-secondary fc-btn-link">Github</a>
-      </span>
+      
     </header>
     <main>
       <nav class="side-nav">
@@ -67,6 +71,16 @@
           <div class="fc-card-title"><h1>Cards</h1></div>
           <div class="fc-card-content">
             <div>
+<div class="fc-tab-group fc-tab-primary">
+  <button class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation')">
+    Documentation
+  </button>
+  <button class="fc-tab-btn" onclick="opentab(event, 'examples')">
+    Examples
+  </button>
+</div>
+
+
 <style>
   .grid {
     display: grid;
@@ -75,112 +89,117 @@
   }
 </style>
 
-<div class="grid">
-  <div class="fc-card fc-card-hover">
-    <div class="fc-card-content">
-      <p>
-        Lay on arms while you're using the keyboard make plans to dominate world
-        and then take a nap yet decide to want nothing to do with my owner today
-        meow to be let in, scratch at the door then walk away, spend all night
-        ensuring people don't sleep sleep all day, for man running from cops
-        stops to pet cats, goes to jail.
-      </p>
-    </div>
-  </div>
+<div id="documentation" class="fc-tab-content fc-tab-active">Docs here</div>
 
-  <div class="fc-card fc-card-flat fc-border-primary">
-    <div class="fc-card-title">
-      <h4>Title</h4>
+<div id="examples" class="fc-tab-content">
+  <div class="grid">
+    <div class="fc-card fc-card-hover">
+      <div class="fc-card-content">
+        <p>
+          Lay on arms while you're using the keyboard make plans to dominate
+          world and then take a nap yet decide to want nothing to do with my
+          owner today meow to be let in, scratch at the door then walk away,
+          spend all night ensuring people don't sleep sleep all day, for man
+          running from cops stops to pet cats, goes to jail.
+        </p>
+      </div>
     </div>
-    <div class="fc-card-content">
-      <p>
-        Chew iPad power cord what the heck just happened, something feels fishy
-        for gimme attention gimme attention gimme attention gimme attention
-        gimme attention gimme attention just kidding i don't want it anymore
-        meow bye put toy mouse in food bowl run out of litter box at full speed
-        yet scratch at fleas, meow until belly rubs
-      </p>
-    </div>
-  </div>
 
-  <div class="fc-card fc-border-secondary">
-    <div class="fc-card-content">
-      <p>
-        Sleeps on my head. You call this cat food relentlessly pursues moth and
-        leave dead animals as gifts, for get my claw stuck in the dog's ear
-        leave dead animals as gifts, so peer out window, chatter at birds, lure
-        them to mouth but ignore the human until she needs to get up, then climb
-        on her lap and sprawl. Attack dog, run away and pretend to be victim all
-        of a sudden cat goes
-      </p>
+    <div class="fc-card fc-card-flat fc-border-primary">
+      <div class="fc-card-title">
+        <h4>Title</h4>
+      </div>
+      <div class="fc-card-content">
+        <p>
+          Chew iPad power cord what the heck just happened, something feels
+          fishy for gimme attention gimme attention gimme attention gimme
+          attention gimme attention gimme attention just kidding i don't want it
+          anymore meow bye put toy mouse in food bowl run out of litter box at
+          full speed yet scratch at fleas, meow until belly rubs
+        </p>
+      </div>
     </div>
-    <div class="fc-card-footer">
-      <button class="fc-btn-primary pull-right">Yes</button>
-      <button class="fc-btn-error pull-right">No</button>
-    </div>
-  </div>
 
-  <div class="fc-card">
-    <span class="fc-card-image">
-      <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
-    </span>
-    <div class="fc-card-title">
-      <h4>Moose</h4>
+    <div class="fc-card fc-border-secondary">
+      <div class="fc-card-content">
+        <p>
+          Sleeps on my head. You call this cat food relentlessly pursues moth
+          and leave dead animals as gifts, for get my claw stuck in the dog's
+          ear leave dead animals as gifts, so peer out window, chatter at birds,
+          lure them to mouth but ignore the human until she needs to get up,
+          then climb on her lap and sprawl. Attack dog, run away and pretend to
+          be victim all of a sudden cat goes
+        </p>
+      </div>
+      <div class="fc-card-footer">
+        <button class="fc-btn-primary pull-right">Yes</button>
+        <button class="fc-btn-error pull-right">No</button>
+      </div>
     </div>
-    <div class="fc-card-content">
-      <p>
-        Make it to the carpet before i vomit mmmmmm. Chew master's slippers
-        meowing chowing and wowing for stick butt in face hiiiiiiiiii feed me
-        now and love you, then bite you. Cough furball cough, that box? i can
-        fit in that box. Jump five feet high and sideways when a shadow moves
-        mark territory, give attitude, but my cat stared at me he was sipping
-        his tea, too, so stinky cat.
-      </p>
-    </div>
-  </div>
 
-  <div class="fc-card">
-    <div class="fc-card-title">
-      <h4>Moose</h4>
-    </div>
-    <span class="fc-card-image">
-      <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
-    </span>
-    <div class="fc-card-content">
-      <p>
-        Massacre a bird in the living room and then look like the cutest and
-        most innocent animal on the planet catasstrophe lick left leg for ninety
-        minutes, still dirty or lick face hiss at owner, pee a lot, and meow
-        repeatedly scratch at fence purrrrrr eat muffins and poutine until owner
-        comes back. Poop in a handbag look delicious and drink the soapy mopping
-        up water then puke giant foamy fur-balls
-      </p>
-    </div>
-    <div class="fc-card-footer">
-      <p>This is a footer</p>
-    </div>
-  </div>
-
-  <div class="fc-card">
-    <span class="fc-card-image">
-      <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
-      <div class="fc-card-title title-background">
+    <div class="fc-card">
+      <span class="fc-card-image">
+        <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
+      </span>
+      <div class="fc-card-title">
         <h4>Moose</h4>
       </div>
-    </span>
+      <div class="fc-card-content">
+        <p>
+          Make it to the carpet before i vomit mmmmmm. Chew master's slippers
+          meowing chowing and wowing for stick butt in face hiiiiiiiiii feed me
+          now and love you, then bite you. Cough furball cough, that box? i can
+          fit in that box. Jump five feet high and sideways when a shadow moves
+          mark territory, give attitude, but my cat stared at me he was sipping
+          his tea, too, so stinky cat.
+        </p>
+      </div>
+    </div>
 
-    <div class="fc-card-content">
-      <p>
-        Chew on cable wake up human for food at 4am lick arm hair but you are a
-        captive audience while sitting on the toilet, pet me but throw down all
-        the stuff in the kitchen. Hiding behind the couch until lured out by a
-        feathery toy meow to be let in but plays league of legends, or leave fur
-        on owners clothes for meeeeouw so lie in the sink all day friends are
-        not food. Good morning
-      </p>
+    <div class="fc-card">
+      <div class="fc-card-title">
+        <h4>Moose</h4>
+      </div>
+      <span class="fc-card-image">
+        <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
+      </span>
+      <div class="fc-card-content">
+        <p>
+          Massacre a bird in the living room and then look like the cutest and
+          most innocent animal on the planet catasstrophe lick left leg for
+          ninety minutes, still dirty or lick face hiss at owner, pee a lot, and
+          meow repeatedly scratch at fence purrrrrr eat muffins and poutine
+          until owner comes back. Poop in a handbag look delicious and drink the
+          soapy mopping up water then puke giant foamy fur-balls
+        </p>
+      </div>
+      <div class="fc-card-footer">
+        <p>This is a footer</p>
+      </div>
+    </div>
+
+    <div class="fc-card">
+      <span class="fc-card-image">
+        <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
+        <div class="fc-card-title title-background">
+          <h4>Moose</h4>
+        </div>
+      </span>
+
+      <div class="fc-card-content">
+        <p>
+          Chew on cable wake up human for food at 4am lick arm hair but you are
+          a captive audience while sitting on the toilet, pet me but throw down
+          all the stuff in the kitchen. Hiding behind the couch until lured out
+          by a feathery toy meow to be let in but plays league of legends, or
+          leave fur on owners clothes for meeeeouw so lie in the sink all day
+          friends are not food. Good morning
+        </p>
+      </div>
     </div>
   </div>
 </div>
+
 </div>
           </div>
         </div>

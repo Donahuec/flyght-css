@@ -4,17 +4,21 @@
     <title>Typography - Flyght CSS</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/flyght-css/styles.css">
+    <script src="/flyght-css/main.js"></script>
   </head>
   <body>
     <header class="fc-nav fc-primary fc-text-white fc-nav-sticky">
-      <span class="fc-nav-container fc-nav-right">
-        <img src="/flyght-css/assets/dragon.svg" class="" style="max-height: 50px">
-        <p class="fc-nav-title">Flyght CSS</p>
+      <span class="fc-nav-content">
+        <span class="fc-nav-container fc-nav-right">
+          <img src="/flyght-css/assets/dragon.svg" class="" style="max-height: 50px">
+          <p class="fc-nav-title">Flyght CSS</p>
+        </span>
+  
+        <span class="fc-nav-container">
+          <a href="https://github.com/Donahuec/flyght-css" role="link" class="fc-btn-secondary fc-btn-link">Github</a>
+        </span>
       </span>
-
-      <span class="fc-nav-container">
-        <a href="https://github.com/Donahuec/flyght-css" role="link" class="fc-btn-secondary fc-btn-link">Github</a>
-      </span>
+      
     </header>
     <main>
       <nav class="side-nav">
@@ -67,55 +71,70 @@
           <div class="fc-card-title"><h1>Typography</h1></div>
           <div class="fc-card-content">
             <div>
-<h1>h1. Heading</h1>
-<h2>h2. Heading</h2>
-<h3>h3. Heading</h3>
-<h4>h4. Heading</h4>
-<h5>h5. Heading</h5>
-<h6>h6. Heading</h6>
+<div class="fc-tab-group fc-tab-primary">
+  <button class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation')">
+    Documentation
+  </button>
+  <button class="fc-tab-btn" onclick="opentab(event, 'examples')">
+    Examples
+  </button>
+</div>
 
-<h2>Text Styles</h2>
-<p>
-  You can use the mark tag to
-  <mark>highlight</mark> text. You can also set the color
-  <mark class="fc-secondary-light">like this</mark>
-  <mark class="fc-warn">or this this</mark>
-  <mark class="fc-success-light">or this</mark>
-  <mark class="fc-secondary">but you</mark>
-  <mark class="fc-error-dark">have to manage</mark>
-  <mark class="fc-primary-dark fc-text-white">color contrast</mark>
-  <mark class="fc-success">yourself</mark>
-</p>
-<p>
-  <del>This line of text is meant to be treated as deleted text.</del>
-</p>
-<p>
-  <s>This line of text is meant to be treated as no longer accurate.</s>
-</p>
-<p>
-  <ins>This line of text is meant to be treated as an addition to the
-    document.</ins>
-</p>
-<p>
-  <u>This line of text will render as underlined</u>
-</p>
-<p>
-  <small>This line of text is meant to be treated as fine print.</small>
-</p>
-<p>
-  <strong>This line rendered as bold text.</strong>
-</p>
-<p>
-  <em>This line rendered as italicized text.</em>
-</p>
 
-<a href="http://stackoverflow.com">Link</a>
-<a href="http://stackoverflow.com" class="fc-link-underline">Link with Underline</a>
-<a href="http://stackoverflow.com" class="fc-link-current">Highlighting links for the current page</a>
-<br>
-<a href="." class="fc-text-primary">primary</a>
-<a href="." class="fc-text-secondary">secondary</a>
-<a href="." class="fc-text-error">error</a>
+<div id="documentation" class="fc-tab-content fc-tab-active">Docs here</div>
+
+<div id="examples" class="fc-tab-content">
+  <h1>h1. Heading</h1>
+  <h2>h2. Heading</h2>
+  <h3>h3. Heading</h3>
+  <h4>h4. Heading</h4>
+  <h5>h5. Heading</h5>
+  <h6>h6. Heading</h6>
+
+  <h2>Text Styles</h2>
+  <p>
+    You can use the mark tag to
+    <mark>highlight</mark> text. You can also set the color
+    <mark class="fc-secondary-light">like this</mark>
+    <mark class="fc-warn">or this this</mark>
+    <mark class="fc-success-light">or this</mark>
+    <mark class="fc-secondary">but you</mark>
+    <mark class="fc-error-dark">have to manage</mark>
+    <mark class="fc-primary-dark fc-text-white">color contrast</mark>
+    <mark class="fc-success">yourself</mark>
+  </p>
+  <p>
+    <del>This line of text is meant to be treated as deleted text.</del>
+  </p>
+  <p>
+    <s>This line of text is meant to be treated as no longer accurate.</s>
+  </p>
+  <p>
+    <ins>This line of text is meant to be treated as an addition to the
+      document.</ins>
+  </p>
+  <p>
+    <u>This line of text will render as underlined</u>
+  </p>
+  <p>
+    <small>This line of text is meant to be treated as fine print.</small>
+  </p>
+  <p>
+    <strong>This line rendered as bold text.</strong>
+  </p>
+  <p>
+    <em>This line rendered as italicized text.</em>
+  </p>
+
+  <a href="http://stackoverflow.com">Link</a>
+  <a href="http://stackoverflow.com" class="fc-link-underline">Link with Underline</a>
+  <a href="http://stackoverflow.com" class="fc-link-current">Highlighting links for the current page</a>
+  <br>
+  <a href="." class="fc-text-primary">primary</a>
+  <a href="." class="fc-text-secondary">secondary</a>
+  <a href="." class="fc-text-error">error</a>
+</div>
+
 </div>
           </div>
         </div>
