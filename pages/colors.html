@@ -8,15 +8,193 @@ eleventyNavigation:
 
 <div id="documentation" class="fc-tab-content fc-tab-active">
   <h2>Overview</h2>
-  Note: Warn and Success colors do not provide enough contrast with text on a
-  white background, or white text on the color. These are more meant as bold
-  statement or accent colors
+  <p>
+    There are six color groups supported - primary, secondary, success, warn,
+    error, and muted. Each color group has a main, light, and dark variant.
+  </p>
+  <p>
+    The default primary, secondary, error, and muted colors and their dark
+    variants are designed to have sufficient contrast with white, either as a
+    background color or text. The default success and warn colors, as well as
+    any of the light variants do not have sufficient contrast, and are intended
+    as bold blocks of color or accents. The color system is designed to allow
+    you to use any of these colors for flexibility,
+    <strong
+      >but make sure to check and manage color contrast when using these
+      colors.</strong
+    >
+  </p>
+  <color-group>
+    <color-block class="fc-primary-light">
+      <p class="fc-black-text fc-text-center color-label">primary-light</p>
+    </color-block>
+    <color-block class="fc-primary">
+      <p class="fc-text-on-primary fc-text-center color-label">primary</p>
+    </color-block>
+    <color-block class="fc-primary-dark">
+      <p class="fc-text-white fc-text-center color-label">primary Dark</p>
+    </color-block>
+  </color-group>
+
+  <color-group>
+    <color-block class="fc-secondary-light">
+      <p class="fc-black-text fc-text-center color-label">secondary Light</p>
+    </color-block>
+    <color-block class="fc-secondary">
+      <p class="fc-text-on-secondary fc-text-center color-label">secondary</p>
+    </color-block>
+    <color-block class="fc-secondary-dark">
+      <p class="fc-text-white fc-text-center color-label">secondary Dark</p>
+    </color-block>
+  </color-group>
+
+  <color-group>
+    <color-block class="fc-success-light">
+      <p class="fc-black-text fc-text-center color-label">success-light</p>
+    </color-block>
+    <color-block class="fc-success">
+      <p class="fc-text-on-success fc-text-center color-label">success</p>
+    </color-block>
+    <color-block class="fc-success-dark">
+      <p class="fc-text-white fc-text-center color-label">success-dark</p>
+    </color-block>
+  </color-group>
+
+  <color-group>
+    <color-block class="fc-warn-light">
+      <p class="fc-black-text fc-text-center color-label">warn-light</p>
+    </color-block>
+    <color-block class="fc-warn">
+      <p class="fc-text-on-warn fc-text-center color-label">warn</p>
+    </color-block>
+    <color-block class="fc-warn-dark">
+      <p class="fc-text-white fc-text-center color-label">warn-dark</p>
+    </color-block>
+  </color-group>
+
+  <color-group>
+    <color-block class="fc-error-light">
+      <p class="fc-black-text fc-text-center color-label">error-light</p>
+    </color-block>
+    <color-block class="fc-error">
+      <p class="fc-text-on-error fc-text-center color-label">error</p>
+    </color-block>
+    <color-block class="fc-error-dark">
+      <p class="fc-text-white fc-text-center color-label">error-dark</p>
+    </color-block>
+  </color-group>
+
+  <color-group>
+    <color-block class="fc-muted-light">
+      <p class="fc-black-text fc-text-center color-label">muted-light</p>
+    </color-block>
+    <color-block class="fc-muted">
+      <p class="fc-text-on-muted fc-text-center color-label">muted</p>
+    </color-block>
+    <color-block class="fc-muted-dark">
+      <p class="fc-text-white fc-text-center color-label">muted-dark</p>
+    </color-block>
+  </color-group>
   <h2>Text Colors</h2>
-  ---
+  <p>
+    Each color has a related text class with the format <code>fc-text-{color}</code>
+  </p>
+  <p>
+    <span class="fc-text-primary-light">Primary Light </span> -
+    <span class="fc-text-primary">Primary </span> -
+    <span class="fc-text-primary-dark">Primary Dark</span>
+    <pre class="fc-border-left fc-border-primary fc-primary-light">
+      <code>
+&lt;span class=&quot;fc-text-primary-light&quot;&gt;Primary Light &lt;/span&gt; -
+&lt;span class=&quot;fc-text-primary&quot;&gt;Primary &lt;/span&gt; -
+&lt;span class=&quot;fc-text-primary-dark&quot;&gt;Primary Dark&lt;/span&gt;</code>
+    </pre>
+  </p>
+  <p>
+    <span class="fc-text-secondary-light">Secondary Light </span> -
+    <span class="fc-text-secondary">Secondary </span> -
+    <span class="fc-text-secondary-dark">Secondary Dark </span>
+    <pre class="fc-border-left fc-border-secondary fc-secondary-light">
+      <code>
+&lt;span class=&quot;fc-text-secondary-light&quot;&gt;Secondary Light &lt;/span&gt; -
+&lt;span class=&quot;fc-text-secondary&quot;&gt;Secondary &lt;/span&gt; -
+&lt;span class=&quot;fc-text-secondary-dark&quot;&gt;Secondary Dark &lt;/span&gt;</code>
+    </pre>
+  </p>
+  <p>
+    <span class="fc-text-muted-light">Muted Light </span> -
+    <span class="fc-text-muted">Muted </span> -
+    <span class="fc-text-muted-dark">Muted Dark </span>
+    <pre class="fc-border-left fc-border-muted fc-muted-light">
+      <code>
+&lt;span class=&quot;fc-text-muted-light&quot;&gt;Muted Light &lt;/span&gt; -
+&lt;span class=&quot;fc-text-muted&quot;&gt;Muted &lt;/span&gt; -
+&lt;span class=&quot;fc-text-muted-dark&quot;&gt;Muted Dark &lt;/span&gt;</code>
+    </pre>
+  </p>
+  <p>
+    <span class="fc-text-success-light">Success Light </span> -
+    <span class="fc-text-success">Success </span> -
+    <span class="fc-text-success-dark">Success Dark </span>
+    <pre class="fc-border-left fc-border-success fc-success-light">
+      <code>
+&lt;span class=&quot;fc-text-success-light&quot;&gt;Success Light &lt;/span&gt; -
+&lt;span class=&quot;fc-text-success&quot;&gt;Success &lt;/span&gt; -
+&lt;span class=&quot;fc-text-success-dark&quot;&gt;Success Dark &lt;/span&gt;</code>
+    </pre>
+  </p>
+  <p>
+    <span class="fc-text-warn-light">Warn Light </span> -
+    <span class="fc-text-warn">Warn </span> -
+    <span class="fc-text-warn-dark">Warn Dark </span>
+    <pre class="fc-border-left fc-border-warn fc-warn-light">
+      <code>
+&lt;span class=&quot;fc-text-warn-light&quot;&gt;Warn Light &lt;/span&gt; -
+&lt;span class=&quot;fc-text-warn&quot;&gt;Warn &lt;/span&gt; -
+&lt;span class=&quot;fc-text-warn-dark&quot;&gt;Warn Dark &lt;/span&gt;</code>
+    </pre>
+  </p>
+  <p>
+  <span class="fc-text-error-light">Error Light </span> -
+  <span class="fc-text-error">Error </span> -
+  <span class="fc-text-error-dark">Error Dark </span>
+  <pre class="fc-border-left fc-border-error fc-error-light">
+    <code>
+&lt;span class=&quot;fc-text-secondary-light&quot;&gt;Secondary Light &lt;/span&gt; -
+&lt;span class=&quot;fc-text-secondary&quot;&gt;Secondary &lt;/span&gt; -
+&lt;span class=&quot;fc-text-secondary-dark&quot;&gt;Secondary Dark &lt;/span&gt;</code>
+      </pre>
+      </p>
+  </p>
   <h2>Background Colors</h2>
-  ---
+  <p>
+    The background color of elements can be set with the class <code>fc-{color}</code> for each provided color. 
+    For example, each of the codeblocks in the above text section has it's background colored in this manner. 
+    Many elements, such as <a href="/pages/codeblock">code blocks</a> have automatic integration with these color classes.
+  </p>
+  <p>
+    <pre class="fc-primary-light">
+<code>&lt;pre class=&quot;fc-primary-light&quot;&gt;
+  &lt;code&gt;Code Block Content&lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+  </p>
   <h2>Outline Colors</h2>
+  <p>By setting the class <code>fc-border-{color}</code> you can set the color of an element's border.
+  This does not include any other border styling. Many element's integrate this, including <a href="/pages/list-groups">list groups</a>, 
+and the <code>fc-left-border</code> attributes of <a href="/pages/blockquotes">block quotes</a> and <a href="/pages/codeblock">code blocks</a>. </p>
+
+<pre class="fc-border-left"><code>&lt;ul class=&quot;fc-list-group fc-border-primary&quot;&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<pre class="fc-border-left fc-border-primary"><code>&lt;pre class=&quot;fc-border-left fc-border-primary&quot;&gt;&lt;code&gt;
+  Code
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 </div>
+</div>
+
 
 <div id="examples" class="fc-tab-content">
   <p>
@@ -46,76 +224,6 @@ eleventyNavigation:
     <span class="fc-text-error">Error </span> -
     <span class="fc-text-error-dark">Error Dark </span>
   </p>
-  <hr />
-  <color-group>
-    <color-square class="fc-primary-light">
-      <p class="fc-black -textfc-text-center color-label">Primary Light</p>
-    </color-square>
-    <color-square class="fc-primary">
-      <p class="fc-text-on-primary fc-text-center color-label">Primary</p>
-    </color-square>
-    <color-square class="fc-primary-dark">
-      <p class="fc-text-white fc-text-center color-label">Primary Dark</p>
-    </color-square>
-  </color-group>
-
-  <color-group>
-    <color-square class="fc-secondary-light">
-      <p class="fc-black -textfc-text-center color-label">Secondary Light</p>
-    </color-square>
-    <color-square class="fc-secondary">
-      <p class="fc-text-on-secondary fc-text-center color-label">Secondary</p>
-    </color-square>
-    <color-square class="fc-secondary-dark">
-      <p class="fc-text-white fc-text-center color-label">Secondary Dark</p>
-    </color-square>
-  </color-group>
-
-  <color-group>
-    <color-square class="fc-success-light">
-      <p class="fc-black -textfc-text-center color-label">Success Light</p>
-    </color-square>
-    <color-square class="fc-success">
-      <p class="fc-text-on-success fc-text-center color-label">Success</p>
-    </color-square>
-    <color-square class="fc-success-dark">
-      <p class="fc-text-white fc-text-center color-label">Success Dark</p>
-    </color-square>
-  </color-group>
-
-  <color-group>
-    <color-square class="fc-warn-light">
-      <p class="fc-black -textfc-text-center color-label">Warn Light</p>
-    </color-square>
-    <color-square class="fc-warn">
-      <p class="fc-text-on-warn fc-text-center color-label">Warn</p>
-    </color-square>
-    <color-square class="fc-warn-dark">
-      <p class="fc-text-white fc-text-center color-label">Warn Dark</p>
-    </color-square>
-  </color-group>
-
-  <color-group>
-    <color-square class="fc-error-light">
-      <p class="fc-black -textfc-text-center color-label">Error Light</p>
-    </color-square>
-    <color-square class="fc-error">
-      <p class="fc-text-on-error fc-text-center color-label">Error</p>
-    </color-square>
-    <color-square class="fc-error-dark">
-      <p class="fc-text-white fc-text-center color-label">Error Dark</p>
-    </color-square>
-  </color-group>
-
-  <color-group>
-    <color-square class="fc-muted-light">
-      <p class="fc-black -textfc-text-center color-label">Muted Light</p>
-    </color-square>
-    <color-square class="fc-muted">
-      <p class="fc-text-on-muted fc-text-center color-label">Muted</p>
-    </color-square>
-    <color-square class="fc-muted-dark">
-      <p class="fc-text-white fc-text-center color-label">Muted Dark</p>
-    </color-square>
-  </color-group>
 </div>
+
+

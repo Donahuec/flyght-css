@@ -3,6 +3,7 @@
     font-family: var(--fc-default-font);
     font-size: 1em;
     font-weight: light;
+    line-height: 1.75em;
   }
 }
 @layer heading {

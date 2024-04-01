@@ -14,5 +14,5 @@ pre {
 }
 
 :not(pre) > code {
-  padding: 0.25em 1ch;
+  padding: 2px 1ch;
 }
