@@ -4,17 +4,16 @@ pre,
   font-family: var(--fc-monospace-font);
   border-radius: var(--fc-border-radius);
   overflow-x: auto;
-}
-
-pre {
-  padding: var(--fc-padding-default);
-  margin: 1em;
-
   &.fc-border-left {
     border-left: var(--fc-border-line-accent);
     --fc-border-color: var(--fc-muted);
     border-color: var(--fc-border-color);
   }
+}
+
+pre {
+  padding: var(--fc-padding-default);
+  margin: 1em;
 }
 
 :not(pre) > code {
