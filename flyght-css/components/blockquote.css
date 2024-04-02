@@ -4,13 +4,14 @@ blockquote {
     border-left: var(--fc-border-line-accent) var(--fc-muted);
     text-align: left;
     border-radius: var(--fc-border-radius);
+    --fc-bq-color: var(--fc-muted);
 
     &.fc-quote:before,
     &.fc-quote:after {
-      color: var(--fc-muted);
       font-size: 1.5em;
       font-style: italic;
       font-weight: 400;
+      color: var(--fc-bq-color);
     }
 
     &.fc-quote:before {
@@ -21,121 +22,65 @@ blockquote {
     &.fc-quote:after {
       content: close-quote;
     }
-  }
 
-  @layer main {
     &.fc-border-primary {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-primary);
-      }
+      --fc-bq-color: var(--fc-primary);
     }
     &.fc-border-primary-dark {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-primary-dark);
-      }
+      --fc-bq-color: var(--fc-primary-dark);
     }
     &.fc-border-primary-light {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-primary-light);
-      }
+      --fc-bq-color: var(--fc-primary-light);
     }
 
     &.fc-border-secondary {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-secondary);
-      }
+      --fc-bq-color: var(--fc-secondary);
     }
     &.fc-border-secondary-dark {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-secondary-dark);
-      }
+      --fc-bq-color: var(--fc-secondary-dark);
     }
     &.fc-border-secondary-light {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-secondary-light);
-      }
+      --fc-bq-color: var(--fc-secondary-light);
     }
 
     &.fc-border-success {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-success);
-      }
+      --fc-bq-color: var(--fc-success);
     }
     &.fc-border-success-dark {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-success-dark);
-      }
+      --fc-bq-color: var(--fc-success-dark);
     }
     &.fc-border-success-light {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-success-light);
-      }
+      --fc-bq-color: var(--fc-success-light);
     }
 
     &.fc-border-warn {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-warn);
-      }
+      --fc-bq-color: var(--fc-warn);
     }
     &.fc-border-warn-dark {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-warn-dark);
-      }
+      --fc-bq-color: var(--fc-warn-dark);
     }
     &.fc-border-warn-light {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-warn-light);
-      }
+      --fc-bq-color: var(--fc-warn-light);
     }
 
     &.fc-border-error {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-error);
-      }
+      --fc-bq-color: var(--fc-error);
     }
     &.fc-border-error-dark {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-error-dark);
-      }
+      --fc-bq-color: var(--fc-error-dark);
     }
     &.fc-border-error-light {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-error-light);
-      }
+      --fc-bq-color: var(--fc-error-light);
     }
 
     &.fc-border-muted {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-muted);
-      }
+      --fc-bq-color: var(--fc-muted);
     }
     &.fc-border-muted-dark {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-muted-dark);
-      }
+      --fc-bq-color: var(--fc-muted-dark);
     }
     &.fc-border-muted-light {
-      &.fc-quote:before,
-      &.fc-quote:after {
-        color: var(--fc-muted-light);
-      }
+      --fc-bq-color: var(--fc-muted-light);
     }
   }
 }
