@@ -1,22 +1,27 @@
-ul.fc-list-group {
-  list-style-type: none;
-  padding: 0;
-  border: var(--fc-border-line);
-  border-color: var(--fc-border-color);
-  border-radius: var(--fc-border-radius);
-}
+ul,
+ol {
+  &.fc-list-group {
+    list-style-type: none;
+    padding: 0;
+    border: var(--fc-border-line);
+    border-color: var(--fc-border-color);
+    border-radius: var(--fc-border-radius);
 
-ul.fc-list-group li {
-  padding: var(--fc-padding-default);
-  border-bottom: var(--fc-border-line);
-  border-color: inherit;
-}
+    li {
+      padding: var(--fc-padding-default);
+      border-bottom: var(--fc-border-line);
+      border-color: inherit;
+    }
 
-ul.fc-list-group li:last-child {
-  border-bottom: none;
-}
+    li:last-child {
+      border-bottom: none;
+      border-bottom-left-radius: calc(var(--fc-border-radius) - 1px);
+      border-bottom-right-radius: calc(var(--fc-border-radius) - 1px);
+    }
 
-ul.fc-list-group.fc-striped li:nth-child(even) {
-  background-color: var(--fc-color-accent);
-  color: var(--fc-color-on-accent);
+    &.fc-striped li:nth-child(even) {
+      background-color: var(--fc-color-accent);
+      color: var(--fc-color-on-accent);
+    }
+  }
 }
