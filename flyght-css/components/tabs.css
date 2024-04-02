@@ -9,7 +9,8 @@
 
 .fc-tab-group {
   @layer base {
-    border-bottom: var(--fc-border-muted-light);
+    border-bottom: var(--fc-border-line);
+    border-color: var(--fc-border-color);
     margin-bottom: 1em;
     .fc-tab-btn {
       background-color: unset;
@@ -31,10 +32,10 @@
       &.fc-tab-active {
         margin-bottom: calc(0px - var(--fc-border-width));
         border-bottom-style: solid;
-        border-color: var(--fc-primary);
+        border-color: var(--fc-border-color);
       }
       &:focus {
-        outline-color: var(--fc-primary);
+        outline-color: var(--fc-border-color);
         border-bottom-width: var(--fc-border-width);
       }
 

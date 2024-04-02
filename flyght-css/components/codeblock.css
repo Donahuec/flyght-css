@@ -11,7 +11,9 @@ pre {
   margin: 1em;
 
   &.fc-border-left {
-    border-left: var(--fc-border-line-accent) var(--fc-muted);
+    border-left: var(--fc-border-line-accent);
+    --fc-border-color: var(--fc-muted);
+    border-color: var(--fc-border-color);
   }
 }
 

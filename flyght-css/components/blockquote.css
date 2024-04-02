@@ -1,7 +1,7 @@
 blockquote {
   @layer base {
     padding: var(--fc-padding-default);
-    border-left: var(--fc-border-line-accent) var(--fc-muted);
+    border-left: var(--fc-border-line-accent) var(--fc-border-color);
     text-align: left;
     border-radius: var(--fc-border-radius);
     --fc-bq-color: var(--fc-muted);
@@ -12,7 +12,7 @@ blockquote {
       font-size: 1.5em;
       font-style: italic;
       font-weight: 400;
-      color: var(--fc-bq-color);
+      color: var(--fc-border-color);
     }
 
     &.fc-quote:before {
@@ -24,7 +24,7 @@ blockquote {
       content: close-quote;
     }
 
-    &.fc-border-primary {
+    /* &.fc-border-primary {
       --fc-bq-color: var(--fc-primary);
     }
     &.fc-border-primary-dark {
@@ -82,7 +82,7 @@ blockquote {
     }
     &.fc-border-muted-light {
       --fc-bq-color: var(--fc-muted-light);
-    }
+    } */
   }
 }
 

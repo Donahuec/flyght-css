@@ -1,7 +1,8 @@
 ul.fc-list-group {
   list-style-type: none;
   padding: 0;
-  border: var(--fc-border-muted-light);
+  border: var(--fc-border-line);
+  border-color: var(--fc-border-color);
   border-radius: var(--fc-border-radius);
 }
 

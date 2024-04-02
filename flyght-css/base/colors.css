@@ -180,74 +180,74 @@
 
 @layer border {
   .fc-border-primary {
-    border-color: var(--fc-primary);
+    --fc-border-color: var(--fc-primary);
   }
 
   .fc-border-primary-dark {
-    border-color: var(--fc-primary-dark);
+    --fc-border-color: var(--fc-primary-dark);
   }
 
   .fc-border-primary-light {
-    border-color: var(--fc-primary-light);
+    --fc-border-color: var(--fc-primary-light);
   }
 
   .fc-border-secondary {
-    border-color: var(--fc-secondary);
+    --fc-border-color: var(--fc-secondary);
   }
 
   .fc-border-secondary-dark {
-    border-color: var(--fc-secondary-dark);
+    --fc-border-color: var(--fc-secondary-dark);
   }
 
   .fc-border-secondary-light {
-    border-color: var(--fc-secondary-light);
+    --fc-border-color: var(--fc-secondary-light);
   }
 
   .fc-border-success {
-    border-color: var(--fc-success);
+    --fc-border-color: var(--fc-success);
   }
 
   .fc-border-success-dark {
-    border-color: var(--fc-success-dark);
+    --fc-border-color: var(--fc-success-dark);
   }
 
   .fc-border-success-light {
-    border-color: var(--fc-success-light);
+    --fc-border-color: var(--fc-success-light);
   }
 
   .fc-border-warn {
-    border-color: var(--fc-warn);
+    --fc-border-color: var(--fc-warn);
   }
 
   .fc-border-warn-dark {
-    border-color: var(--fc-warn-dark);
+    --fc-border-color: var(--fc-warn-dark);
   }
 
   .fc-border-warn-light {
-    border-color: var(--fc-warn-light);
+    --fc-border-color: var(--fc-warn-light);
   }
 
   .fc-border-error {
-    border-color: var(--fc-error);
+    --fc-border-color: var(--fc-error);
   }
 
   .fc-border-error-dark {
-    border-color: var(--fc-error-dark);
+    --fc-border-color: var(--fc-error-dark);
   }
 
   .fc-border-error-light {
-    border-color: var(--fc-error-light);
+    --fc-border-color: var(--fc-error-light);
   }
 
   .fc-border-muted {
-    border-color: var(--fc-muted);
+    --fc-border-color: var(--fc-muted);
   }
 
   .fc-border-muted-dark {
-    border-color: var(--fc-muted-dark);
+    --fc-border-color: var(--fc-muted-dark);
   }
 
   .fc-border-muted-light {
-    border-color: var(--fc-muted-light);
+    --fc-border-color: var(--fc-muted-light);
   }
 }
