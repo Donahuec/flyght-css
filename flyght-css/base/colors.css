@@ -1,3 +1,67 @@
+@layer presets {
+  .fc-primary {
+    --fc-color-hs: var(--fc-primary-hs);
+    --fc-color-dark: var(--fc-primary-dark);
+    --fc-color-default: var(--fc-primary);
+    --fc-color-light: var(--fc-primary-light);
+    --fc-color-text: var(--fc-on-primary);
+  }
+  .fc-secondary {
+    --fc-color-hs: var(--fc-secondary-hs);
+    --fc-color-dark: var(--fc-secondary-dark);
+    --fc-color-default: var(--fc-secondary);
+    --fc-color-light: var(--fc-secondary-light);
+    --fc-color-text: var(--fc-on-secondary);
+  }
+  .fc-success {
+    --fc-color-hs: var(--fc-success-hs);
+    --fc-color-dark: var(--fc-success-dark);
+    --fc-color-default: var(--fc-success);
+    --fc-color-light: var(--fc-success-light);
+    --fc-color-text: var(--fc-on-success);
+  }
+  .fc-warn {
+    --fc-color-hs: var(--fc-warn-hs);
+    --fc-color-dark: var(--fc-warn-dark);
+    --fc-color-default: var(--fc-warn);
+    --fc-color-light: var(--fc-warn-light);
+    --fc-color-text: var(--fc-on-warn);
+  }
+  .fc-error {
+    --fc-color-hs: var(--fc-error-hs);
+    --fc-color-dark: var(--fc-error-dark);
+    --fc-color-default: var(--fc-error);
+    --fc-color-light: var(--fc-error-light);
+    --fc-color-text: var(--fc-on-error);
+  }
+  .fc-muted {
+    --fc-color-hs: var(--fc-muted-hs);
+    --fc-color-dark: var(--fc-muted-dark);
+    --fc-color-default: var(--fc-muted);
+    --fc-color-light: var(--fc-muted-light);
+    --fc-color-text: var(--fc-on-muted);
+  }
+  .fc-white {
+    --fc-color-hs: var(0 0%);
+    --fc-color-dark: var(--fc-muted);
+    --fc-color-default: var(--white);
+    --fc-color-light: var(--white);
+    --fc-color-text: var(--black);
+    --fc-v-light: 100%;
+    --fc-light: 100%;
+    --fc-mid: 100%;
+    --fc-m-dark: 80%;
+    --fc-dark: 70%;
+  }
+  .fc-black {
+    --fc-color-hs: var(--fc-secondary-hs);
+    --fc-color-dark: var(--fc-secondary-dark);
+    --fc-color-default: var(--fc-secondary);
+    --fc-color-light: var(--fc-secondary-light);
+    --fc-color-text: var(--fc-on-secondary);
+  }
+}
+
 @layer text {
   .fc-text-white {
     color: white;
@@ -105,75 +169,75 @@
 }
 
 @layer background {
-  .fc-primary {
+  .fc-bg-primary {
     background-color: var(--fc-primary);
   }
 
-  .fc-primary-dark {
+  .fc-bg-primary-dark {
     background-color: var(--fc-primary-dark);
   }
 
-  .fc-primary-light {
+  .fc-bg-primary-light {
     background-color: var(--fc-primary-light);
   }
 
-  .fc-secondary {
+  .fc-bg-secondary {
     background-color: var(--fc-secondary);
   }
 
-  .fc-secondary-dark {
+  .fc-bg-secondary-dark {
     background-color: var(--fc-secondary-dark);
   }
 
-  .fc-secondary-light {
+  .fc-bg-secondary-light {
     background-color: var(--fc-secondary-light);
   }
 
-  .fc-success {
+  .fc-bg-success {
     background-color: var(--fc-success);
   }
 
-  .fc-success-dark {
+  .fc-bg-success-dark {
     background-color: var(--fc-success-dark);
   }
 
-  .fc-success-light {
+  .fc-bg-success-light {
     background-color: var(--fc-success-light);
   }
 
-  .fc-warn {
+  .fc-bg-warn {
     background-color: var(--fc-warn);
   }
 
-  .fc-warn-dark {
+  .fc-bg-warn-dark {
     background-color: var(--fc-warn-dark);
   }
 
-  .fc-warn-light {
+  .fc-bg-warn-light {
     background-color: var(--fc-warn-light);
   }
 
-  .fc-error {
+  .fc-bg-error {
     background-color: var(--fc-error);
   }
 
-  .fc-error-dark {
+  .fc-bg-error-dark {
     background-color: var(--fc-error-dark);
   }
 
-  .fc-error-light {
+  .fc-bg-error-light {
     background-color: var(--fc-error-light);
   }
 
-  .fc-muted {
+  .fc-bg-muted {
     background-color: var(--fc-muted);
   }
 
-  .fc-muted-dark {
+  .fc-bg-muted-dark {
     background-color: var(--fc-muted-dark);
   }
 
-  .fc-muted-light {
+  .fc-bg-muted-light {
     background-color: var(--fc-muted-light);
   }
 }
@@ -249,5 +313,97 @@
 
   .fc-border-muted-light {
     --fc-border-color: var(--fc-muted-light);
+  }
+}
+
+@layer accent {
+  .fc-accent-primary {
+    --fc-color-accent: var(--fc-primary);
+    --fc-color-on-accent: var(--fc-on-primary);
+  }
+
+  .fc-accent-primary-dark {
+    --fc-color-accent: var(--fc-primary-dark);
+    --fc-color-on-accent: var(--fc-on-primary-dark);
+  }
+
+  .fc-accent-primary-light {
+    --fc-color-accent: var(--fc-primary-light);
+    --fc-color-on-accent: var(--fc-on-primary-light);
+  }
+
+  .fc-accent-secondary {
+    --fc-color-accent: var(--fc-secondary);
+    --fc-color-on-accent: var(--fc-on-secondary);
+  }
+
+  .fc-accent-secondary-dark {
+    --fc-color-accent: var(--fc-secondary-dark);
+    --fc-color-on-accent: var(--fc-on-secondary-dark);
+  }
+
+  .fc-accent-secondary-light {
+    --fc-color-accent: var(--fc-secondary-light);
+    --fc-color-on-accent: var(--fc-on-secondary-light);
+  }
+
+  .fc-accent-success {
+    --fc-color-accent: var(--fc-success);
+    --fc-color-on-accent: var(--fc-on-success);
+  }
+
+  .fc-accent-success-dark {
+    --fc-color-accent: var(--fc-success-dark);
+    --fc-color-on-accent: var(--fc-on-success-dark);
+  }
+
+  .fc-accent-success-light {
+    --fc-color-accent: var(--fc-success-light);
+    --fc-color-on-accent: var(--fc-on-success-light);
+  }
+
+  .fc-accent-warn {
+    --fc-color-accent: var(--fc-warn);
+    --fc-color-on-accent: var(--fc-on-warn);
+  }
+
+  .fc-accent-warn-dark {
+    --fc-color-accent: var(--fc-warn-dark);
+    --fc-color-on-accent: var(--fc-on-warn-dark);
+  }
+
+  .fc-accent-warn-light {
+    --fc-color-accent: var(--fc-warn-light);
+    --fc-color-on-accent: var(--fc-on-warn-light);
+  }
+
+  .fc-accent-error {
+    --fc-color-accent: var(--fc-error);
+    --fc-color-on-accent: var(--fc-on-error);
+  }
+
+  .fc-accent-error-dark {
+    --fc-color-accent: var(--fc-error-dark);
+    --fc-color-on-accent: var(--fc-on-error-dark);
+  }
+
+  .fc-accent-error-light {
+    --fc-color-accent: var(--fc-error-light);
+    --fc-color-on-accent: var(--fc-on-error-light);
+  }
+
+  .fc-accent-muted {
+    --fc-color-accent: var(--fc-muted);
+    --fc-color-on-accent: var(--fc-on-muted);
+  }
+
+  .fc-accent-muted-dark {
+    --fc-color-accent: var(--fc-muted-dark);
+    --fc-color-on-accent: var(--fc-on-muted-dark);
+  }
+
+  .fc-accent-muted-light {
+    --fc-color-accent: var(--fc-muted-light);
+    --fc-color-on-accent: var(--fc-on-muted-light);
   }
 }

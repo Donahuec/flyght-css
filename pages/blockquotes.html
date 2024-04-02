@@ -15,7 +15,7 @@ eleventyNavigation:
         <code>fc-border-{color}</code> class defined in 
         <a href="/pages/colors">colors</a>.</li>
       <li>
-        Setting the background color with the <code>fc-{color}</code> 
+        Setting the background color with the <code>fc-bg-{color}</code> 
         class defined in <a href="/pages/colors">colors</a>.</li>
       <li>
         Adding decorative quotes with the <code>fc-quote</code> class. 
@@ -27,7 +27,7 @@ eleventyNavigation:
     </ol>
   </p>
 
-  <br>
+  <br />
   <h2>Base Features</h2>
   <blockquote>
     Some base styling comes out of the box by using the <code>&lt;blockquote&gt;</code> element.
@@ -87,27 +87,26 @@ eleventyNavigation:
 <br />
 <h3>Adding a Background Color</h3>
   <p>
-    The <code>fc-{color}</code> class defined in <a href="/pages/colors">colors</a> 
+    The <code>fc-bg-{color}</code> class defined in <a href="/pages/colors">colors</a> 
     can be used to set the background color of the blockquote. 
     All of the default theme colors are available. You can also set the text color with 
     <code>fc-text-{color}</code> (also defined in the <a href="/pages/colors">colors</a> documentation)
     to ensure proper color contrast.
   </p>
 
-  <blockquote class="fc-border-primary-light fc-primary fc-text-white">
+  <blockquote class="fc-border-primary-light fc-bg-primary fc-text-white">
     Blockquote with primary-light border and primary background
   </blockquote>
-  <blockquote class="fc-border-secondary fc-secondary-light">
+  <blockquote class="fc-border-secondary fc-bg-secondary-light">
     Blockquote with secondary border and secondary-light background
   </blockquote>
 
-  <pre><code>&lt;blockquote class=&quot;fc-border-primary-light fc-primary fc-text-white&quot;&gt;
+  <pre><code>&lt;blockquote class=&quot;fc-border-primary-light fc-bg-primary fc-text-white&quot;&gt;
   Blockquote with primary-light border and primary background
 &lt;/blockquote&gt;
-&lt;blockquote class=&quot;fc-border-secondary fc-secondary-light&quot;&gt;
+&lt;blockquote class=&quot;fc-border-secondary fc-bg-secondary-light&quot;&gt;
   Blockquote with secondary border and secondary-light background
 &lt;/blockquote&gt;</code></pre>
-
 
 </div>
 
@@ -133,7 +132,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-primary">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-primary-light fc-primary fc-text-white">
+  <blockquote class="fc-border-primary-light fc-bg-primary fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -146,7 +145,7 @@ eleventyNavigation:
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-border-primary fc-primary-light">
+  <blockquote class="fc-border-primary fc-bg-primary-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -157,7 +156,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-primary-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-primary-light fc-primary-dark fc-text-white">
+  <blockquote class="fc-border-primary-light fc-bg-primary-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -168,7 +167,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-secondary">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-secondary-light fc-secondary fc-text-white">
+  <blockquote class="fc-border-secondary-light fc-bg-secondary fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -181,7 +180,7 @@ eleventyNavigation:
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-border-secondary fc-secondary-light">
+  <blockquote class="fc-border-secondary fc-bg-secondary-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -192,7 +191,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-secondary-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-secondary-light fc-secondary-dark fc-text-white">
+  <blockquote class="fc-border-secondary-light fc-bg-secondary-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -203,7 +202,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-success">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-success-light fc-success">
+  <blockquote class="fc-border-success-light fc-bg-success">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -216,7 +215,7 @@ eleventyNavigation:
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-border-success fc-success-light">
+  <blockquote class="fc-border-success fc-bg-success-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -227,7 +226,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-success-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-success-light fc-success-dark fc-text-white">
+  <blockquote class="fc-border-success-light fc-bg-success-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -238,7 +237,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-warn">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-warn-light fc-warn">
+  <blockquote class="fc-border-warn-light fc-bg-warn">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -251,7 +250,7 @@ eleventyNavigation:
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-border-warn fc-warn-light">
+  <blockquote class="fc-border-warn fc-bg-warn-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -262,7 +261,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-warn-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-warn-light fc-warn-dark fc-text-white">
+  <blockquote class="fc-border-warn-light fc-bg-warn-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -273,7 +272,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-error">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-error-light fc-error fc-text-white">
+  <blockquote class="fc-border-error-light fc-bg-error fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -286,7 +285,7 @@ eleventyNavigation:
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-border-error fc-error-light">
+  <blockquote class="fc-border-error fc-bg-error-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -297,7 +296,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-error-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-error-light fc-error-dark fc-text-white">
+  <blockquote class="fc-border-error-light fc-bg-error-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -308,7 +307,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-muted">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-muted-light fc-muted fc-text-white">
+  <blockquote class="fc-border-muted-light fc-bg-muted fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -321,7 +320,7 @@ eleventyNavigation:
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-border-muted fc-muted-light">
+  <blockquote class="fc-border-muted fc-bg-muted-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
@@ -332,7 +331,7 @@ eleventyNavigation:
   <blockquote class="fc-quote fc-border-muted-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-border-muted-light fc-muted-dark fc-text-white">
+  <blockquote class="fc-border-muted-light fc-bg-muted-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 </div>

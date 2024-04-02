@@ -1,7 +1,17 @@
 :root {
-  @layer border {
+  @layer color-presets {
     --fc-border-color: var(--fc-muted-light);
 
+    --fc-color-hs: var(--fc-muted-hs);
+    --fc-color-dark: var(--fc-muted-dark);
+    --fc-color-default: var(--fc-muted);
+    --fc-color-light: var(--fc-muted-light);
+    --fc-color-text: var(--fc-on-muted);
+
+    --fc-color-accent: var(--fc-muted-light);
+    --fc-color-on-accent: var(--fc-on-muted-light);
+  }
+  @layer border {
     --fc-border-radius: 4px;
 
     --fc-border-width: 1px;
