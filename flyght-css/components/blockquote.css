@@ -24,132 +24,114 @@ blockquote {
   }
 
   @layer main {
-    &.fc-bq-primary {
-      border-color: var(--fc-primary);
+    &.fc-border-primary {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-primary);
       }
     }
-    &.fc-bq-primary-dark {
-      border-color: var(--fc-primary-dark);
+    &.fc-border-primary-dark {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-primary-dark);
       }
     }
-    &.fc-bq-primary-light {
-      border-color: var(--fc-primary-light);
+    &.fc-border-primary-light {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-primary-light);
       }
     }
 
-    &.fc-bq-secondary {
-      border-color: var(--fc-secondary);
+    &.fc-border-secondary {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-secondary);
       }
     }
-    &.fc-bq-secondary-dark {
-      border-color: var(--fc-secondary-dark);
+    &.fc-border-secondary-dark {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-secondary-dark);
       }
     }
-    &.fc-bq-secondary-light {
-      border-color: var(--fc-secondary-light);
+    &.fc-border-secondary-light {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-secondary-light);
       }
     }
 
-    &.fc-bq-success {
-      border-color: var(--fc-success);
+    &.fc-border-success {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-success);
       }
     }
-    &.fc-bq-success-dark {
-      border-color: var(--fc-success-dark);
+    &.fc-border-success-dark {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-success-dark);
       }
     }
-    &.fc-bq-success-light {
-      border-color: var(--fc-success-light);
+    &.fc-border-success-light {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-success-light);
       }
     }
 
-    &.fc-bq-warn {
-      border-color: var(--fc-warn);
+    &.fc-border-warn {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-warn);
       }
     }
-    &.fc-bq-warn-dark {
-      border-color: var(--fc-warn-dark);
+    &.fc-border-warn-dark {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-warn-dark);
       }
     }
-    &.fc-bq-warn-light {
-      border-color: var(--fc-warn-light);
+    &.fc-border-warn-light {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-warn-light);
       }
     }
 
-    &.fc-bq-error {
-      border-color: var(--fc-error);
+    &.fc-border-error {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-error);
       }
     }
-    &.fc-bq-error-dark {
-      border-color: var(--fc-error-dark);
+    &.fc-border-error-dark {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-error-dark);
       }
     }
-    &.fc-bq-error-light {
-      border-color: var(--fc-error-light);
+    &.fc-border-error-light {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-error-light);
       }
     }
 
-    &.fc-bq-muted {
-      border-color: var(--fc-muted);
+    &.fc-border-muted {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-muted);
       }
     }
-    &.fc-bq-muted-dark {
-      border-color: var(--fc-muted-dark);
+    &.fc-border-muted-dark {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-muted-dark);
       }
     }
-    &.fc-bq-muted-light {
-      border-color: var(--fc-muted-light);
+    &.fc-border-muted-light {
       &.fc-quote:before,
       &.fc-quote:after {
         color: var(--fc-muted-light);
