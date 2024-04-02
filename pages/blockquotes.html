@@ -27,9 +27,10 @@ eleventyNavigation:
     </ol>
   </p>
 
+  <br>
   <h2>Base Features</h2>
   <blockquote>
-    Some base styling comes out of the box by using the <code>&lt;blockquote&gt;</code>
+    Some base styling comes out of the box by using the <code>&lt;blockquote&gt;</code> element.
   </blockquote>
   <h3>Adding Quotations</h3>
   <blockquote class="fc-quote">
@@ -54,9 +55,60 @@ eleventyNavigation:
 &lt;/blockquote&gt;</code></pre>
 
 
-
+<br>
   <h2>Adding Color</h2>
-  
+  <h3>Changing the Border Color</h3>
+  <p>
+    By adding the <code>fc-border-{color}</code> class, defined in <a href="/pages/colors">colors</a>, you can set the left border Color
+    to any default theme color. If <code>fc-quote</code> is also applied, the color of
+    the quotations will also reflect the border color.
+  </p>
+
+  <blockquote class="fc-border-primary fc-quote">
+    Blockquote with fc-border-primary
+  </blockquote>
+  <blockquote class="fc-border-secondary-light fc-quote">
+    Blockquote with fc-border-secondary-light
+  </blockquote>
+  <blockquote class="fc-border-success fc-quote">
+    Blockquote with fc-border-success
+  </blockquote>
+
+  <pre><code>&lt;blockquote class=&quot;fc-border-primary fc-quote&quot;&gt;
+  Blockquote with fc-border-primary
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;fc-border-secondary-light fc-quote&quot;&gt;
+  Blockquote with fc-border-secondary-light
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;fc-border-success fc-quote&quot;&gt;
+  Blockquote with fc-border-success
+&lt;/blockquote&gt;</code></pre>
+
+<br />
+<h3>Adding a Background Color</h3>
+  <p>
+    The <code>fc-{color}</code> class defined in <a href="/pages/colors">colors</a> 
+    can be used to set the background color of the blockquote. 
+    All of the default theme colors are available. You can also set the text color with 
+    <code>fc-text-{color}</code> (also defined in the <a href="/pages/colors">colors</a> documentation)
+    to ensure proper color contrast.
+  </p>
+
+  <blockquote class="fc-border-primary-light fc-primary fc-text-white">
+    Blockquote with primary-light border and primary background
+  </blockquote>
+  <blockquote class="fc-border-secondary fc-secondary-light">
+    Blockquote with secondary border and secondary-light background
+  </blockquote>
+
+  <pre><code>&lt;blockquote class=&quot;fc-border-primary-light fc-primary fc-text-white&quot;&gt;
+  Blockquote with primary-light border and primary background
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;fc-border-secondary fc-secondary-light&quot;&gt;
+  Blockquote with secondary border and secondary-light background
+&lt;/blockquote&gt;</code></pre>
+
+
 </div>
 
 <div id="examples" class="fc-tab-content">

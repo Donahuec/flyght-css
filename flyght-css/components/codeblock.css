@@ -8,6 +8,7 @@ pre,
 
 pre {
   padding: var(--fc-padding-default);
+  margin: 1em;
 
   &.fc-border-left {
     border-left: var(--fc-border-line-accent) var(--fc-muted);

@@ -5,6 +5,7 @@ blockquote {
     text-align: left;
     border-radius: var(--fc-border-radius);
     --fc-bq-color: var(--fc-muted);
+    margin: 1em;
 
     &.fc-quote:before,
     &.fc-quote:after {
