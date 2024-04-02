@@ -11,14 +11,52 @@ eleventyNavigation:
   <p>
     Four options are provided for blockquotes:
     <ol>
+      <li>Setting the color of the left border with the 
+        <code>fc-border-{color}</code> class defined in 
+        <a href="/pages/colors">colors</a>.</li>
       <li>
         Setting the background color with the <code>fc-{color}</code> 
         class defined in <a href="/pages/colors">colors</a>.</li>
       <li>
-        Setting a decorative left border using <code>fc-border-{color}</code>
+        Adding decorative quotes with the <code>fc-quote</code> class. 
+        The color of these will match the border
+      </li>
+      <li>
+        Adding a quote attribution in an element with the <code>fc-source</code> class.
       </li>
     </ol>
   </p>
+
+  <h2>Base Features</h2>
+  <blockquote>
+    Some base styling comes out of the box by using the <code>&lt;blockquote&gt;</code>
+  </blockquote>
+  <h3>Adding Quotations</h3>
+  <blockquote class="fc-quote">
+    You can add decorative quotation marks with the <code>fc-quote</code> class.
+    <br />
+    The color of the quotations will be the same as the border
+  </blockquote>
+  <pre class="fc-border-left"><code>&lt;blockquote class=&quot;fc-quote&quot;&gt;
+  Blockquote with Quotes
+&lt;/blockquote&gt;</code></pre>
+
+    <h3>Adding Attribution</h3>
+  <blockquote>
+    You can add an attribution to your blockquote with the <code>fc-source</code>
+    class on a sub element.
+    <span class="fc-source">TakenFlyght</span>
+  </blockquote>
+
+  <pre class="fc-border-left"><code>&lt;blockquote&gt;
+  What a neat Quote
+  &lt;span class=&quot;fc-source&quot;&gt;Author&lt;/span&gt;
+&lt;/blockquote&gt;</code></pre>
+
+
+
+  <h2>Adding Color</h2>
+  
 </div>
 
 <div id="examples" class="fc-tab-content">

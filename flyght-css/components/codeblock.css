@@ -3,6 +3,7 @@ pre,
   background-color: var(--fc-muted-light);
   font-family: var(--fc-monospace-font);
   border-radius: var(--fc-border-radius);
+  overflow-x: scroll;
 }
 
 pre {
