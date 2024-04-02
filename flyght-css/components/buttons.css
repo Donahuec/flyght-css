@@ -1,6 +1,9 @@
 @layer base, colors, extras;
 
 button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 a.fc-btn-link {
   @layer base {
     box-sizing: border-box;
