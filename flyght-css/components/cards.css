@@ -1,41 +1,52 @@
 .fc-card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px var(--fc-muted-light), 0 1px 2px var(--fc-muted-light);
   border: var(--fc-border-line);
   border-color: var(--fc-border-color);
   border-radius: var(--fc-border-radius);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  margin: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0.5em;
   overflow: hidden;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .fc-card-content {
+    padding: 1em;
+  }
+  .fc-card-title {
+    padding: 0.3em 2em 0 2em;
+  }
+  .fc-card-footer {
+    padding: 0.3em 2em 0.3em 2em;
+    margin-block-start: auto;
+  }
+  .fc-card {
+    height: auto;
+  }
+  img.fc-card-image,
+  .fc-card-image img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  & :not(:first-child) {
+    border-top: var(--fc-border-line);
+    border-color: var(--fc-border-color);
+  }
+  &.fc-card-flat {
+    box-shadow: none;
+  }
 }
 
 /* On mouse-over, add a deeper shadow */
 
-.fc-card.fc-card-hover:hover {
+.ofc-card.fc-card-hover:hover {
   transition: 0.3s;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
-.fc-card.fc-card-flat {
-  box-shadow: none;
-}
-
-/* Add some padding inside the fc-card container */
-
-.fc-card .fc-card-content {
-  padding: 1em 1em 1em 1em;
-}
-
-.fc-card .fc-card-title {
-  padding: 0.3em 2em 0 2em;
-  border-bottom: var(--fc-border-line);
-  border-color: inherit;
-}
-
-.fc-card .fc-card-image .fc-card-title {
+.ofc-card .fc-card-image .fc-card-title {
   position: absolute;
   border: none;
   padding: 0 1em 0 1em;
@@ -43,33 +54,9 @@
   left: 0;
 }
 
-.fc-card .fc-card-image .fc-card-title.title-background {
+.foc-card .fc-card-image .fc-card-title.title-background {
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
   right: 0;
   color: var(--white);
-}
-
-.fc-card .fc-card-image {
-  position: relative;
-}
-
-.fc-card .fc-card-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.fc-card .fc-card-footer {
-  padding: 0.3em 2em 0.3em 2em;
-  border-top: var(--fc-border-line);
-  border-color: inherit;
-}
-
-.fc-card .fc-card-title::after,
-.fc-card .fc-card-content::after,
-.fc-card .fc-card-image::after,
-.fc-card .fc-card-footer::after {
-  content: "";
-  clear: both;
-  display: table;
 }
