@@ -1,126 +1,43 @@
 @layer base, colors, extras;
 
 button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
 a.fc-btn-link {
   @layer base {
     box-sizing: border-box;
     padding: var(--fc-padding-default);
     border: none;
     border-radius: var(--fc-border-radius);
-    color: var(--white);
+    color: var(--fc-color-text);
     box-shadow: var(--fc-box-shadow);
     margin: 0.25em;
     cursor: pointer;
     outline-offset: 2px;
 
     /* Default to muted styles */
-    background-color: var(--fc-muted);
+    background-color: var(--fc-color-default);
     &:hover,
     &:focus {
-      background-color: hsl(var(--fc-muted-hs) var(--fc-m-dark));
+      background-color: hsl(var(--fc-color-hs) var(--fc-m-dark));
     }
     &:focus {
-      outline: var(--fc-border-thick) var(--fc-muted-dark);
+      outline: var(--fc-border-thick) var(--fc-color-dark);
     }
     &:active {
       outline-offset: 0px;
-      outline: var(--fc-border-thick) var(--fc-muted-dark);
+      outline: var(--fc-border-thick) var(--fc-color-dark);
     }
-  }
-  @layer colors {
-    &.fc-btn-primary {
-      background-color: var(--fc-primary);
+    &.fc-btn-outline {
+      color: var(--fc-color-default);
       &:hover,
       &:focus {
-        background-color: hsl(var(--fc-primary-hs) var(--fc-m-dark));
+        background-color: hsl(var(--fc-color-hs) var(--fc-v-light));
       }
       &:focus,
       &:active {
-        outline-color: var(--fc-primary-dark);
-      }
-      &.fc-btn-outline {
-        color: var(--fc-primary);
-        &:hover,
-        &:focus {
-          background-color: hsl(var(--fc-primary-hs) var(--fc-v-light));
-        }
-        &:focus,
-        &:active {
-          outline-color: var(--fc-primary-dark);
-        }
-      }
-    }
-
-    &.fc-btn-secondary {
-      background-color: var(--fc-secondary);
-      &:hover,
-      &:focus {
-        background-color: hsl(var(--fc-secondary-hs) var(--fc-m-dark));
-      }
-      &:focus,
-      &:active {
-        outline-color: var(--fc-secondary-dark);
-      }
-      &.fc-btn-outline {
-        color: var(--fc-secondary);
-        &:hover,
-        &:focus {
-          background-color: hsl(var(--fc-secondary-hs) var(--fc-v-light));
-        }
-        &:focus,
-        &:active {
-          outline-color: var(--fc-secondary-dark);
-        }
-      }
-    }
-
-    &.fc-btn-muted.fc-btn-outline {
-      color: var(--fc-muted);
-      &:hover,
-      &:focus {
-        background-color: hsl(var(--fc-muted-hs) var(--fc-v-light));
-      }
-      &:focus,
-      &:active {
-        outline-color: var(--fc-muted-dark);
-      }
-    }
-
-    &.fc-btn-error {
-      background-color: var(--fc-error);
-      &:hover,
-      &:focus {
-        background-color: hsl(var(--fc-error-hs) var(--fc-m-dark));
-      }
-      &:focus,
-      &:active {
-        outline-color: var(--fc-error-dark);
-      }
-      &.fc-btn-outline {
-        color: var(--fc-error);
-        &:hover,
-        &:focus {
-          background-color: hsl(var(--fc-error-hs) var(--fc-v-light));
-        }
-        &:focus,
-        &:active {
-          outline-color: var(--fc-error-dark);
-        }
-      }
-    }
-
-    &.fc-btn-white {
-      background: var(--white);
-      color: var(--black);
-      &:hover,
-      &:focus {
-        background-color: var(--fc-muted-light);
-      }
-      &:focus {
-        outline: var(--fc-border-thick) var(--fc-muted);
-      }
-      &:active {
-        outline: var(--fc-border-thick) var(--fc-muted);
+        outline-color: var(--fc-color-dark);
       }
     }
   }

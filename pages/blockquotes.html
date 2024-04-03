@@ -3,10 +3,112 @@ layout: documentLayout.html
 title: Blockquotes
 eleventyNavigation:
   key: Blockquotes
-  order: 1
+  order: 3
 ---
 
-<div id="documentation" class="fc-tab-content fc-tab-active">Docs here</div>
+<div id="documentation" class="fc-tab-content fc-tab-active">
+  <h2>Overview</h2>
+  <p>
+    Four options are provided for blockquotes:
+    <ol>
+      <li>Setting the color of the left border with the 
+        <code>fc-border-{color}</code> class defined in 
+        <a href="/pages/colors">colors</a>.</li>
+      <li>
+        Setting the background color with the <code>fc-bg-{color}</code> 
+        class defined in <a href="/pages/colors">colors</a>.</li>
+      <li>
+        Adding decorative quotes with the <code>fc-quote</code> class. 
+        The color of these will match the border
+      </li>
+      <li>
+        Adding a quote attribution in an element with the <code>fc-source</code> class.
+      </li>
+    </ol>
+  </p>
+
+  <br />
+  <h2>Base Features</h2>
+  <blockquote>
+    Some base styling comes out of the box by using the <code>&lt;blockquote&gt;</code> element.
+  </blockquote>
+  <h3>Adding Quotations</h3>
+  <blockquote class="fc-quote">
+    You can add decorative quotation marks with the <code>fc-quote</code> class.
+    <br />
+    The color of the quotations will be the same as the border
+  </blockquote>
+  <pre class="fc-border-left"><code>&lt;blockquote class=&quot;fc-quote&quot;&gt;
+  Blockquote with Quotes
+&lt;/blockquote&gt;</code></pre>
+
+    <h3>Adding Attribution</h3>
+  <blockquote>
+    You can add an attribution to your blockquote with the <code>fc-source</code>
+    class on a sub element.
+    <span class="fc-source">TakenFlyght</span>
+  </blockquote>
+
+  <pre class="fc-border-left"><code>&lt;blockquote&gt;
+  What a neat Quote
+  &lt;span class=&quot;fc-source&quot;&gt;Author&lt;/span&gt;
+&lt;/blockquote&gt;</code></pre>
+
+
+<br>
+  <h2>Adding Color</h2>
+  <h3>Changing the Border Color</h3>
+  <p>
+    By adding the <code>fc-border-{color}</code> class, defined in <a href="/pages/colors">colors</a>, you can set the left border Color
+    to any default theme color. If <code>fc-quote</code> is also applied, the color of
+    the quotations will also reflect the border color.
+  </p>
+
+  <blockquote class="fc-border-primary fc-quote">
+    Blockquote with fc-border-primary
+  </blockquote>
+  <blockquote class="fc-border-secondary-light fc-quote">
+    Blockquote with fc-border-secondary-light
+  </blockquote>
+  <blockquote class="fc-border-success fc-quote">
+    Blockquote with fc-border-success
+  </blockquote>
+
+  <pre><code>&lt;blockquote class=&quot;fc-border-primary fc-quote&quot;&gt;
+  Blockquote with fc-border-primary
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;fc-border-secondary-light fc-quote&quot;&gt;
+  Blockquote with fc-border-secondary-light
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;fc-border-success fc-quote&quot;&gt;
+  Blockquote with fc-border-success
+&lt;/blockquote&gt;</code></pre>
+
+<br />
+<h3>Adding a Background Color</h3>
+  <p>
+    The <code>fc-bg-{color}</code> class defined in <a href="/pages/colors">colors</a> 
+    can be used to set the background color of the blockquote. 
+    All of the default theme colors are available. You can also set the text color with 
+    <code>fc-text-{color}</code> (also defined in the <a href="/pages/colors">colors</a> documentation)
+    to ensure proper color contrast.
+  </p>
+
+  <blockquote class="fc-border-primary-light fc-bg-primary fc-text-white">
+    Blockquote with primary-light border and primary background
+  </blockquote>
+  <blockquote class="fc-border-secondary fc-bg-secondary-light">
+    Blockquote with secondary border and secondary-light background
+  </blockquote>
+
+  <pre><code>&lt;blockquote class=&quot;fc-border-primary-light fc-bg-primary fc-text-white&quot;&gt;
+  Blockquote with primary-light border and primary background
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;fc-border-secondary fc-bg-secondary-light&quot;&gt;
+  Blockquote with secondary border and secondary-light background
+&lt;/blockquote&gt;</code></pre>
+
+</div>
 
 <div id="examples" class="fc-tab-content">
   <h2>Base Styles</h2>
@@ -24,212 +126,212 @@ eleventyNavigation:
 
   <h2>Color Support</h2>
   <h3>Primary</h3>
-  <blockquote class="fc-bq-primary">
+  <blockquote class="fc-border-primary">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-primary">
+  <blockquote class="fc-quote fc-border-primary">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-primary-light fc-primary fc-text-white">
+  <blockquote class="fc-border-primary-light fc-bg-primary fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Light</h4>
-  <blockquote class="fc-bq-primary-light">
+  <blockquote class="fc-border-primary-light">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-primary-light">
+  <blockquote class="fc-quote fc-border-primary-light">
     Add the quote class to add styled quotations <br />
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-bq-primary fc-primary-light">
+  <blockquote class="fc-border-primary fc-bg-primary-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Dark</h4>
-  <blockquote class="fc-bq-primary-dark">
+  <blockquote class="fc-border-primary-dark">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-primary-dark">
+  <blockquote class="fc-quote fc-border-primary-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-primary-light fc-primary-dark fc-text-white">
+  <blockquote class="fc-border-primary-light fc-bg-primary-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h3>Secondary</h3>
-  <blockquote class="fc-bq-secondary">
+  <blockquote class="fc-border-secondary">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-secondary">
+  <blockquote class="fc-quote fc-border-secondary">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-secondary-light fc-secondary fc-text-white">
+  <blockquote class="fc-border-secondary-light fc-bg-secondary fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Light</h4>
-  <blockquote class="fc-bq-secondary-light">
+  <blockquote class="fc-border-secondary-light">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-secondary-light">
+  <blockquote class="fc-quote fc-border-secondary-light">
     Add the quote class to add styled quotations <br />
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-bq-secondary fc-secondary-light">
+  <blockquote class="fc-border-secondary fc-bg-secondary-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Dark</h4>
-  <blockquote class="fc-bq-secondary-dark">
+  <blockquote class="fc-border-secondary-dark">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-secondary-dark">
+  <blockquote class="fc-quote fc-border-secondary-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-secondary-light fc-secondary-dark fc-text-white">
+  <blockquote class="fc-border-secondary-light fc-bg-secondary-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h3>Success</h3>
-  <blockquote class="fc-bq-success">
+  <blockquote class="fc-border-success">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-success">
+  <blockquote class="fc-quote fc-border-success">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-success-light fc-success">
+  <blockquote class="fc-border-success-light fc-bg-success">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Light</h4>
-  <blockquote class="fc-bq-success-light">
+  <blockquote class="fc-border-success-light">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-success-light">
+  <blockquote class="fc-quote fc-border-success-light">
     Add the quote class to add styled quotations <br />
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-bq-success fc-success-light">
+  <blockquote class="fc-border-success fc-bg-success-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Dark</h4>
-  <blockquote class="fc-bq-success-dark">
+  <blockquote class="fc-border-success-dark">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-success-dark">
+  <blockquote class="fc-quote fc-border-success-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-success-light fc-success-dark fc-text-white">
+  <blockquote class="fc-border-success-light fc-bg-success-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h3>Warn</h3>
-  <blockquote class="fc-bq-warn">
+  <blockquote class="fc-border-warn">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-warn">
+  <blockquote class="fc-quote fc-border-warn">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-warn-light fc-warn">
+  <blockquote class="fc-border-warn-light fc-bg-warn">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Light</h4>
-  <blockquote class="fc-bq-warn-light">
+  <blockquote class="fc-border-warn-light">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-warn-light">
+  <blockquote class="fc-quote fc-border-warn-light">
     Add the quote class to add styled quotations <br />
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-bq-warn fc-warn-light">
+  <blockquote class="fc-border-warn fc-bg-warn-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Dark</h4>
-  <blockquote class="fc-bq-warn-dark">
+  <blockquote class="fc-border-warn-dark">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-warn-dark">
+  <blockquote class="fc-quote fc-border-warn-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-warn-light fc-warn-dark fc-text-white">
+  <blockquote class="fc-border-warn-light fc-bg-warn-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h3>Error</h3>
-  <blockquote class="fc-bq-error">
+  <blockquote class="fc-border-error">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-error">
+  <blockquote class="fc-quote fc-border-error">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-error-light fc-error fc-text-white">
+  <blockquote class="fc-border-error-light fc-bg-error fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Light</h4>
-  <blockquote class="fc-bq-error-light">
+  <blockquote class="fc-border-error-light">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-error-light">
+  <blockquote class="fc-quote fc-border-error-light">
     Add the quote class to add styled quotations <br />
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-bq-error fc-error-light">
+  <blockquote class="fc-border-error fc-bg-error-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Dark</h4>
-  <blockquote class="fc-bq-error-dark">
+  <blockquote class="fc-border-error-dark">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-error-dark">
+  <blockquote class="fc-quote fc-border-error-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-error-light fc-error-dark fc-text-white">
+  <blockquote class="fc-border-error-light fc-bg-error-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h3>Muted</h3>
-  <blockquote class="fc-bq-muted">
+  <blockquote class="fc-border-muted">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-muted">
+  <blockquote class="fc-quote fc-border-muted">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-muted-light fc-muted fc-text-white">
+  <blockquote class="fc-border-muted-light fc-bg-muted fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Light</h4>
-  <blockquote class="fc-bq-muted-light">
+  <blockquote class="fc-border-muted-light">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-muted-light">
+  <blockquote class="fc-quote fc-border-muted-light">
     Add the quote class to add styled quotations <br />
     Beware color contrast! You're getting flexibility - light styles are not
     sufficient contrast on a white background
   </blockquote>
-  <blockquote class="fc-bq-muted fc-muted-light">
+  <blockquote class="fc-border-muted fc-bg-muted-light">
     You can also set background-colors, but beware color contrast
   </blockquote>
 
   <h4>Dark</h4>
-  <blockquote class="fc-bq-muted-dark">
+  <blockquote class="fc-border-muted-dark">
     You can use the blockquote tag to separate out text or quotes
   </blockquote>
-  <blockquote class="fc-quote fc-bq-muted-dark">
+  <blockquote class="fc-quote fc-border-muted-dark">
     Add the quote class to add styled quotations
   </blockquote>
-  <blockquote class="fc-bq-muted-light fc-muted-dark fc-text-white">
+  <blockquote class="fc-border-muted-light fc-bg-muted-dark fc-text-white">
     You can also set background-colors, but beware color contrast
   </blockquote>
 </div>

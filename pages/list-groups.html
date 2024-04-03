@@ -3,10 +3,145 @@ layout: documentLayout.html
 title: List Groups
 eleventyNavigation:
   key: ListGroups
-  order: 1
+  title: List Groups
+  order: 3
 ---
 
-<div id="documentation" class="fc-tab-content fc-tab-active">Docs here</div>
+<div id="documentation" class="fc-tab-content fc-tab-active">
+  <h2>Overview</h2>
+  <p>
+    List groups can be created by adding the <code>fc-list-group</code> class to
+    both ordered and unordered <a href="/pages/lists">lists</a>. This adds some
+    basic styling and supports a few extra styling features.
+    <ul>
+      <li>
+        By adding the <code>fc-striped</code> class, alternating rows of the list will have a different background color.
+        The colors of these stripes can be set using the <code>fc-accent-{color}</code> class for all default theme colors.
+      </li>
+      <li>
+        The outlines of the list group can be styled using the <code>fc-border-{color}</code> class, defined in 
+        <a href="/pages/colors">colors</a>.
+      </li>
+      <li>
+        The background and text colors of non-striped rows in the list group can be styled using the 
+        <code>fc-bg-{color}</code> and <code>fc-text-{color}</code>classes, defined in <a href="/pages/colors">colors</a>.
+        These will be overidden by any styling on striped rows when <code>fc-striped</code> is applied.
+      </li>
+    </ul>
+  </p>
+  <ul class="fc-list-group">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group&quot;&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+  &lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+  <ul class="fc-list-group fc-striped">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-striped&quot;&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+  &lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+  <h2>Adding Color</h2>
+  <h3>Outlines</h3>
+  
+  <ul class="fc-list-group fc-border-primary">
+    <li>This list has fc-border-primary</li>
+    <li>This list has fc-border-primary</li>
+    <li>This list has fc-border-primary</li>
+    <li>This list has fc-border-primary</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-border-primary&quot;&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+  <h3>Stripe Colors</h3>
+  
+  <ul class="fc-list-group fc-striped fc-accent-primary-light">
+    <li>This list has fc-striped and fc-accent-primary-light</li>
+    <li>This list has fc-striped and fc-accent-primary-light</li>
+    <li>This list has fc-striped and fc-accent-primary-light</li>
+    <li>This list has fc-striped and fc-accent-primary-light</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-striped fc-accent-primary-light&quot;&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  
+  <p>Striped list groups pair well with adding border colors</p>
+  <ul class="fc-list-group fc-striped fc-accent-secondary fc-border-secondary">
+    <li>This list has fc-striped, fc-accent-secondary, and fc-border-secondary</li>
+    <li>This list has fc-striped, fc-accent-secondary, and fc-border-secondary</li>
+    <li>This list has fc-striped, fc-accent-secondary, and fc-border-secondary</li>
+    <li>This list has fc-striped, fc-accent-secondary, and fc-border-secondary</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-striped fc-accent-secondary fc-border-secondary&quot;&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+  <h3>Background and Text</h3>
+  
+  <ul class="fc-list-group fc-bg-primary-light fc-border-primary">
+    <li>This list has fc-bg-primary-light and fc-border-primary</li>
+    <li>This list has fc-bg-primary-light and fc-border-primary</li>
+    <li>This list has fc-bg-primary-light and fc-border-primary</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-bg-primary-light fc-border-primary&quot;&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  
+  <ul class="fc-list-group fc-bg-primary fc-text-white fc-border-primary-dark">
+    <li>This list has fc-bg-primary, fc-text-white, and fc-border-primary-dark</li>
+    <li>This list has fc-bg-primary, fc-text-white, and fc-border-primary-dark</li>
+    <li>This list has fc-bg-primary, fc-text-white, and fc-border-primary-dark</li>
+    <li>This list has fc-bg-primary, fc-text-white, and fc-border-primary-dark</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-bg-primary fc-text-white fc-border-primary-dark&quot;&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  
+  <ul class="fc-list-group fc-border-primary fc-bg-primary-light fc-striped fc-accent-primary">
+    <li>This list has fc-border-primary, fc-bg-primary-light, fc-striped, and fc-accent-primary</li>
+    <li>This list has fc-border-primary, fc-bg-primary-light, fc-striped, and fc-accent-primary</li>
+    <li>This list has fc-border-primary, fc-bg-primary-light, fc-striped, and fc-accent-primary</li>
+    <li>This list has fc-border-primary, fc-bg-primary-light, fc-striped, and fc-accent-primary</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-border-primary fc-bg-primary-light fc-striped fc-accent-primary&quot;&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+  &lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+  <ul class="fc-list-group fc-border-secondary fc-bg-success-light fc-text-primary-dark fc-striped fc-accent-primary">
+    <li>You can mix and match as much as you want</li>
+    <li>Feel free to get crazy</li>
+    <li>But be prepared for the consequences</li>
+    <li>Because this definitely doesn't look good</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;fc-list-group fc-border-secondary fc-bg-success-light fc-text-primary-dark fc-striped fc-accent-primary&quot;&gt;
+  &lt;li&gt;You can mix and match as much as you want&lt;/li&gt;
+  &lt;li&gt;Feel free to get crazy&lt;/li&gt;
+  &lt;li&gt;But be prepared for the consequences&lt;/li&gt;
+  &lt;li&gt;Because this definitely doesn&#39;t look good&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+</div>
 
 <div id="examples" class="fc-tab-content">
   <h3>Defaults</h3>
@@ -26,7 +161,9 @@ eleventyNavigation:
   </ul>
 
   <h3>Primary</h3>
-  <ul class="fc-list-group fc-border-primary-light fc-striped-primary-light">
+  <ul
+    class="fc-list-group fc-border-primary-light fc-striped fc-accent-primary-light"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -34,7 +171,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-primary fc-striped-primary">
+  <ul class="fc-list-group fc-border-primary fc-striped fc-accent-primary">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -42,7 +179,9 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-primary-dark fc-striped-primary-dark">
+  <ul
+    class="fc-list-group fc-border-primary-dark fc-striped fc-accent-primary-dark"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -52,7 +191,7 @@ eleventyNavigation:
 
   <h3>Secondary</h3>
   <ul
-    class="fc-list-group fc-border-secondary-light fc-striped-secondary-light"
+    class="fc-list-group fc-border-secondary-light fc-striped fc-accent-secondary-light"
   >
     <li>List Item 1</li>
     <li>List Item 2</li>
@@ -61,7 +200,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-secondary fc-striped-secondary">
+  <ul class="fc-list-group fc-border-secondary fc-striped fc-accent-secondary">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -69,7 +208,9 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-secondary-dark fc-striped-secondary-dark">
+  <ul
+    class="fc-list-group fc-border-secondary-dark fc-striped fc-accent-secondary-dark"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -78,7 +219,9 @@ eleventyNavigation:
   </ul>
 
   <h3>Success</h3>
-  <ul class="fc-list-group fc-border-success-light fc-striped-success-light">
+  <ul
+    class="fc-list-group fc-border-success-light fc-striped fc-accent-success-light"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -86,7 +229,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-success fc-striped-success">
+  <ul class="fc-list-group fc-border-success fc-striped fc-accent-success">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -94,7 +237,9 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-success-dark fc-striped-success-dark">
+  <ul
+    class="fc-list-group fc-border-success-dark fc-striped fc-accent-success-dark"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -103,7 +248,9 @@ eleventyNavigation:
   </ul>
 
   <h3>Warn</h3>
-  <ul class="fc-list-group fc-border-warn-light fc-striped-warn-light">
+  <ul
+    class="fc-list-group fc-border-warn-light fc-striped fc-accent-warn-light"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -111,7 +258,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-warn fc-striped-warn">
+  <ul class="fc-list-group fc-border-warn fc-striped fc-accent-warn">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -119,7 +266,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-warn-dark fc-striped-warn-dark">
+  <ul class="fc-list-group fc-border-warn-dark fc-striped fc-accent-warn-dark">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -128,7 +275,9 @@ eleventyNavigation:
   </ul>
 
   <h3>Error</h3>
-  <ul class="fc-list-group fc-border-error-light fc-striped-error-light">
+  <ul
+    class="fc-list-group fc-border-error-light fc-striped fc-accent-error-light"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -136,7 +285,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-error fc-striped-error">
+  <ul class="fc-list-group fc-border-error fc-striped fc-accent-error">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -144,7 +293,9 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-error-dark fc-striped-error-dark">
+  <ul
+    class="fc-list-group fc-border-error-dark fc-striped fc-accent-error-dark"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -153,7 +304,9 @@ eleventyNavigation:
   </ul>
 
   <h3>Muted</h3>
-  <ul class="fc-list-group fc-border-muted-light fc-striped-muted-light">
+  <ul
+    class="fc-list-group fc-border-muted-light fc-striped fc-accent-muted-light"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -161,7 +314,7 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-muted fc-striped-muted">
+  <ul class="fc-list-group fc-border-muted fc-striped fc-accent-muted">
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
@@ -169,7 +322,9 @@ eleventyNavigation:
     <li>List Item 5</li>
   </ul>
 
-  <ul class="fc-list-group fc-border-muted-dark fc-striped-muted-dark">
+  <ul
+    class="fc-list-group fc-border-muted-dark fc-striped fc-accent-muted-dark"
+  >
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
