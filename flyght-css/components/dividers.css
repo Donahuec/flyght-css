@@ -1,5 +1,6 @@
 hr {
-  border-top: var(--fc-border-muted);
+  border-top: var(--fc-border-line);
+  border-color: var(--fc-border-color);
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;

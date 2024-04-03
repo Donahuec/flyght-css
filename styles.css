@@ -20,10 +20,12 @@
       width: 80%;
     }
 
-    color-square {
-      display: inline-block;
-      height: 100px;
-      width: 100px;
+    color-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 50px;
+      width: 200px;
       margin: 0;
       padding: 0;
     }

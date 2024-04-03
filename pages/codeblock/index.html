@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <title>Codeblocks - Flyght CSS</title>
+    <link rel="icon" type="image/x-icon" href="/flyght-css/favicon.ico">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/flyght-css/styles.css">
     <script src="/flyght-css/main.js"></script>
   </head>
   <body>
-    <header class="fc-nav fc-primary fc-text-white fc-nav-sticky">
+    <header class="fc-nav fc-bg-primary fc-text-white fc-nav-sticky">
       <span class="fc-nav-content">
         <span class="fc-nav-container fc-nav-right">
           <img src="/flyght-css/assets/dragon.svg" class="" style="max-height: 50px">
@@ -15,7 +16,7 @@
         </span>
   
         <span class="fc-nav-container">
-          <a href="https://github.com/Donahuec/flyght-css" role="link" class="fc-btn-secondary fc-btn-link">Github</a>
+          <a href="https://github.com/Donahuec/flyght-css" role="link" class="fc-secondary fc-btn-link">Github</a>
         </span>
       </span>
       
@@ -30,34 +31,34 @@
                 <a href="/flyght-css/">Home</a>
               </li>
               <li>
-                <a href="/flyght-css/pages/blockquotes/">Blockquotes</a>
+                <a href="/flyght-css/pages/colors/">Colors</a>
+              </li>
+              <li>
+                <a href="/flyght-css/pages/typography/">Typography</a>
               </li>
               <li>
                 <a href="/flyght-css/pages/buttons/">Buttons</a>
               </li>
               <li>
-                <a href="/flyght-css/pages/cards/">Cards</a>
+                <a href="/flyght-css/pages/blockquotes/">Blockquotes</a>
               </li>
               <li>
                 <a href="/flyght-css/pages/codeblock/" class="fc-link-current" aria-current="page">Codeblocks</a>
               </li>
               <li>
-                <a href="/flyght-css/pages/colors/">Colors</a>
-              </li>
-              <li>
-                <a href="/flyght-css/pages/images/">Images</a>
-              </li>
-              <li>
-                <a href="/flyght-css/pages/list-groups/">ListGroups</a>
+                <a href="/flyght-css/pages/list-groups/">List Groups</a>
               </li>
               <li>
                 <a href="/flyght-css/pages/lists/">Lists</a>
               </li>
               <li>
-                <a href="/flyght-css/pages/misc/">Misc</a>
+                <a href="/flyght-css/pages/cards/">Cards</a>
               </li>
               <li>
-                <a href="/flyght-css/pages/typography/">Typography</a>
+                <a href="/flyght-css/pages/images/">Images</a>
+              </li>
+              <li>
+                <a href="/flyght-css/pages/misc/">Misc</a>
               </li>
               <li>
                 <a href="/flyght-css/pages/util/">Utilities</a>
@@ -71,7 +72,7 @@
           <div class="fc-card-title"><h1>Codeblocks</h1></div>
           <div class="fc-card-content">
             <div>
-<div class="fc-tab-group fc-tab-primary">
+<div class="fc-tab-group fc-primary">
   <button class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation')">
     Documentation
   </button>
@@ -81,11 +82,96 @@
 </div>
 
 
-<div id="documentation" class="fc-tab-content fc-tab-active">Docs here</div>
+<div id="documentation" class="fc-tab-content fc-tab-active">
+  <h2>Overview</h2>
+  <p>
+    Code Blocks are defined using the <code>&lt;pre&gt;</code> and
+    <code>&lt;code&gt;</code> elements. Using a
+    <code>&lt;code&gt;</code> element alone will result in an inline code block.
+    Wrapping it in a <code>&lt;pre&gt;</code>
+    block will result in a separated block.
+  </p>
+
+  <p>Code blocks have a few built in features:
+    </p><ol>
+      <li>
+        Setting the background and text colors can be done with the <code>fc-bg-{color}</code> and <code>fc-text-{color}</code>
+        classes defined in <a href="/flyght-css/pages/colors">colors</a>.</li>
+      
+      <li>
+        By adding the class <code>fc-border-left</code> a decorative left border can be added.
+        This border can be colored using the <code>fc-border-{color}</code> class, defined in <a href="/flyght-css/pages/colors">colors</a>.
+      </li>
+    </ol>
+  <p></p>
+  <pre><code>&lt;p&gt;
+  This &lt;code&gt;code block&lt;/code&gt; would be inline
+&lt;/p&gt;
+&lt;pre class=&quot;fc-bg-primary-light&quot;&gt;&lt;code&gt;
+  Whereas this would be it&#39;s own block
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+  <h2>Background Colors</h2>
+  <p>
+    All of the default colors are supported. It is important to make sure you manage color contrast with text colors if using darker background colors.
+  </p>
+  <pre class="fc-bg-primary-light"><code>&lt;pre class=&quot;fc-bg-primary-light&quot;&gt;
+  &lt;code&gt;
+    This code block has a primary-light background
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+  <pre class="fc-bg-primary-dark fc-text-white"><code>&lt;pre class=&quot;fc-bg-primary-dark fc-text-white&quot;&gt;
+  &lt;code&gt;
+    This code block has a primary-dark background and white text
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+  <pre class="fc-bg-warn-light"><code>&lt;pre class=&quot;fc-bg-warn-light&quot;&gt;
+  &lt;code&gt;
+    This code block has a warn-light background
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+  <pre class="fc-bg-secondary fc-text-white"><code>&lt;pre class=&quot;fc-bg-secondary fc-text-white&quot;&gt;
+  &lt;code&gt;
+    This code block has a secondary background and white text
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+
+  <h2>Border Colors</h2>
+  <p>
+    With The class <code>fc-border-left</code> a decorative left border will be added to the code block. 
+    This can be styled with the <code>fc-border-{color}</code> class, defined in <a href="/flyght-css/pages/colors">colors</a>.
+    Borders can be combined with background colors, as well as mixed and matched.
+  </p>
+
+  <pre class="fc-border-left fc-border-secondary"><code>&lt;pre class=&quot;fc-border-left fc-border-secondary&quot;&gt;
+  &lt;code&gt;
+    This code block has a secondary border and no background set
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+  <pre class="fc-bg-primary-light fc-border-left fc-border-primary"><code>&lt;pre class=&quot;fc-bg-primary-light fc-border-left fc-border-primary&quot;&gt;
+  &lt;code&gt;
+    This code block has a primary border and primary-light background
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+  <pre class="fc-bg-warn-light fc-border-left fc-border-error"><code>&lt;pre class=&quot;fc-bg-warn-light fc-border-left fc-border-error&quot;&gt;
+  &lt;code&gt;
+    This code block has an error border and and warn-light background
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+
+</div>
 
 <div id="examples" class="fc-tab-content">
-  <pre><code>
-    Sample Text in a 
+  
+  <p>
+    Inline code with Inline code with <code>c o d e</code>
+  </p>
+  <p>
+    Inline code blocks allow the same color styles like <code class="fc-bg-primary-light">fc-bg-primary-light</code>
+    and <code class="fc-border-left">fc-border-left</code>.
+  </p>
+
+  <pre><code>Sample Text in a 
                       C o d e b l o c k 
 </code></pre>
 
@@ -95,80 +181,76 @@
   <pre class="fc-border-left"><code>Add a border to a
                         C o d e b l o c k</code></pre>
 
-  <br>
-  <br>
-  Inline code with Inline code with <code>c o d e</code>
-
-  <pre class="fc-primary-light"><code>You can set a color in a 
+  <pre class="fc-bg-primary-light"><code>You can set a color in a 
 C o d e b l o c k</code></pre>
 
-  <pre class="fc-primary-light fc-border-left fc-border-primary"><code>You can set a color in a 
+  <pre class="fc-bg-primary-light fc-border-left fc-border-primary"><code>You can set a color in a 
   C o d e b l o c k</code></pre>
 
-  <pre class="fc-primary-light fc-border-left fc-border-primary-dark"><code>You can set a color in a 
+  <pre class="fc-bg-primary-light fc-border-left fc-border-primary-dark"><code>You can set a color in a 
   C o d e b l o c k</code></pre>
 
-  <pre class="fc-primary-dark fc-border-left fc-border-primary-light fc-text-white"><code>You can set a color in a 
+  <pre class="fc-bg-primary-dark fc-border-left fc-border-primary-light fc-text-white"><code>You can set a color in a 
   C o d e b l o c k</code></pre>
 
-  <pre class="fc-secondary-light"><code>You can set a color in a 
+  <pre class="fc-bg-secondary-light"><code>You can set a color in a 
         C o d e b l o c k</code></pre>
 
-  <pre class="fc-secondary-light fc-border-left fc-border-secondary"><code>You can set a color in a 
+  <pre class="fc-bg-secondary-light fc-border-left fc-border-secondary"><code>You can set a color in a 
           C o d e b l o c k</code></pre>
 
-  <pre class="fc-secondary-light fc-border-left fc-border-secondary-dark"><code>You can set a color in a 
+  <pre class="fc-bg-secondary-light fc-border-left fc-border-secondary-dark"><code>You can set a color in a 
           C o d e b l o c k</code></pre>
 
-  <pre class="fc-secondary-dark fc-border-left fc-border-secondary-light fc-text-white"><code>You can set a color in a 
+  <pre class="fc-bg-secondary-dark fc-border-left fc-border-secondary-light fc-text-white"><code>You can set a color in a 
           C o d e b l o c k</code></pre>
 
-  <pre class="fc-success-light"><code>You can set a color in a 
+  <pre class="fc-bg-success-light"><code>You can set a color in a 
             C o d e b l o c k</code></pre>
 
-  <pre class="fc-success-light fc-border-left fc-border-success"><code>You can set a color in a 
+  <pre class="fc-bg-success-light fc-border-left fc-border-success"><code>You can set a color in a 
               C o d e b l o c k</code></pre>
 
-  <pre class="fc-success-light fc-border-left fc-border-success-dark"><code>You can set a color in a 
+  <pre class="fc-bg-success-light fc-border-left fc-border-success-dark"><code>You can set a color in a 
               C o d e b l o c k</code></pre>
 
-  <pre class="fc-success-dark fc-border-left fc-border-success-light fc-text-white"><code>You can set a color in a 
+  <pre class="fc-bg-success-dark fc-border-left fc-border-success-light fc-text-white"><code>You can set a color in a 
               C o d e b l o c k</code></pre>
 
-  <pre class="fc-warn-light"><code>You can set a color in a 
+  <pre class="fc-bg-warn-light"><code>You can set a color in a 
                 C o d e b l o c k</code></pre>
 
-  <pre class="fc-warn-light fc-border-left fc-border-warn"><code>You can set a color in a 
+  <pre class="fc-bg-warn-light fc-border-left fc-border-warn"><code>You can set a color in a 
                   C o d e b l o c k</code></pre>
 
-  <pre class="fc-warn-light fc-border-left fc-border-warn-dark"><code>You can set a color in a 
+  <pre class="fc-bg-warn-light fc-border-left fc-border-warn-dark"><code>You can set a color in a 
                   C o d e b l o c k</code></pre>
 
-  <pre class="fc-warn-dark fc-border-left fc-border-warn-light fc-text-white"><code>You can set a color in a 
+  <pre class="fc-bg-warn-dark fc-border-left fc-border-warn-light fc-text-white"><code>You can set a color in a 
                   C o d e b l o c k</code></pre>
 
-  <pre class="fc-error-light"><code>You can set a color in a 
+  <pre class="fc-bg-error-light"><code>You can set a color in a 
                     C o d e b l o c k</code></pre>
 
-  <pre class="fc-error-light fc-border-left fc-border-error"><code>You can set a color in a 
+  <pre class="fc-bg-error-light fc-border-left fc-border-error"><code>You can set a color in a 
                       C o d e b l o c k</code></pre>
 
-  <pre class="fc-error-light fc-border-left fc-border-error-dark"><code>You can set a color in a 
+  <pre class="fc-bg-error-light fc-border-left fc-border-error-dark"><code>You can set a color in a 
                       C o d e b l o c k</code></pre>
 
-  <pre class="fc-error-dark fc-border-left fc-border-error-light fc-text-white"><code>You can set a color in a 
+  <pre class="fc-bg-error-dark fc-border-left fc-border-error-light fc-text-white"><code>You can set a color in a 
                       C o d e b l o c k</code></pre>
 
-  <pre class="fc-muted-light"><code>You can set a color in a 
+  <pre class="fc-bg-muted-light"><code>You can set a color in a 
                         C o d e b l o c k</code></pre>
 
-  <pre class="fc-muted-light fc-border-left fc-border-muted"><code>You can set a color in a 
+  <pre class="fc-bg-muted-light fc-border-left fc-border-muted"><code>You can set a color in a 
                           C o d e b l o c k</code></pre>
 
-  <pre class="fc-muted-light fc-border-left fc-border-muted-dark"><code>You can set a color in a 
+  <pre class="fc-bg-muted-light fc-border-left fc-border-muted-dark"><code>You can set a color in a 
                           C o d e b l o c k</code></pre>
 
-  <pre class="fc-muted-dark fc-border-left fc-border-muted-light fc-text-white"><code>You can set a color in a 
+  <pre class="fc-bg-muted-dark fc-border-left fc-border-muted-light fc-text-white"><code>You can set a color in a 
                           C o d e b l o c k</code></pre>
 </div>
 
