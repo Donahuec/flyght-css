@@ -13,7 +13,7 @@ pre,
 
 pre {
   padding: var(--fc-padding-default);
-  margin: 1em;
+  margin: var(--fc-padding-equal-large);
 }
 
 :not(pre) > code {

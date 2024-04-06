@@ -26,10 +26,12 @@
   }
 
   @layer spacing {
-    --fc-padding-vertical: 0.5em;
-    --fc-padding-horizontal: 1em;
+    --fc-padding-vertical: 8px;
+    --fc-padding-horizontal: 16px;
     --fc-padding-default: var(--fc-padding-vertical)
       var(--fc-padding-horizontal);
+    --fc-padding-equal-large: var(--fc-padding-horizontal);
+    --fc-padding-equal-small: var(--fc-padding-vertical);
   }
 
   @layer text {

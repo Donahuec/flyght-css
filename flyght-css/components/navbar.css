@@ -4,7 +4,7 @@
   .fc-nav-content {
     padding: 0 10%;
     overflow: hidden;
-    height: 4em;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .fc-nav-title {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .fc-nav-sticky {
