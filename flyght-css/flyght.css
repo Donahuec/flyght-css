@@ -1,6 +1,6 @@
-@layer vendor, typography, components, utils, images, colors;
+@layer vendor, defaults, typography, components, utils, images, colors;
 
-@import "theme/flyght-defaults.css";
+@import "theme/flyght-defaults.css" layer(defaults);
 @import "theme/flyght-theme.css";
 
 @import "vendor/normalize.css" layer(vendor);
@@ -8,5 +8,5 @@
 @import "base/typography/lists.css" layer(typography);
 @import "base/colors.css" layer(colors);
 @import "base/util.css" layer(utils);
-@import "base/images.css" layer(utiimagesls);
+@import "base/images.css" layer(images);
 @import "components/components.css" layer(components);

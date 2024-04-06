@@ -1,6 +1,10 @@
 .fc-nav {
   display: inline-block;
   width: 100%;
+  box-shadow: var(--fc-shadow-elevation-medium);
+  &.fc-flat {
+    box-shadow: none;
+  }
   .fc-nav-content {
     padding: 0 10%;
     overflow: hidden;

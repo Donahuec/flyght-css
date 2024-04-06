@@ -11,7 +11,7 @@ a.fc-btn-link {
     border: none;
     border-radius: var(--fc-border-radius);
     color: var(--fc-color-text);
-    box-shadow: var(--fc-box-shadow);
+    box-shadow: var(--fc-shadow-elevation-low);
     margin: 0.25em;
     cursor: pointer;
     outline-offset: 2px;

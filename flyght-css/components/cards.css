@@ -1,6 +1,5 @@
 .fc-card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px var(--fc-muted-light), 0 1px 2px var(--fc-muted-light);
+  box-shadow: var(--fc-shadow-elevation-medium);
   border: var(--fc-border-line);
   border-color: var(--fc-border-color);
   border-radius: var(--fc-border-radius);
