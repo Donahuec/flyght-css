@@ -4,12 +4,17 @@ layout: layout.html
 
 <div class="fc-tab-group fc-primary fc-card-tabs">
   <button
+    name="documentation-card"
     class="fc-tab-btn fc-tab-active"
-    onclick="opentab(event, 'documentation')"
+    onclick="opentab(event, 'documentation', 'documentation-card')"
   >
     Documentation
   </button>
-  <button class="fc-tab-btn" onclick="opentab(event, 'examples')">
+  <button
+    name="documentation-card"
+    class="fc-tab-btn"
+    onclick="opentab(event, 'examples', 'documentation-card')"
+  >
     Examples
   </button>
 </div>

@@ -5,7 +5,7 @@
   border-color: var(--fc-border-color);
   border-radius: var(--fc-border-radius);
   background-clip: padding-box;
-  margin: 0.5em;
+  margin: var(--fc-padding-default);
   overflow: auto;
   background-color: var(--white);
   display: flex;
@@ -13,21 +13,15 @@
   justify-content: flex-start;
   .fc-card-content {
     padding: 1em;
-    flex: 3 1 auto;
   }
-  .fc-card-tabs {
-    flex: 0 1 auto;
-    padding: 0.3em 2em 0 2em;
-    margin-bottom: 0;
-  }
+  .fc-card-tabs,
   .fc-card-title {
     padding: 0.3em 2em 0 2em;
+    flex: 0 1 auto;
   }
   .fc-card-footer {
-    padding: 0.3em 2em 0.3em 2em;
-  }
-  .fc-card {
-    height: auto;
+    padding: 0.3em 2em;
+    flex: 0 1 auto;
   }
   .fc-card-image {
     display: flex;
