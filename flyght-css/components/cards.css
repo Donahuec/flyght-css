@@ -6,57 +6,44 @@
   border-radius: var(--fc-border-radius);
   background-clip: padding-box;
   margin: 0.5em;
-  overflow: hidden;
+  overflow: auto;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   .fc-card-content {
     padding: 1em;
+    flex: 3 1 auto;
+  }
+  .fc-card-tabs {
+    flex: 0 1 auto;
+    padding: 0.3em 2em 0 2em;
+    margin-bottom: 0;
   }
   .fc-card-title {
     padding: 0.3em 2em 0 2em;
   }
   .fc-card-footer {
     padding: 0.3em 2em 0.3em 2em;
-    margin-block-start: auto;
   }
   .fc-card {
     height: auto;
   }
-  img.fc-card-image,
-  .fc-card-image img {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+  .fc-card-image {
+    display: flex;
+    flex-direction: column;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
   }
-  & :not(:first-child) {
-    border-top: var(--fc-border-line);
+  & > :not(:last-child) {
+    border-bottom: var(--fc-border-line);
     border-color: var(--fc-border-color);
   }
   &.fc-card-flat {
     box-shadow: none;
   }
-}
-
-/* On mouse-over, add a deeper shadow */
-
-.ofc-card.fc-card-hover:hover {
-  transition: 0.3s;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-}
-
-.ofc-card .fc-card-image .fc-card-title {
-  position: absolute;
-  border: none;
-  padding: 0 1em 0 1em;
-  bottom: 0.25em;
-  left: 0;
-}
-
-.foc-card .fc-card-image .fc-card-title.title-background {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: block;
-  right: 0;
-  color: var(--white);
 }

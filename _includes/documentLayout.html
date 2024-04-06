@@ -2,7 +2,7 @@
 layout: layout.html
 ---
 
-<div class="fc-tab-group fc-primary">
+<div class="fc-tab-group fc-primary fc-card-tabs">
   <button
     class="fc-tab-btn fc-tab-active"
     onclick="opentab(event, 'documentation')"
@@ -13,5 +13,6 @@ layout: layout.html
     Examples
   </button>
 </div>
-
-{{ content }}
+<div class="fc-card-content">
+  <div>{{ content }}</div>
+</div>

@@ -14,13 +14,68 @@ eleventyNavigation:
   }
 </style>
 
-<div id="examples" class="fc-tab-content">
-  Documentation in progress - restructuring of how cards work is planned
+<div id="documentation" class="fc-tab-content fc-tab-active">
+  <h2>Overview</h2>
+  <p></p>
+  <h2>Card Sections</h2>
+  <p>
+    <ul>
+      <li>
+        Title
+      </li>
+      <li>
+        Content
+      </li>
+      <li>
+        Image
+      </li>
+      <li>
+        Tabs
+      </li>
+      <li>
+        Footer
+      </li>
+    </ul>
+  </p>
+  <h2>Customizing Cards</h2>
+  <p>
+    <ul>
+      <li>
+        Flat
+      </li>
+      <li>
+        Border Color
+      </li>
+      <li>
+        Background color
+      </li>
+    </ul>
+  </p>
 </div>
 
-<div id="documentation" class="fc-tab-content fc-tab-active">
+<div id="examples" class="fc-tab-content">
   <div class="grid">
-    <div class="fc-card fc-card-hover">
+    <div class="fc-card">
+      <div class="fc-card-content">
+        <p>
+          Lay on arms while you're using the keyboard make plans to dominate
+          world and then take a nap yet decide to want nothing to do with my
+          owner today meow to be let in, scratch at the door then walk away,
+          spend all night ensuring people don't sleep sleep all day, for man
+          running from cops stops to pet cats, goes to jail.
+        </p>
+      </div>
+    </div>
+
+    <div class="fc-card">
+      <div class="fc-card-title">
+        <h4>Title</h4>
+      </div>
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button class="fc-tab-btn fc-tab-active">Tab One</button>
+        <button class="fc-tab-btn">Tab Two</button>
+        <button class="fc-tab-btn">Tab Three</button>
+      </div>
       <div class="fc-card-content">
         <p>
           Lay on arms while you're using the keyboard make plans to dominate
@@ -71,9 +126,9 @@ eleventyNavigation:
     </div>
 
     <div class="fc-card">
-      <span class="fc-card-image">
+      <div class="fc-card-image">
         <img src="/assets/Moose.jpg " alt="picture of Moose the cat" />
-      </span>
+      </div>
       <div class="fc-card-title">
         <h4>Moose</h4>
       </div>
@@ -90,9 +145,6 @@ eleventyNavigation:
     </div>
 
     <div class="fc-card">
-      <div class="fc-card-title">
-        <h4>Moose</h4>
-      </div>
       <span class="fc-card-image">
         <img src="/assets/Moose.jpg " alt="picture of Moose the cat" />
       </span>
@@ -112,12 +164,15 @@ eleventyNavigation:
     </div>
 
     <div class="fc-card">
-      <span class="fc-card-image">
+      <div class="fc-card-title">
+        <h4>Moose</h4>
+      </div>
+      <figure class="fc-card-image">
         <img src="/assets/Moose.jpg " alt="picture of Moose the cat" />
-        <div class="fc-card-title title-background">
-          <h4>Moose</h4>
-        </div>
-      </span>
+        <figcaption class="fc-figure-caption fc-text-center">
+          Picture of Moose the Cat
+        </figcaption>
+      </figure>
 
       <div class="fc-card-content">
         <p>

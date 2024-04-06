@@ -1,4 +1,4 @@
-@layer vendor, typography, components, utils, colors;
+@layer vendor, typography, components, utils, images, colors;
 
 @import "theme/flyght-defaults.css";
 @import "theme/flyght-theme.css";
@@ -8,4 +8,5 @@
 @import "base/typography/lists.css" layer(typography);
 @import "base/colors.css" layer(colors);
 @import "base/util.css" layer(utils);
+@import "base/images.css" layer(utiimagesls);
 @import "components/components.css" layer(components);
