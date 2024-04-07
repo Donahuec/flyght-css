@@ -13,11 +13,12 @@
     border-color: var(--fc-border-color);
     margin-bottom: 1em;
     display: flex;
+    gap: var(--fc-padding-horizontal);
     &.fc-card-tabs {
       margin: 1em 0 0 0;
     }
     .fc-tab-btn {
-      flex: 1 1 auto;
+      /* flex: 1 1 auto; */
       background-color: unset;
       color: var(--black);
       box-shadow: none;

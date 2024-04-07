@@ -65,7 +65,7 @@ eleventyNavigation:
       <div class="fc-card-content">
         <div name="title-docs" id="title-description" class="fc-tab-content fc-tab-active">
           <p>
-            A sectioned meant to hold a title for the card. Usually paired with a header tag.
+            A section meant to hold a title for the card. Usually paired with a header tag.
           </p>
         </div>
         <div name="title-docs" id="title-html" class="fc-tab-content">
@@ -91,11 +91,15 @@ eleventyNavigation:
       <div class="fc-card-content">
         <div name="content-docs" id="content-description" class="fc-tab-content fc-tab-active">
           <p>
-            A sectioned meant to hold generic content. Generally the bulk of card content will be here. You can put whatever you want in content blocks.
+            A section for generic content. Generally the bulk of card content will be here. You can put whatever you want in content blocks.
           </p>
         </div>
         <div name="content-docs" id="content-html" class="fc-tab-content">
-          <pre><code>-</code></pre>
+          <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+  &lt;div class=&quot;fc-card-content&quot;&gt;
+    You can put whatever you want here.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
         </div>
       </div>
       
@@ -110,7 +114,7 @@ eleventyNavigation:
       <div class="fc-card-content">
         <div name="image-docs" id="image-description" class="fc-tab-content fc-tab-active">
           <p>
-            A sectioned meant to hold a title for the card. Usually paired with a header tag.
+            A section for including images in a card. Used with <code>img</code> or <code>figure</code> elements.
           </p>
         </div>
         <div name="image-docs" id="image-html" class="fc-tab-content">
@@ -129,7 +133,7 @@ eleventyNavigation:
       <div class="fc-card-content">
         <div name="tabs-docs" id="tabs-description" class="fc-tab-content fc-tab-active">
           <p>
-            A sectioned meant to hold a title for the card. Usually paired with a header tag.
+            A section for including <a href="/pages/tabs">tabs</a> in your card. Pair the tab content with another card section.
           </p>
         </div>
         <div name="tabs-docs" id="tabs-html" class="fc-tab-content">
@@ -148,7 +152,9 @@ eleventyNavigation:
       <div class="fc-card-content">
         <div name="footer-docs" id="footer-description" class="fc-tab-content fc-tab-active">
           <p>
-            A sectioned meant to hold a title for the card. Usually paired with a header tag.
+            A section for including a footer. Good for additional notes or action buttons. 
+            Will automatically pull towards the bottom of it's available space.
+            Designed to be used as the last element in the card.
           </p>
         </div>
         <div name="footer-docs" id="footer-html" class="fc-tab-content">
