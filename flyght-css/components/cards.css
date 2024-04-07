@@ -36,7 +36,10 @@
     border-bottom: var(--fc-border-line);
     border-color: var(--fc-border-color);
   }
-  &.fc-card-flat {
+  & > :last-child:not(.fc-card-footer) {
+    flex-grow: 1;
+  }
+  &.fc-flat {
     box-shadow: none;
   }
 }
