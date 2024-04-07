@@ -4,14 +4,14 @@
   border-color: var(--fc-border-color);
   border-radius: var(--fc-border-radius);
   background-clip: padding-box;
-  margin: var(--fc-padding-default);
+  margin: var(--fc-spacing-default);
   overflow: auto;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   .fc-card-content {
-    padding: var(--fc-padding-default);
+    padding: var(--fc-spacing-default);
   }
   .fc-card-tabs,
   .fc-card-title {
@@ -19,7 +19,7 @@
     flex: 0 1 auto;
   }
   .fc-card-footer {
-    padding: var(--fc-padding-default);
+    padding: var(--fc-spacing-default);
     flex: 0 1 auto;
   }
   .fc-card-image {

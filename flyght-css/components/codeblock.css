@@ -12,8 +12,8 @@ pre,
 }
 
 pre {
-  padding: var(--fc-padding-default);
-  margin: var(--fc-padding-equal-large);
+  padding: var(--fc-spacing-default);
+  margin: var(--fc-spacing-equal-large);
 }
 
 :not(pre) > code {

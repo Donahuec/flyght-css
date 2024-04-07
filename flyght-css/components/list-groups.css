@@ -8,7 +8,7 @@ ol {
     border-radius: var(--fc-border-radius);
 
     li {
-      padding: var(--fc-padding-default);
+      padding: var(--fc-spacing-default);
       border-bottom: var(--fc-border-line);
       border-color: inherit;
     }

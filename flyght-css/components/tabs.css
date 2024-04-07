@@ -1,6 +1,6 @@
 .fc-tab-content {
   display: none;
-  padding: var(--fc-padding-default);
+  padding: var(--fc-spacing-default);
 
   &.fc-tab-active {
     display: block;
@@ -13,12 +13,12 @@
     border-color: var(--fc-border-color);
     margin-bottom: 1em;
     display: flex;
-    gap: var(--fc-padding-horizontal);
+    gap: var(--fc-gap-small);
     &.fc-card-tabs {
       margin: 1em 0 0 0;
     }
     .fc-tab-btn {
-      /* flex: 1 1 auto; */
+      flex: 1 1 0;
       background-color: unset;
       color: var(--black);
       box-shadow: none;
@@ -26,8 +26,8 @@
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       margin: 0;
-      padding: calc(var(--fc-padding-vertical) + var(--fc-border-width-accent))
-        var(--fc-padding-horizontal);
+      padding: calc(var(--fc-spacing-vertical) + var(--fc-border-width-accent))
+        var(--fc-spacing-horizontal);
       outline-offset: -2px;
 
       &:hover,
@@ -47,7 +47,7 @@
 
       &.fc-tab-active {
         padding-bottom: calc(
-          var(--fc-padding-vertical) + var(--fc-border-width)
+          var(--fc-spacing-vertical) + var(--fc-border-width)
         );
         border-bottom-width: var(--fc-border-width-accent);
       }

@@ -28,12 +28,16 @@
 
 @layer spacing {
   :root {
-    --fc-padding-vertical: 8px;
-    --fc-padding-horizontal: 16px;
-    --fc-padding-default: var(--fc-padding-vertical)
-      var(--fc-padding-horizontal);
-    --fc-padding-equal-large: var(--fc-padding-horizontal);
-    --fc-padding-equal-small: var(--fc-padding-vertical);
+    --fc-gap-small: 4px;
+    --fc-gap-medium: 8px;
+    --fc-gap-large: 16px;
+
+    --fc-spacing-vertical: var(--fc-gap-medium);
+    --fc-spacing-horizontal: var(--fc-gap-large);
+    --fc-spacing-default: var(--fc-spacing-vertical)
+      var(--fc-spacing-horizontal);
+    --fc-spacing-equal-large: var(--fc-spacing-horizontal);
+    --fc-spacing-equal-small: var(--fc-spacing-vertical);
   }
 }
 

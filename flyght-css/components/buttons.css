@@ -7,7 +7,7 @@ input[type="reset"],
 a.fc-btn-link {
   @layer base {
     box-sizing: border-box;
-    padding: var(--fc-padding-default);
+    padding: var(--fc-spacing-default);
     border: none;
     border-radius: var(--fc-border-radius);
     color: var(--fc-color-text);
