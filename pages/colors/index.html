@@ -52,6 +52,9 @@
                 <a href="/flyght-css/pages/lists/">Lists</a>
               </li>
               <li>
+                <a href="/flyght-css/pages/tabs/">Tabs</a>
+              </li>
+              <li>
                 <a href="/flyght-css/pages/cards/">Cards</a>
               </li>
               <li>
@@ -70,19 +73,18 @@
       <div class="content">
         <div class="fc-card">
           <div class="fc-card-title"><h1>Colors</h1></div>
-          <div class="fc-card-content">
-            <div>
-<div class="fc-tab-group fc-primary">
-  <button class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation')">
+          
+<div class="fc-tab-group fc-primary fc-card-tabs">
+  <button name="documentation-card" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation', 'documentation-card')">
     Documentation
   </button>
-  <button class="fc-tab-btn" onclick="opentab(event, 'examples')">
+  <button name="documentation-card" class="fc-tab-btn" onclick="opentab(event, 'examples', 'documentation-card')">
     Examples
   </button>
 </div>
-
-
-<div id="documentation" class="fc-tab-content fc-tab-active">
+<div class="fc-card-content">
+  <div>
+<div id="documentation" name="documentation-card" class="fc-tab-content fc-tab-active">
   <h2>Overview</h2>
   <p>
     There are six color groups supported - primary, secondary, success, warn,
@@ -270,7 +272,7 @@ and the <code>fc-border-left</code> attributes of <a href="/flyght-css/pages/blo
 </div>
 
 
-<div id="examples" class="fc-tab-content">
+<div id="examples" name="documentation-card" class="fc-tab-content">
   <p>
     No Color
     <br>
@@ -301,9 +303,9 @@ and the <code>fc-border-left</code> attributes of <a href="/flyght-css/pages/blo
 </div>
 
 
-
 </div>
-          </div>
+</div>
+
         </div>
       
     </main>

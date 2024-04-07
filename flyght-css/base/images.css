@@ -1,0 +1,8 @@
+figure {
+  margin: 0;
+  .fc-figure-caption {
+    padding: 0 var(--fc-spacing-horizontal) var(--fc-spacing-vertical)
+      var(--fc-spacing-horizontal);
+    font-size: 1rem;
+  }
+}

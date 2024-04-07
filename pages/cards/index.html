@@ -52,6 +52,9 @@
                 <a href="/flyght-css/pages/lists/">Lists</a>
               </li>
               <li>
+                <a href="/flyght-css/pages/tabs/">Tabs</a>
+              </li>
+              <li>
                 <a href="/flyght-css/pages/cards/" class="fc-link-current" aria-current="page">Cards</a>
               </li>
               <li>
@@ -70,33 +73,252 @@
       <div class="content">
         <div class="fc-card">
           <div class="fc-card-title"><h1>Cards</h1></div>
-          <div class="fc-card-content">
-            <div>
-<div class="fc-tab-group fc-primary">
-  <button class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation')">
+          
+<div class="fc-tab-group fc-primary fc-card-tabs">
+  <button name="documentation-card" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation', 'documentation-card')">
     Documentation
   </button>
-  <button class="fc-tab-btn" onclick="opentab(event, 'examples')">
+  <button name="documentation-card" class="fc-tab-btn" onclick="opentab(event, 'examples', 'documentation-card')">
     Examples
   </button>
 </div>
-
-
+<div class="fc-card-content">
+  <div>
 <style>
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 1rem;
+  }
+  .grid-wide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     grid-gap: 1rem;
   }
 </style>
 
-<div id="documentation" class="fc-tab-content fc-tab-active">
-  Documentation in progress - restructuring of how cards work is planned
+<div id="documentation" name="documentation-card" class="fc-tab-content fc-tab-active">
+  <h2>Overview</h2>
+  <p>
+    Cards are visual containers that can help build structured layouts and neatly contain information. 
+    They can be defined by applying the class <code>fc-card</code> to the desired element.
+    Currently, cards are implemented to allow the following sub-sections:
+    
+    </p><ul>
+      <li>
+        Title: <code>fc-card-title</code>
+      </li>
+      <li>
+        Content: <code>fc-card-content</code>
+      </li>
+      <li>
+        Image: <code>fc-card-image</code>
+      </li>
+      <li>
+        Tabs: <code>fc-card-tabs</code>
+      </li>
+      <li>
+        Footer: <code>fc-card-footer</code>
+      </li>
+    </ul>
+  <p></p>
+  
+  <br>
+  <div class="grid">
+    <div class="fc-card">
+      <div class="fc-card-title"><h4>This is a Generic Card</h4></div>
+      <div class="fc-card-content">You can put whatever you want here.</div>
+    </div>
+    
+    <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+  &lt;div class=&quot;fc-card-title&quot;&gt;
+    &lt;h4&gt;
+      This is a Generic Card
+    &lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;fc-card-content&quot;&gt;
+    You can put whatever you want here.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+
+
+  <h2>Card Sections</h2>
+  <div class="grid-wide">
+    <div class="fc-card">
+      <div class="fc-card-title"><h4>Title</h4></div>
+      <div class="fc-card-content fc-text-center"><code>class="fc-card-title"</code></div>
+      
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button name="title-docs" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'title-description', 'title-docs')">About</button>
+        <button name="title-docs" class="fc-tab-btn" onclick="opentab(event, 'title-html', 'title-docs')">Html</button>
+      </div>
+      <div class="fc-card-content">
+        <div name="title-docs" id="title-description" class="fc-tab-content fc-tab-active">
+          <p>
+            A section meant to hold a title for the card. Usually paired with a header tag.
+          </p>
+        </div>
+        <div name="title-docs" id="title-html" class="fc-tab-content">
+          <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+  &lt;div class=&quot;fc-card-title&quot;&gt;
+    &lt;h4&gt;
+      This is Title
+    &lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      
+    </div>
+    <div class="fc-card">
+      <div class="fc-card-title"><h4>Content</h4></div>
+      <div class="fc-card-content fc-text-center"><code>class="fc-card-content"</code></div>
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button name="content-docs" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'content-description', 'content-docs')">About</button>
+        <button name="content-docs" class="fc-tab-btn" onclick="opentab(event, 'content-html', 'content-docs')">Html</button>
+      </div>
+      
+      <div class="fc-card-content">
+        <div name="content-docs" id="content-description" class="fc-tab-content fc-tab-active">
+          <p>
+            A section for generic content. Generally the bulk of card content will be here. You can put whatever you want in content blocks.
+          </p>
+        </div>
+        <div name="content-docs" id="content-html" class="fc-tab-content">
+          <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+  &lt;div class=&quot;fc-card-content&quot;&gt;
+    You can put whatever you want here.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      
+    </div>
+    <div class="fc-card">
+      <div class="fc-card-title"><h4>Image</h4></div>
+      <div class="fc-card-content fc-text-center"><code>class="fc-card-image"</code></div>
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button name="image-docs" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'image-description', 'image-docs')">About</button>
+        <button name="image-docs" class="fc-tab-btn" onclick="opentab(event, 'image-html', 'image-docs')">Html</button>
+      </div>
+      <div class="fc-card-content">
+        <div name="image-docs" id="image-description" class="fc-tab-content fc-tab-active">
+          <p>
+            A section for including images in a card. Used with <code>img</code> or <code>figure</code> elements.
+          </p>
+        </div>
+        <div name="image-docs" id="image-html" class="fc-tab-content">
+          <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+  &lt;div class=&quot;fc-card-image&quot;&gt;
+    &lt;img src=&quot;/assets/Moose.jpg&quot; 
+        alt=&quot;picture of Moose the cat&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="fc-card">
+      <div class="fc-card-title"><h4>Tabs</h4></div>
+      <div class="fc-card-content fc-text-center"><code>class="fc-card-tabs fc-tab-group"</code></div>
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button name="tabs-docs" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'tabs-description', 'tabs-docs')">About</button>
+        <button name="tabs-docs" class="fc-tab-btn" onclick="opentab(event, 'tabs-html', 'tabs-docs')">Html</button>
+      </div>
+      <div class="fc-card-content">
+        <div name="tabs-docs" id="tabs-description" class="fc-tab-content fc-tab-active">
+          <p>
+            A section for including <a href="/flyght-css/pages/tabs">tabs</a> in your card. Pair the tab content with another card section.
+            It is recommended to include all tab-content elements in one card section, to avoid any extra borders or artifacts.
+          </p>
+        </div>
+        <div name="tabs-docs" id="tabs-html" class="fc-tab-content">
+          <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+  &lt;div class=&quot;fc-tab-group fc-primary fc-card-tabs&quot;&gt;
+    &lt;button class=&quot;fc-tab-btn fc-tab-active&quot;&gt;Tab One&lt;/button&gt;
+    &lt;button class=&quot;fc-tab-btn&quot;&gt;Tab Two&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;fc-card-content&quot;&gt;
+    &lt;div id=&quot;tab-one&quot; class=&quot;fc-tab-content fc-tab-active&quot;&gt;
+      &lt;p&gt;
+        Tab One Content
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tab-two&quot; class=&quot;fc-tab-content&quot;&gt;
+      &lt;p&gt;
+        Tab Two Content
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="fc-card">
+      <div class="fc-card-title"><h4>Footer</h4></div>
+      <div class="fc-card-content fc-text-center"><code>class="fc-card-footer"</code></div>
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button name="footer-docs" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'footer-description', 'footer-docs')">About</button>
+        <button name="footer-docs" class="fc-tab-btn" onclick="opentab(event, 'footer-html', 'footer-docs')">Html</button>
+      </div>
+      <div class="fc-card-content">
+        <div name="footer-docs" id="footer-description" class="fc-tab-content fc-tab-active">
+          <p>
+            A section for including a footer. Good for additional notes or action buttons. 
+            Will automatically pull towards the bottom of it's available space.
+            Designed to be used as the last element in the card.
+          </p>
+        </div>
+        <div name="footer-docs" id="footer-html" class="fc-tab-content">
+          <pre><code>&lt;div class=&quot;fc-card&quot;&gt;
+&lt;div class=&quot;fc-card-content&quot;&gt;
+  &lt;p&gt;
+    Some interesting content here
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;fc-card-footer&quot;&gt;
+  This is a footer.
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Customizing Cards</h2>
+  <div class="grid">
+    <div class="fc-card fc-flat">
+      <div class="fc-card-content fc-text-center"><code>class="fc-card fc-flat"</code></div>
+      <div class="fc-card-content">
+        <p>You can remove the card shadow by adding the <code>fc-flat</code> class.</p>
+      </div>
+    </div>
+    <div class="fc-card fc-border-primary">
+      <div class="fc-card-content fc-text-center"><code>class="fc-card fc-border-{color}"</code></div>
+      <div class="fc-card-content">
+        <p>You can change the border colors with the <code>fc-border-{color}</code> classes, 
+          described in <a href="/flyght-css/pages/colors/">colors</a>.</p>
+      </div>
+    </div>
+    <div class="fc-card fc-bg-primary-light fc-border-primary">
+      <div class="fc-card-content fc-text-center"><code class="fc-bg-primary fc-text-white">class="fc-card fc-bg-{color}"</code></div>
+      <div class="fc-card-content">
+        <p>You can Change the background color of the card with the <code class="fc-bg-primary fc-text-white">fc-bg-{color}</code> classes, 
+          described in <a href="/flyght-css/pages/colors/">colors</a>.</p>
+      </div>
+    </div>
+    <div class="fc-card fc-border-primary">
+      <div class="fc-card-content fc-text-center fc-bg-primary"><code class="fc-bg-primary-light">class="fc-card-content fc-bg-{color}"</code></div>
+      <div class="fc-card-content fc-bg-primary-light">
+        <p>Background colors can also be applied to individual sections. Mix and match!</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="examples" class="fc-tab-content">
+<div id="examples" name="documentation-card" class="fc-tab-content">
   <div class="grid">
-    <div class="fc-card fc-card-hover">
+    <div class="fc-card">
       <div class="fc-card-content">
         <p>
           Lay on arms while you're using the keyboard make plans to dominate
@@ -108,7 +330,47 @@
       </div>
     </div>
 
-    <div class="fc-card fc-card-flat fc-border-primary">
+    <div class="fc-card">
+      <div class="fc-card-title">
+        <h4>Title</h4>
+      </div>
+      <div class="fc-tab-group fc-primary fc-card-tabs">
+        <button name="card-example" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'one', 'card-example')">One</button>
+        <button name="card-example" class="fc-tab-btn" onclick="opentab(event, 'two', 'card-example')">Two</button>
+        <button name="card-example" class="fc-tab-btn" onclick="opentab(event, 'three', 'card-example')">Three</button>
+      </div>
+      <div class="fc-card-content">
+        <div id="one" name="card-example" class="fc-tab-content fc-tab-active">
+          <p>
+            <strong>ONE</strong> Lay on arms while you're using the keyboard make plans to dominate
+            world and then take a nap yet decide to want nothing to do with my
+            owner today meow to be let in, scratch at the door then walk away,
+            spend all night ensuring people don't sleep sleep all day, for man
+            running from cops stops to pet cats, goes to jail.
+          </p>
+        </div>
+        <div id="two" name="card-example" class="fc-tab-content">
+          <p>
+            <strong>TWO</strong> Lay on arms while you're using the keyboard make plans to dominate
+            world and then take a nap yet decide to want nothing to do with my
+            owner today meow to be let in, scratch at the door then walk away,
+            spend all night ensuring people don't sleep sleep all day, for man
+            running from cops stops to pet cats, goes to jail.
+          </p>
+        </div>
+        <div id="three" name="card-example" class="fc-tab-content">
+          <p>
+            <strong>THREE</strong> Lay on arms while you're using the keyboard make plans to dominate
+            world and then take a nap yet decide to want nothing to do with my
+            owner today meow to be let in, scratch at the door then walk away,
+            spend all night ensuring people don't sleep sleep all day, for man
+            running from cops stops to pet cats, goes to jail.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fc-card fc-flat fc-border-primary">
       <div class="fc-card-title">
         <h4>Title</h4>
       </div>
@@ -123,7 +385,10 @@
       </div>
     </div>
 
-    <div class="fc-card fc-border-secondary">
+    <div class="fc-card">
+      <div class="fc-card-title">
+        <h4>Title</h4>
+      </div>
       <div class="fc-card-content">
         <p>
           Sleeps on my head. You call this cat food relentlessly pursues moth
@@ -134,16 +399,19 @@
           be victim all of a sudden cat goes
         </p>
       </div>
+      <div class="fc-card-content">
+        <p>Another card content section</p>
+      </div>
       <div class="fc-card-footer">
-        <button class="fc-primary pull-right">Yes</button>
-        <button class="fc-error pull-right">No</button>
+        <button class="fc-primary">Yes</button>
+        <button class="fc-error">No</button>
       </div>
     </div>
 
     <div class="fc-card">
-      <span class="fc-card-image">
+      <div class="fc-card-image">
         <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
-      </span>
+      </div>
       <div class="fc-card-title">
         <h4>Moose</h4>
       </div>
@@ -160,9 +428,6 @@
     </div>
 
     <div class="fc-card">
-      <div class="fc-card-title">
-        <h4>Moose</h4>
-      </div>
       <span class="fc-card-image">
         <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
       </span>
@@ -182,12 +447,15 @@
     </div>
 
     <div class="fc-card">
-      <span class="fc-card-image">
+      <div class="fc-card-title">
+        <h4>Moose</h4>
+      </div>
+      <figure class="fc-card-image">
         <img src="/flyght-css/assets/Moose.jpg" alt="picture of Moose the cat">
-        <div class="fc-card-title title-background">
-          <h4>Moose</h4>
-        </div>
-      </span>
+        <figcaption class="fc-figure-caption fc-text-center">
+          Picture of Moose the Cat
+        </figcaption>
+      </figure>
 
       <div class="fc-card-content">
         <p>
@@ -202,9 +470,9 @@
     </div>
   </div>
 </div>
-
 </div>
-          </div>
+</div>
+
         </div>
       </div>
     </main>

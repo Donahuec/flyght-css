@@ -52,6 +52,9 @@
                 <a href="/flyght-css/pages/lists/">Lists</a>
               </li>
               <li>
+                <a href="/flyght-css/pages/tabs/">Tabs</a>
+              </li>
+              <li>
                 <a href="/flyght-css/pages/cards/">Cards</a>
               </li>
               <li>
@@ -70,19 +73,18 @@
       <div class="content">
         <div class="fc-card">
           <div class="fc-card-title"><h1>Typography</h1></div>
-          <div class="fc-card-content">
-            <div>
-<div class="fc-tab-group fc-primary">
-  <button class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation')">
+          
+<div class="fc-tab-group fc-primary fc-card-tabs">
+  <button name="documentation-card" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation', 'documentation-card')">
     Documentation
   </button>
-  <button class="fc-tab-btn" onclick="opentab(event, 'examples')">
+  <button name="documentation-card" class="fc-tab-btn" onclick="opentab(event, 'examples', 'documentation-card')">
     Examples
   </button>
 </div>
-
-
-<div id="documentation" class="fc-tab-content fc-tab-active">
+<div class="fc-card-content">
+  <div>
+<div id="documentation" name="documentation-card" class="fc-tab-content fc-tab-active">
   <h1>h1. Heading</h1>
   <h2>h2. Heading</h2>
   <h3>h3. Heading</h3>
@@ -134,10 +136,10 @@
   <a href="." class="fc-text-error">error</a>
 </div>
 
-<div id="examples" class="fc-tab-content"></div>
-
+<div id="examples" name="documentation-card" class="fc-tab-content"></div>
 </div>
-          </div>
+</div>
+
         </div>
       </div>
     </main>

@@ -1,75 +1,45 @@
 .fc-card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: var(--fc-shadow-elevation-medium);
   border: var(--fc-border-line);
   border-color: var(--fc-border-color);
   border-radius: var(--fc-border-radius);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  margin: 0.5em 0.5em 0.5em 0.5em;
-  overflow: hidden;
+  margin: var(--fc-spacing-default);
+  overflow: auto;
   background-color: var(--white);
-}
-
-/* On mouse-over, add a deeper shadow */
-
-.fc-card.fc-card-hover:hover {
-  transition: 0.3s;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-}
-
-.fc-card.fc-card-flat {
-  box-shadow: none;
-}
-
-/* Add some padding inside the fc-card container */
-
-.fc-card .fc-card-content {
-  padding: 1em 1em 1em 1em;
-}
-
-.fc-card .fc-card-title {
-  padding: 0.3em 2em 0 2em;
-  border-bottom: var(--fc-border-line);
-  border-color: inherit;
-}
-
-.fc-card .fc-card-image .fc-card-title {
-  position: absolute;
-  border: none;
-  padding: 0 1em 0 1em;
-  bottom: 0.25em;
-  left: 0;
-}
-
-.fc-card .fc-card-image .fc-card-title.title-background {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: block;
-  right: 0;
-  color: var(--white);
-}
-
-.fc-card .fc-card-image {
-  position: relative;
-}
-
-.fc-card .fc-card-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.fc-card .fc-card-footer {
-  padding: 0.3em 2em 0.3em 2em;
-  border-top: var(--fc-border-line);
-  border-color: inherit;
-}
-
-.fc-card .fc-card-title::after,
-.fc-card .fc-card-content::after,
-.fc-card .fc-card-image::after,
-.fc-card .fc-card-footer::after {
-  content: "";
-  clear: both;
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .fc-card-content {
+    padding: var(--fc-spacing-default);
+  }
+  .fc-card-tabs,
+  .fc-card-title {
+    padding: 0.3em 2em 0 2em;
+    flex: 0 1 auto;
+  }
+  .fc-card-footer {
+    padding: var(--fc-spacing-default);
+    flex: 0 1 auto;
+  }
+  .fc-card-image {
+    display: flex;
+    flex-direction: column;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  & > :not(:last-child) {
+    border-bottom: var(--fc-border-line);
+    border-color: var(--fc-border-color);
+  }
+  & > :last-child:not(.fc-card-footer) {
+    flex-grow: 1;
+  }
+  &.fc-flat {
+    box-shadow: none;
+  }
 }

@@ -4,7 +4,7 @@
 @layer site {
   @layer overrides {
     main {
-      margin: 5em 10%;
+      margin: 5rem 10%;
       height: 100vh;
     }
   }
