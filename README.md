@@ -3,17 +3,28 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/donahuec/flyght-css?logo=github)
 ![GitHub Release](https://img.shields.io/github/v/release/donahuec/flyght-css)
 
-
-
 # Flyght CSS
-[Github Pages](https://donahuec.github.io/flyght-css/)
 
+[Github Pages](https://donahuec.github.io/flyght-css/)
 
 [Project Tracking](https://github.com/users/Donahuec/projects/6)
 
+[npm Package](https://www.npmjs.com/package/flyght-css)
 
-This is a small css framework. Mostly built for practicing and learning purposes.
+This is a small css framework. Mostly built for practicing and learning
+purposes.
 
-Designed to be pure vanilla css and html, with eventual optional javascript integration.
+Designed to be pure vanilla css and html, with eventual optional javascript
+integration.
 
 Templating and Static Site Generation done with [11ty](https://www.11ty.dev/).
+
+## How to Use
+
+Import flyght-css into your project in one of the following ways:
+
+- Copy the `flyght-css` folder from this repo and import `flyght.css` into your
+  project
+- Install from npm:
+  - `npm install flyght-css`
+  - import `node_modules/flyght-css/flyght.css` into your project.
