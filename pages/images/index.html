@@ -75,10 +75,10 @@
           <div class="fc-card-title"><h1>Images</h1></div>
           
 <div class="fc-tab-group fc-primary fc-card-tabs">
-  <button name="documentation-card" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation', 'documentation-card')">
+  <button id="documentation-tab" name="documentation-card" class="fc-tab-btn fc-tab-active" onclick="opentab(event, 'documentation', 'documentation-card', true)">
     Documentation
   </button>
-  <button name="documentation-card" class="fc-tab-btn" onclick="opentab(event, 'examples', 'documentation-card')">
+  <button id="examples-tab" name="documentation-card" class="fc-tab-btn" onclick="opentab(event, 'examples', 'documentation-card', true)">
     Examples
   </button>
 </div>
@@ -93,6 +93,14 @@
 </div>
 </div>
 </div>
+
+<script>
+  let searchParams = new URLSearchParams(window.location.search);
+  let activeTab = searchParams.get("tab");
+  if (activeTab != null) {
+    openTabWithNames(activeTab + "-tab", activeTab, "documentation-card");
+  }
+</script>
 
         </div>
       </div>
