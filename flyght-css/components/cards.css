@@ -6,7 +6,7 @@
   background-clip: padding-box;
   margin: var(--fc-spacing-default);
   overflow: auto;
-  background-color: var(--white);
+  background-color: var(--fc-surface);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

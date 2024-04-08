@@ -10,15 +10,10 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
 
-  --fc-lt-background: var(--white);
-  --fc-lt-on-background: var(--black);
-  --fc-dt-background: "";
-  --fc-dt-on-background: var(--white);
-
-  --fc-lt-surface: var(--white);
-  --fc-lt-on-surface: var(--black);
-  --fc-dt-surface: "";
-  --fc-dt-on-surface: "";
+  --fc-background: var(--white);
+  --fc-on-background: var(--black);
+  --fc-surface: var(--white);
+  --fc-on-surface: var(--black);
 
   --fc-v-light: 90%;
   --fc-light: 85%;

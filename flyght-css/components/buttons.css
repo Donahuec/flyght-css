@@ -54,7 +54,7 @@ a.fc-btn-link {
         outline: var(--fc-border-thick);
       }
       &:not(:active, :hover) {
-        background-color: var(--white);
+        background-color: unset;
       }
     }
   }
