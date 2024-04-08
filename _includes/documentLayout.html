@@ -4,16 +4,18 @@ layout: layout.html
 
 <div class="fc-tab-group fc-primary fc-card-tabs">
   <button
+    id="documentation-tab"
     name="documentation-card"
     class="fc-tab-btn fc-tab-active"
-    onclick="opentab(event, 'documentation', 'documentation-card')"
+    onclick="opentab(event, 'documentation', 'documentation-card', true)"
   >
     Documentation
   </button>
   <button
+    id="examples-tab"
     name="documentation-card"
     class="fc-tab-btn"
-    onclick="opentab(event, 'examples', 'documentation-card')"
+    onclick="opentab(event, 'examples', 'documentation-card', true)"
   >
     Examples
   </button>
@@ -21,3 +23,11 @@ layout: layout.html
 <div class="fc-card-content">
   <div>{{ content }}</div>
 </div>
+
+<script>
+  let searchParams = new URLSearchParams(window.location.search);
+  let activeTab = searchParams.get("tab");
+  if (activeTab != null) {
+    openTabWithNames(activeTab + "-tab", activeTab, "documentation-card");
+  }
+</script>
