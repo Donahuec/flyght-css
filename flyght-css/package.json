@@ -1,0 +1,22 @@
+{
+  "name": "flyght-css",
+  "version": "0.2.1",
+  "description": "Small CSS Library",
+  "main": "flyght.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donahuec/flyght-css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Caitlin Donahue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donahuec/flyght-css/issues"
+  },
+  "homepage": "https://donahuec.github.io/flyght-css/"
+}
