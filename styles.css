@@ -3,6 +3,10 @@
 
 @layer site {
   @layer overrides {
+    body {
+      background-color: var(--fc-background);
+    }
+
     main {
       margin: 5rem 10%;
       height: 100vh;
@@ -38,6 +42,13 @@
     .color-label {
       padding: 0 5px;
       margin: 5px 0;
+    }
+
+    .gh-status {
+      padding: var(--fc-spacing-default);
+      display: flex;
+      justify-content: center;
+      gap: 1em;
     }
   }
 }

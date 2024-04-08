@@ -4,6 +4,7 @@
     font-size: 1rem;
     font-weight: light;
     line-height: 1.75rem;
+    color: var(--fc-on-surface);
   }
 }
 @layer heading {
