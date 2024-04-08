@@ -1,4 +1,27 @@
-function opentab(evt, tabName, sectionName) {
+function opentab(evt, tabName, sectionName, updateQuery = false) {
+  changeTabStateWithElements(
+    evt.currentTarget,
+    document.getElementById(tabName),
+    sectionName,
+    updateQuery
+  );
+}
+
+function openTabWithNames(
+  buttonName,
+  tabName,
+  sectionName,
+  updateQuery = false
+) {
+  changeTabStateWithElements(
+    document.getElementById(buttonName),
+    document.getElementById(tabName),
+    sectionName,
+    updateQuery
+  );
+}
+
+function changeTabStateWithElements(button, tab, sectionName, updateQuery) {
   var i, tabcontent, tablinks;
   tabcontent = document.querySelectorAll(
     `[name=${sectionName}].fc-tab-content`
@@ -13,6 +36,15 @@ function opentab(evt, tabName, sectionName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" fc-tab-active", "");
   }
-  document.getElementById(tabName).className += " fc-tab-active";
-  evt.currentTarget.className += " fc-tab-active";
+  tab.className += " fc-tab-active";
+  button.className += " fc-tab-active";
+
+  if (updateQuery) {
+    var searchParams = new URLSearchParams(window.location.search);
+    searchParams.set("tab", tab.id);
+    var newRelativePathQuery =
+      window.location.pathname + "?" + searchParams.toString();
+    console.log(updateQuery);
+    history.pushState(null, "", newRelativePathQuery);
+  }
 }
